@@ -43,7 +43,8 @@ Spec: `01_SPECS/SINATRA_Hito001B_FLX4_Baseline.md` · v1.0 · **Aprobada — lis
 
 - [x] Crear y aprobar una spec propia. → aprobada v1.0.
 - [x] Crear la plantilla `04_TESTS/FLX4_BASELINE.md` (se crea al aprobar la spec). → creada.
-- [ ] Instalar el driver oficial Pioneer DDJ-FLX4 (ASIO) y configurar audio (Master + Cue por la FLX4).
+- [x] Preparación sin hardware (Sesión 03): mapping oficial inspeccionado (solo lectura), doc oficial de audio consultada, `FLX4_BASELINE.md` pre-rellenado. → hecho.
+- [ ] Conectar la Pioneer DJ DDJ-FLX4 (class-compliant, sin driver) y configurar audio en Mixxx (Master 1-2 / Cue 3-4, WASAPI).
 - [ ] Conectar la Pioneer DJ DDJ-FLX4 a la build local.
 - [ ] Verificar audio principal y preescucha.
 - [ ] Probar decks, transporte, jogs, tempo, mixer, EQ, filtro, faders y crossfader.

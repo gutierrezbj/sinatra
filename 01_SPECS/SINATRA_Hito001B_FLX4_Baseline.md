@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| Versión | 1.0 |
+| Versión | 1.1 |
 | Fecha | 2026-09-19 |
 | Estado | **Aprobada — lista para ejecución** |
 | Autor | Juan Ramón Gutiérrez (borrador preparado con agente Claude Code) |
@@ -26,8 +26,10 @@ Esta fase valida únicamente la integración hardware↔build con recursos ofici
 - **Equipo:** el mismo de 001-A — `GARAGE1` (ASUS ROG Zephyrus G14 GA403UV), Windows 11.
 - **Build de Mixxx:** el artefacto local de 001-A en `C:\dev\mixxx\build\x64-portable\mixxx.exe`, del commit `81a5eb877f15140136ec07148f3df3d1065cba6c` (`main`). Si se recompila, registrar el commit real usado.
 - **Hardware:** Pioneer DJ DDJ-FLX4 + cable USB; auriculares para preescucha.
-- **Interfaz de audio (fijada):** la **tarjeta de sonido integrada de la propia FLX4**. Master por las salidas de la FLX4 (RCA/altavoces) y preescucha (Cue) por el jack de auriculares de la FLX4, en canales separados. En Windows requiere el **driver oficial Pioneer DDJ-FLX4 (ASIO)**; se instala y se registra su versión.
-  - *Fallback degradado (no objetivo):* si no se instala el driver o no hay salida conectada, usar el audio integrado del G14 solo para Master, sin Cue separado. Se marca explícitamente como baseline parcial.
+- **Interfaz de audio (fijada):** la **tarjeta de sonido integrada de la propia FLX4**. Según el manual oficial de Mixxx, la FLX4 es **class-compliant (audio y MIDI) y no requiere instalar drivers** en Windows. Configuración de sonido en Mixxx: **Master → canales 1-2** y **Headphones → canales 3-4** del dispositivo FLX4. Los controles de auriculares (HEADPHONES MIXING/LEVEL, CUE por canal) son hardware.
+  - **Sound API:** usar **WASAPI** (reportado como funcional por la comunidad Mixxx en Windows). ASIO es **opcional**, solo si se busca menor latencia; no es obligatorio ni bloqueante.
+  - *Nota:* la entrada de micrófono (TS 1/4") **no se enruta al PC**, así que no es grabable/emitible ni configurable como entrada. Fuera del alcance del baseline.
+  - *Fallback degradado (no objetivo):* si no hubiera salida conectada a la FLX4, usar el audio integrado del G14 solo para Master, sin Cue separado. Se marca explícitamente como baseline parcial.
 - **Mapping:** el mapping oficial de la DDJ-FLX4 incluido en Mixxx (XML + JS), **tal cual**, sin edición.
 - **Documentación de referencia:** manual/wiki oficial de Mixxx para la FLX4 y para configuración de sonido, consultada en la fecha de ejecución (registrar URL y fecha).
 
@@ -36,9 +38,9 @@ Las versiones exactas (Mixxx, mapping, drivers, latencias) se registran durante 
 ## 3. Dentro del alcance
 
 - Arrancar la build local de 001-A (recompilar solo si es necesario, registrando el commit).
-- Instalar el **driver oficial Pioneer DDJ-FLX4 para Windows (ASIO)** para exponer la interfaz de audio integrada de la controladora; registrar versión y fuente oficial.
+- Conectar la FLX4 y confirmar que Windows la reconoce **sin instalar drivers** (class-compliant). Solo si se justifica por latencia, evaluar el driver ASIO oficial de Pioneer como opción documentada (no obligatorio).
 - Conectar la DDJ-FLX4 por USB y confirmar que Windows y Mixxx la detectan (MIDI y audio).
-- Configurar en Mixxx los dispositivos de sonido sobre la interfaz de la FLX4: salida principal (Master) y preescucha (Headphones/Cue) en canales separados. Registrar API de audio (ASIO), dispositivo, sample rate y tamaño de búfer usados.
+- Configurar en Mixxx los dispositivos de sonido sobre la interfaz de la FLX4: **Master → canales 1-2** y **Headphones/Cue → canales 3-4**. Registrar Sound API (WASAPI por defecto), dispositivo, sample rate y tamaño de búfer usados.
 - Cargar el **mapping oficial** de la FLX4 en Mixxx.
 - Ejercitar de forma sistemática y registrar el resultado de:
   - Audio: salida principal y preescucha (cue) en ambos decks.
@@ -127,3 +129,4 @@ Un éxito parcial no es cierre.
 |---|---|---|---|
 | 0.1 | 2026-09-19 | Borrador inicial de 001-B (FLX4 baseline), preparado tras el cierre de 001-A. Interfaz de audio fijada a la tarjeta integrada de la FLX4 (Master + Cue por la controladora, driver oficial Pioneer ASIO en Windows), con fallback degradado al audio del G14. | Juan Ramón Gutiérrez (con agente Claude Code) |
 | 1.0 | 2026-09-19 | **Aprobada** por el responsable (Juan Ramón Gutiérrez). Etiqueta de equipo unificada a `GARAGE1`. Habilita la ejecución de 001-B en una sesión con la FLX4 conectada. | Juan Ramón Gutiérrez |
+| 1.1 | 2026-09-19 | **Corrección desde doc oficial** (prep sin hardware): la FLX4 es class-compliant y **no requiere driver** en Windows (ASIO opcional). Configuración de sonido fijada: Master 1-2, Headphones 3-4; Sound API WASAPI. Añadida nota de mic no enrutado. Sin cambio de alcance. | Juan Ramón Gutiérrez (con agente Claude Code) |

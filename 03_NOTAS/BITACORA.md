@@ -207,6 +207,52 @@ Copiar tal cual, al final del archivo, con el mismo nivel de encabezado que las 
 
 ---
 
+## 2026-09-19 · Sesión 03 · Preparación de 001-B sin hardware
+
+**Fase:** 001-B (preparación; sin ejecución)
+**Responsable:** Juan Ramón Gutiérrez, con agente Claude Code (Opus 4.8)
+**Commit Mixxx:** `81a5eb87` (solo lectura del árbol; sin cambios)
+**Objetivo de la sesión:** al no tener la FLX4 a mano, adelantar todo lo que no necesita hardware para que la ejecución de 001-B sea enchufar y validar.
+
+### Qué se hizo
+
+- Inspeccionado (solo lectura) el mapping oficial en el árbol de Mixxx: `Pioneer-DDJ-FLX4.midi.xml` + `Pioneer-DDJ-FLX4-script.js` — "Pioneer DDJ-FLX4" (autor Robert904, basado en DDJ-400), schemaVersion 1, mixxxVersion 2.6, base firmware 1.02, 281 controles de entrada y 112 salidas (LEDs).
+- Consultada la doc oficial de Mixxx para la FLX4 (manual 2.4) y referencias de comunidad (2026-09-19).
+- Pre-rellenada la parte sin hardware de `04_TESTS/FLX4_BASELINE.md` (fuente, mapping, ruteo de audio objetivo, sección de preparación).
+- Corregida la spec 001-B a v1.1 desde la fuente oficial.
+
+### Resultado
+
+- Preparación completada. 001-B **sigue sin ejecutarse** (sin hardware); no cambia su estado (Aprobada — lista para ejecución).
+
+### Qué funcionó
+
+- Consultar la fuente oficial antes de fijar nada evitó un error real: el driver ASIO **no** es necesario (la FLX4 es class-compliant).
+
+### Qué falló o quedó incierto
+
+- Todo lo que depende del hardware (detección real, audio, respuesta de controles, LEDs, latencia) queda pendiente por no tener la FLX4.
+- Sample rate y búfer óptimos se decidirán en ejecución.
+
+### Decisiones y razones
+
+- Corrección de la spec (no driver, WASAPI, Master 1-2 / Cue 3-4) tratada como ajuste de exactitud dentro del mismo alcance, con la aprobación vigente; registrada en changelog v1.1.
+- No se reordenó la hoja de ruta: se mantiene 001-B como siguiente, solo pendiente de hardware.
+
+### Qué aprendimos
+
+- La FLX4 no necesita drivers en Windows y su interfaz integrada expone Master (1-2) y Cue (3-4); el mic no vuelve al PC.
+
+### Evidencia relacionada
+
+- `04_TESTS/FLX4_BASELINE.md` (prep sin hardware) · spec 001-B v1.1 · mapping oficial en `C:\dev\mixxx\res\controllers`.
+
+### Siguiente paso
+
+- Con la FLX4 conectada a GARAGE1: detección → audio Master+Cue → batería de controles → latencia → registro y cierre de 001-B.
+
+---
+
 ## Correcciones fechadas
 
 > Estas notas corrigen o unifican terminología sin reescribir las entradas anteriores, que se conservan como registro del momento en que se escribieron.
