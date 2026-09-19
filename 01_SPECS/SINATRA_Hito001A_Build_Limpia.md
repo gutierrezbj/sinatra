@@ -2,9 +2,9 @@
 
 | Campo | Valor |
 |---|---|
-| Versión | 1.2 |
+| Versión | 1.3 |
 | Fecha | 2026-09-19 |
-| Estado | **Aprobada — lista para ejecución** |
+| Estado | **Cerrada** — build limpia reproducida y arranque verificado en Sesión 02 (ver `04_TESTS/BUILD_NOTES.md`) |
 | Autor | Juan Ramón Gutiérrez |
 | Aprobador | Juan Ramón Gutiérrez |
 | Fecha de aprobación | 2026-09-19 |
@@ -123,3 +123,4 @@ Un éxito parcial no es cierre.
 | 1.0 | 2026-09-18 | Spec inicial de 001-A | Juan Ramón Gutiérrez |
 | 1.1 | 2026-09-19 | Cabecera formal (versión, estado, autor, aprobador). Spec pasa a ser fuente única de alcance. Añadidos: estados de salida, checklist y estado de spec como entregables, evidencia en `04_TESTS/evidence/`, inventario de entorno de dependencias, anotación de opciones QML sin activar, prohibición de commits en el repo de Mixxx. | Juan Ramón Gutiérrez |
 | 1.2 | 2026-09-19 | Ruta recomendada de SINATRA en SA97 pasa a `C:\ProyectosIA\Sinatra`. | Juan Ramón Gutiérrez |
+| 1.3 | 2026-09-19 | **Estado → Cerrada.** Ejecutada en Sesión 02: toolchain oficial provisto (VS 2022 Community + workload C++), Mixxx `main` `81a5eb87` compilado con deps 2.7 (1150/1150, exit 0) y arrancado desde build local. Árbol de Mixxx limpio, sin fork. Cumple todos los criterios de aceptación (sección 8). | Juan Ramón Gutiérrez (con agente Claude Code) |

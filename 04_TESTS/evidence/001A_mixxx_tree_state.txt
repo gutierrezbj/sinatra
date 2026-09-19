@@ -1,0 +1,17 @@
+# Evidencia 001-A — Estado del arbol de Mixxx tras build/arranque
+# Fecha: 2026-09-19  ·  Repo: https://github.com/mixxxdj/mixxx.git  ·  Rama: main
+
+## git log -1
+81a5eb877f15140136ec07148f3df3d1065cba6c
+2026-09-19 10:00:31 +0200
+Merge pull request #17101 from xARSENICx/fix/latenightqml-toolbar-options-fonts
+
+## git status --porcelain  (vacio = sin cambios en archivos versionados)
+[fin: sin salida arriba = arbol limpio]
+
+## Artefactos generados (ignorados por .gitignore de Mixxx):
+build/  install/  buildenv/  CMakeSettings.json
+build
+install
+buildenv
+CMakeSettings.json

@@ -10,32 +10,32 @@ Cada fase se cierra con evidencia y una entrada en `03_NOTAS/BITACORA.md`, y ter
 
 ## 001-A — Build limpia de Mixxx
 
-Spec: `01_SPECS/SINATRA_Hito001A_Build_Limpia.md` · v1.2 · Aprobada — lista para ejecución
+Spec: `01_SPECS/SINATRA_Hito001A_Build_Limpia.md` · v1.3 · **Cerrada** (2026-09-19, Sesión 02)
 
-- [ ] Confirmar que el repo de Mixxx está fuera de OneDrive, preferiblemente en `C:\dev\mixxx`; si ya existe, inspeccionar su estado antes de actuar.
-- [ ] Registrar versión de Windows, build, CPU/arquitectura y espacio disponible.
-- [ ] Registrar remoto, rama, commit exacto de Mixxx, fecha y estado inicial del árbol.
-- [ ] Verificar Visual Studio 2022 y el workload **Desktop development with C++**.
-- [ ] Verificar Git, CMake, Python y demás herramientas requeridas por el procedimiento oficial.
-- [ ] Registrar el entorno oficial de dependencias de Mixxx (versión/hash), según la guía oficial.
-- [ ] Ejecutar el procedimiento oficial de compilación para Windows.
-- [ ] Documentar cualquier desviación antes de aplicarla.
-- [ ] Conseguir una compilación completa sin cambios funcionales.
-- [ ] Arrancar `Mixxx.exe` desde la build local, comprobar que abre y cerrar de forma normal.
-- [ ] Anotar opciones de compilación relevantes para una futura prueba QML, sin activarlas.
-- [ ] Confirmar que no se modificaron motor, audio, skins ni mappings; árbol de Mixxx limpio.
-- [ ] Completar `04_TESTS/BUILD_NOTES.md` a partir de la plantilla.
-- [ ] Guardar evidencia textual sanitizada en `04_TESTS/evidence/`; nada pesado en Git.
-- [ ] Actualizar el estado en la cabecera de la spec con el estado de salida alcanzado.
-- [ ] Registrar cierre y aprendizaje en la bitácora.
+- [x] Confirmar que el repo de Mixxx está fuera de OneDrive, preferiblemente en `C:\dev\mixxx`; si ya existe, inspeccionar su estado antes de actuar. → clonado limpio en `C:\dev\mixxx`, fuera de OneDrive.
+- [x] Registrar versión de Windows, build, CPU/arquitectura y espacio disponible. → Win 11 Home 26200, Ryzen 9 8945HS x64, 31 GB RAM, 330 GB libres.
+- [x] Registrar remoto, rama, commit exacto de Mixxx, fecha y estado inicial del árbol. → `mixxxdj/mixxx`, `main`, `81a5eb87`, árbol limpio.
+- [x] Verificar Visual Studio 2022 y el workload **Desktop development with C++**. → ausente al inicio; instalado Community 17.14 + NativeDesktop.
+- [x] Verificar Git, CMake, Python y demás herramientas requeridas por el procedimiento oficial. → git 2.51, CMake 3.31.6 (bundled VS), Ninja 1.12.1, Python 3.13.7.
+- [x] Registrar el entorno oficial de dependencias de Mixxx (versión/hash), según la guía oficial. → `mixxx-deps-2.7-x64-windows-1c20f84a` (SHA256 verificado).
+- [x] Ejecutar el procedimiento oficial de compilación para Windows. → `windows_buildenv.bat setup` + `cmake` (toolchain vcpkg, Ninja) + `cmake --build`.
+- [x] Documentar cualquier desviación antes de aplicarla. → sin desviaciones del procedimiento; instalación de toolchain documentada.
+- [x] Conseguir una compilación completa sin cambios funcionales. → 1150/1150, exit 0, sin errores.
+- [x] Arrancar `Mixxx.exe` desde la build local, comprobar que abre y cerrar de forma normal. → ventana `Mixxx` abierta, responsiva, sin crash; cerrada sin colgarse.
+- [x] Anotar opciones de compilación relevantes para una futura prueba QML, sin activarlas. → `QML:BOOL=ON` (default), `QT6:BOOL=ON`; no modificadas.
+- [x] Confirmar que no se modificaron motor, audio, skins ni mappings; árbol de Mixxx limpio. → `git status --porcelain` vacío.
+- [x] Completar `04_TESTS/BUILD_NOTES.md` a partir de la plantilla.
+- [x] Guardar evidencia textual sanitizada en `04_TESTS/evidence/`; nada pesado en Git.
+- [x] Actualizar el estado en la cabecera de la spec con el estado de salida alcanzado.
+- [x] Registrar cierre y aprendizaje en la bitácora.
 
 ### Puerta de salida 001-A
 
-- [ ] Build reproducible documentada.
-- [ ] Aplicación local arranca.
-- [ ] Árbol de trabajo de Mixxx sin cambios funcionales realizados por Sinatra.
-- [ ] `BUILD_NOTES.md` completo.
-- [ ] Aprobación explícita para avanzar a 001-B.
+- [x] Build reproducible documentada.
+- [x] Aplicación local arranca.
+- [x] Árbol de trabajo de Mixxx sin cambios funcionales realizados por Sinatra.
+- [x] `BUILD_NOTES.md` completo.
+- [ ] Aprobación explícita para avanzar a 001-B. → **pendiente del responsable** (acción posterior al cierre; cerrar 001-A solo habilita *solicitar* la spec de 001-B).
 
 ## 001-B — FLX4 baseline
 

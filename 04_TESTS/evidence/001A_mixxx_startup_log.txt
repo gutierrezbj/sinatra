@@ -1,0 +1,67 @@
+# Evidencia 001-A — Arranque de Mixxx desde build local (sanitizado)
+# Fecha: 2026-09-19  ·  exe: C:/dev/mixxx/build/x64-portable/mixxx.exe
+# Resultado: ventana principal 'Mixxx' abierta, Responding=True, viva >30s; sin crash.
+
+## Inicio del log (primeras 40 lineas)
+14:02:07.593 Warning [Main] Failed to load "qt" translations for locale "es_ES" from "C:/dev/mixxx/res/translations/"
+14:02:07.600 Debug [Main] Loaded "mixxx" translations for locale "es_ES" from "C:/dev/mixxx/res/translations/mixxx_es_ES.qm"
+14:02:07.600 Debug [Main] KeyboardEventFilter - createKeyboardConfig
+14:02:07.601 Debug [Main] KeyboardEventFilter - Found and will use default keyboard mapping "C:/dev/mixxx/res/keyboard/es_ES.kbd.cfg"
+14:02:07.601 Debug [Main] Loading resources from  "C:/dev/mixxx/res/"
+14:02:07.927 Debug [Main] SoundSourceProxy - Registering SoundSource providers
+14:02:07.927 Debug [Main] SoundSourceProxy - Registering platform and fallback SoundSource providers
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering provider "Microsoft Media Foundation 10.0.26100.9278"
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "aac" for provider "Microsoft Media Foundation 10.0.26100.9278" with priority 4 (higher)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "m4a" for provider "Microsoft Media Foundation 10.0.26100.9278" with priority 4 (higher)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "mp4" for provider "Microsoft Media Foundation 10.0.26100.9278" with priority 4 (higher)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering provider "FFmpeg 7.1"
+14:02:07.934 Debug [Main] SoundSourceFFmpeg - Disabling untested input formats: aa, aax, ac3, ac4, ace, acm, act, adf, adp, ads, adx, aea, afc, aix, alp, amr, amrnb, amrwb, anm, apac, apc, ape, apm, apng, aptx, aptx_hd, aqtitle, argo_asf, argo_brp, argo_cvg, asf, asf_o, ass, ast, au, av1, avi, avr, avs, avs2, avs3, bethsoftvid, bfi, bin, bink, binka, bit, bitpacked, bmv, bfstm, brstm, boa, bonk, c93, caf, cavsvideo, cdg, cdxl, cine, codec2, codec2raw, concat, data, daud, dcstr, derf, dfa, dfpwm, dhav, dirac, dnxhd, dsf, dsicin, dss, dts, dtshd, dv, dvbsub, dvbtxt, dxa, ea, ea_cdata, eac3, epaf, evc, ffmetadata, filmstrip, fits, flac, flic, flv, live_flv, 4xm, frm, fsb, fwse, g722, g723_1, g726, g726le, g729, gdv, genh, gif, gsm, gxf, h261, h263, h264, hca, hcom, hevc, hls, hnm, iamf, ico, idcin, idf, iff, ifv, ilbc, image2, image2pipe, alias_pix, brender_pix, ingenient, ipmovie, ipu, ircam, iss, iv8, ivf, ivr, jacosub, jv, jpegxl_anim, kux, kvag, laf, lc3, lmlm4, loas, luodat, lrc, lvf, lxf, mca, mcc, matroska,webm, mgsts, microdvd, mjpeg, mjpeg_2000, mlp, mlv, mm, mmf, mods, moflex, mpc, mpc8, mpeg, mpegts, mpegtsraw, mpegvideo, mpjpeg, mpl2, mpsub, msf, msnwctcp, msp, mtaf, mtv, musx, mv, mvi, mxf, mxg, nc, nistsphere, nsp, nsv, nut, nuv, obu, ogg, oma, osq, paf, alaw, mulaw, vidc, f64be, f64le, f32be, f32le, s32be, s32le, s24be, s24le, s16be, s16le, s8, u32be, u32le, u24be, u24le, u16be, u16le, u8, pdv, pjs, pmp, pp_bnk, pva, pvf, qcp, qoa, r3d, rawvideo, rcwt, realtext, redspark, rka, rl2, rm, roq, rpl, rsd, rso, rtp, rtsp, s337m, sami, sap, sbc, sbg, scc, scd, sdns, sdp, sdr2, sds, sdx, film_cpk, ser, sga, shn, siff, simbiosis_imx, sln, smk, smjpeg, smush, sol, sox, spdif, srt, psxstr, stl, subviewer1, subviewer, sup, svag, svs, swf, tak, tedcaptions, thp, 3dostr, tiertexseq, tmv, truehd, tta, txd, tty, ty, usm, v210, v210x, vag, vc1, vc1test, vividas, vivo, vmd, vobsub, voc, vpk, vplayer, vqf, vvc, w64, wady, wavarc, wc3movie, webm_dash_manifest, webvtt, wsaud, wsd, wsvqa, wtv, wve, xa, xbin, xmd, xmv, xvag, xwma, yop, yuv4mpegpipe, bmp_pipe, cri_pipe, dds_pipe, dpx_pipe, exr_pipe, gem_pipe, gif_pipe, hdr_pipe, j2k_pipe, jpeg_pipe, jpegls_pipe, jpegxl_pipe, pam_pipe, pbm_pipe, pcx_pipe, pfm_pipe, pgmyuv_pipe, pgm_pipe, pgx_pipe, phm_pipe, photocd_pipe, pictor_pipe, png_pipe, ppm_pipe, psd_pipe, qdraw_pipe, qoi_pipe, sgi_pipe, svg_pipe, sunrast_pipe, tiff_pipe, vbn_pipe, webp_pipe, xbm_pipe, xpm_pipe, xwd_pipe
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "aac" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "aiff" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "mp4" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "mov" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "mp4" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "m4a" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "3gp" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "3g2" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "mj2" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "mp3" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "wav" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "wv" for provider "FFmpeg 7.1" with priority 1 (lowest)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering provider "MAD: MPEG Audio Decoder 0.16.4 NDEBUG FPM_64BIT OPT_ACCURACY"
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "mp3" for provider "MAD: MPEG Audio Decoder 0.16.4 NDEBUG FPM_64BIT OPT_ACCURACY" with priority 3 (default)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering provider "MODPlug"
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "mod" for provider "MODPlug" with priority 3 (default)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "okt" for provider "MODPlug" with priority 3 (default)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "s3m" for provider "MODPlug" with priority 3 (default)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "stm" for provider "MODPlug" with priority 3 (default)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "xm" for provider "MODPlug" with priority 3 (default)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "it" for provider "MODPlug" with priority 3 (default)
+14:02:07.934 Info [Main] SoundSourceSndFile - Disabling OGG decoding for "libsndfile-1.2.2"
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering provider "libsndfile"
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "aiff" for provider "libsndfile" with priority 3 (default)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "caf" for provider "libsndfile" with priority 2 (lower)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "flac" for provider "libsndfile" with priority 2 (lower)
+14:02:07.934 Debug [Main] SoundSourceProviderRegistry - Registering file type "wav" for provider "libsndfile" with priority 3 (default)
+
+## Fin del log (ultimas 20 lineas)
+14:02:08.397 Debug [Main] "Speakers (NVIDIA Broadcast)"
+14:02:08.397 Debug [Main] "Micr�fono (NVIDIA Broadcast)"
+14:02:08.397 Debug [Main] "Varios micr�fonos (Realtek(R) Audio)"
+14:02:08.397 Debug [Main] "Altavoces (Realtek(R) Audio) [Loopback]"
+14:02:08.397 Debug [Main] "Speakers (NVIDIA Broadcast) [Loopback]"
+14:02:08.397 Debug [Main] "Output 1 ()"
+14:02:08.397 Debug [Main] "Output 2 ()"
+14:02:08.397 Debug [Main] "Input ()"
+14:02:08.397 Debug [Main] "Output ()"
+14:02:08.397 Debug [Main] "Output ()"
+14:02:08.397 Debug [Main] "Auriculares con micr�fono ()"
+14:02:08.397 Debug [Main] "Auriculares con micr�fono ()"
+14:02:08.397 Debug [Main] "Output 1 ()"
+14:02:08.397 Debug [Main] "Output 2 ()"
+14:02:08.397 Debug [Main] "Input ()"
+14:02:08.397 Debug [Main] "Output 1 ()"
+14:02:08.397 Debug [Main] "Output 2 ()"
+14:02:08.397 Debug [Main] "Input ()"
+14:02:08.397 Debug [Main] "Output ()"
+14:02:08.397 Debug [Main] "Auriculares con micr�fono ()"
