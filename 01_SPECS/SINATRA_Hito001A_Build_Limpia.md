@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| Versión | 1.1 |
+| Versión | 1.2 |
 | Fecha | 2026-09-19 |
 | Estado | **Aprobada — lista para ejecución** |
 | Autor | Juan Ramón Gutiérrez |
@@ -26,7 +26,7 @@ Esta fase valida únicamente el entorno de construcción. No valida la DDJ-FLX4,
 - **Equipo:** SA97 — ASUS Zephyrus G14.
 - **Sistema:** Windows 11.
 - **Código Mixxx:** repositorio oficial independiente, fuera de OneDrive; ruta recomendada `C:\dev\mixxx`.
-- **Proyecto Sinatra:** repositorio separado, fuera de OneDrive; ruta recomendada `C:\SINATRA`.
+- **Proyecto Sinatra:** repositorio separado, fuera de OneDrive; ruta recomendada `C:\ProyectosIA\Sinatra`.
 - **Toolchain base:** Visual Studio 2022, workload Desktop development with C++, Git, CMake, Python si la guía oficial lo exige, entorno oficial de dependencias de Mixxx y el procedimiento oficial de Mixxx para Windows.
 
 Las versiones exactas deben registrarse durante la ejecución; no se fijan por memoria ni por suposición.
@@ -122,3 +122,4 @@ Un éxito parcial no es cierre.
 |---|---|---|---|
 | 1.0 | 2026-09-18 | Spec inicial de 001-A | Juan Ramón Gutiérrez |
 | 1.1 | 2026-09-19 | Cabecera formal (versión, estado, autor, aprobador). Spec pasa a ser fuente única de alcance. Añadidos: estados de salida, checklist y estado de spec como entregables, evidencia en `04_TESTS/evidence/`, inventario de entorno de dependencias, anotación de opciones QML sin activar, prohibición de commits en el repo de Mixxx. | Juan Ramón Gutiérrez |
+| 1.2 | 2026-09-19 | Ruta recomendada de SINATRA en SA97 pasa a `C:\ProyectosIA\Sinatra`. | Juan Ramón Gutiérrez |

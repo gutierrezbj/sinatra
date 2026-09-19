@@ -10,7 +10,7 @@ Cada fase se cierra con evidencia y una entrada en `03_NOTAS/BITACORA.md`, y ter
 
 ## 001-A — Build limpia de Mixxx
 
-Spec: `01_SPECS/SINATRA_Hito001A_Build_Limpia.md` · v1.1 · Aprobada — lista para ejecución
+Spec: `01_SPECS/SINATRA_Hito001A_Build_Limpia.md` · v1.2 · Aprobada — lista para ejecución
 
 - [ ] Confirmar que el repo de Mixxx está fuera de OneDrive, preferiblemente en `C:\dev\mixxx`; si ya existe, inspeccionar su estado antes de actuar.
 - [ ] Registrar versión de Windows, build, CPU/arquitectura y espacio disponible.

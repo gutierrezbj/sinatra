@@ -30,7 +30,7 @@ El código de Mixxx debe clonarse por separado, fuera de OneDrive:
 
 ```text
 C:\dev\mixxx       # repositorio oficial de Mixxx
-C:\SINATRA         # este repositorio
+C:\ProyectosIA\Sinatra   # este repositorio
 ```
 
 No se debe copiar Mixxx dentro de este repositorio ni usar este proyecto como fork.
