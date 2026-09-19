@@ -23,7 +23,7 @@ Esta fase valida únicamente el entorno de construcción. No valida la DDJ-FLX4,
 
 ## 2. Entorno objetivo
 
-- **Equipo:** SA97 — ASUS Zephyrus G14.
+- **Equipo:** GARAGE1 — ASUS ROG Zephyrus G14 (GA403UV). *(Etiqueta anterior "SA97", unificada a GARAGE1 el 2026-09-19.)*
 - **Sistema:** Windows 11.
 - **Código Mixxx:** repositorio oficial independiente, fuera de OneDrive; ruta recomendada `C:\dev\mixxx`.
 - **Proyecto Sinatra:** repositorio separado, fuera de OneDrive; ruta recomendada `C:\ProyectosIA\Sinatra`.
@@ -33,7 +33,7 @@ Las versiones exactas deben registrarse durante la ejecución; no se fijan por m
 
 ## 3. Dentro del alcance
 
-- Inventariar el entorno real de SA97 y registrar versiones.
+- Inventariar el entorno real de GARAGE1 y registrar versiones.
 - Preparar o verificar el toolchain oficial.
 - Clonar o actualizar el repositorio oficial de Mixxx en su ubicación independiente; si ya existe, inspeccionar su estado antes de actuar y no sobrescribir trabajo existente.
 - Registrar remoto, rama, commit exacto, fecha y estado inicial del árbol.
@@ -41,7 +41,7 @@ Las versiones exactas deben registrarse durante la ejecución; no se fijan por m
 - Resolver bloqueos de entorno estrictamente necesarios, documentando causa y solución.
 - Arrancar Mixxx desde la build local, comprobar que abre sin fallo inmediato y cerrar de forma normal.
 - Anotar, sin activarlas, las opciones de compilación que la guía oficial mencione como relevantes para una futura prueba QML.
-- Dejar notas suficientes para repetir el proceso en SA97.
+- Dejar notas suficientes para repetir el proceso en GARAGE1.
 
 ## 4. Fuera del alcance
 

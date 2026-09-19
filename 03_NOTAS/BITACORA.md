@@ -204,3 +204,12 @@ Copiar tal cual, al final del archivo, con el mismo nivel de encabezado que las 
 ### Siguiente paso
 
 - Decisión del responsable: aprobar (o no) el avance a **001-B — FLX4 baseline**, que requiere una spec independiente propia antes de tocar la controladora. Hasta entonces, 001-B/C/D, Learn, DJ y Radio siguen bloqueados. La build local queda lista para reusarse (`cmake --build .` en `build/x64-portable`).
+
+---
+
+## Correcciones fechadas
+
+> Estas notas corrigen o unifican terminología sin reescribir las entradas anteriores, que se conservan como registro del momento en que se escribieron.
+
+- **2026-09-19 — Nombre de la máquina.** El responsable **unifica la etiqueta de la máquina objetivo a `GARAGE1`** (ASUS ROG Zephyrus G14 GA403UV, Windows 11). Toda mención a **"SA97"** en entradas y changelogs anteriores designa **esta misma máquina**; los documentos canónicos (README, DECISIONES, checklist, specs, plantillas, BUILD_NOTES) ya usan `GARAGE1`.
+- **2026-09-19 — Aprobación de 001-B.** El responsable **aprueba la spec `SINATRA_Hito001B_FLX4_Baseline.md`** (pasa de Borrador a Aprobada — lista para ejecución). Se crea la plantilla `04_TESTS/FLX4_BASELINE.md`. La **ejecución** de 001-B queda pendiente de una sesión con la FLX4 conectada; no se ha tocado hardware.

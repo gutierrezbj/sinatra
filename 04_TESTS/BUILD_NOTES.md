@@ -8,7 +8,7 @@
 |---|---|
 | Fecha y hora | 2026-09-19 13:49 (UTC+02:00) — inicio de sesión 02 |
 | Responsable | Juan Ramón Gutiérrez, con agente Claude Code (Opus 4.8) |
-| Equipo | ROG Zephyrus G14 GA403UV (hostname `GARAGE1`; la spec lo etiqueta "SA97" — ver nota de discrepancia) |
+| Equipo | GARAGE1 — ASUS ROG Zephyrus G14 GA403UV *(etiqueta unificada a GARAGE1 el 2026-09-19; antes "SA97")* |
 | Windows (edición/build) | Windows 11 Home · build 26200 |
 | Arquitectura | x64 · AMD Ryzen 9 8945HS w/ Radeon 780M · 31.3 GB RAM · 330 GB libres en C: |
 | Ruta repo Mixxx | `C:\dev\mixxx` (fuera de OneDrive) |
@@ -19,7 +19,7 @@
 | Resultado final | Pendiente |
 | Estado de salida de 001-A | Pendiente |
 
-> **Nota de discrepancia (no crítica):** la spec llama a la máquina objetivo "SA97". El hostname real es `GARAGE1`, pero el modelo (ASUS ROG Zephyrus G14, Windows 11) coincide con el equipo objetivo descrito. Se ejecuta en esta máquina por coincidencia de modelo/rol; queda anotado para el responsable.
+> **Nota (resuelta):** durante 001-A la spec etiquetaba la máquina como "SA97" mientras el hostname real es `GARAGE1` (mismo ASUS ROG Zephyrus G14). El responsable **unificó la etiqueta a `GARAGE1` el 2026-09-19**; toda referencia a "SA97" en docs anteriores designa esta misma máquina.
 
 ## Toolchain
 

@@ -8,7 +8,7 @@
 |---|---|
 | Fecha y hora | |
 | Responsable | |
-| Equipo | SA97 — ASUS Zephyrus G14 |
+| Equipo | GARAGE1 — ASUS ROG Zephyrus G14 |
 | Windows (edición/build) | |
 | Arquitectura | |
 | Ruta repo Mixxx | |

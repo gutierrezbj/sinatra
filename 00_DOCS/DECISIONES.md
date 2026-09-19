@@ -23,7 +23,7 @@ Al arrancar el proyecto no se sabe cuánto de la experiencia deseada puede const
 
 No crear ni publicar un fork de Mixxx en esta etapa. Se trabaja sobre el repositorio oficial sin modificar. Los experimentos de Sinatra (skins, mappings, QML) se hacen sobre copias aisladas e identificadas, fuera del árbol de Mixxx, dentro de `02_MODS/`.
 
-Ruta ratificada: **Windows 11 en SA97 → Mixxx como motor → FLX4 → interfaz Sinatra → QML → Learn.**
+Ruta ratificada: **Windows 11 en GARAGE1 → Mixxx como motor → FLX4 → interfaz Sinatra → QML → Learn.**
 
 ### Alternativas consideradas
 

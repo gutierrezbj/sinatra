@@ -1,7 +1,7 @@
 # SINATRA — Hito 001 · Checklist técnico
 
 **Nombre:** Hacer que Frankenstein respire  
-**Máquina objetivo:** SA97 · ASUS Zephyrus G14 · Windows 11  
+**Máquina objetivo:** GARAGE1 · ASUS ROG Zephyrus G14 (GA403UV) · Windows 11 *(antes etiquetada "SA97"; unificada a GARAGE1 el 2026-09-19)*  
 **Estado formal de cada fase:** vive en la cabecera de su spec en `01_SPECS/`. Este documento registra únicamente progreso operativo (qué pasos se han hecho).
 
 ## Regla de avance
@@ -39,9 +39,11 @@ Spec: `01_SPECS/SINATRA_Hito001A_Build_Limpia.md` · v1.3 · **Cerrada** (2026-0
 
 ## 001-B — FLX4 baseline
 
-**Bloqueado hasta cerrar 001-A.**
+Spec: `01_SPECS/SINATRA_Hito001B_FLX4_Baseline.md` · v1.0 · **Aprobada — lista para ejecución** (2026-09-19). Ejecución pendiente de una sesión con la FLX4 conectada; no se ha tocado hardware.
 
-- [ ] Crear y aprobar una spec propia.
+- [x] Crear y aprobar una spec propia. → aprobada v1.0.
+- [x] Crear la plantilla `04_TESTS/FLX4_BASELINE.md` (se crea al aprobar la spec). → creada.
+- [ ] Instalar el driver oficial Pioneer DDJ-FLX4 (ASIO) y configurar audio (Master + Cue por la FLX4).
 - [ ] Conectar la Pioneer DJ DDJ-FLX4 a la build local.
 - [ ] Verificar audio principal y preescucha.
 - [ ] Probar decks, transporte, jogs, tempo, mixer, EQ, filtro, faders y crossfader.

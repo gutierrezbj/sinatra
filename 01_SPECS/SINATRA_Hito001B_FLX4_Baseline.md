@@ -2,18 +2,18 @@
 
 | Campo | Valor |
 |---|---|
-| Versión | 0.1 |
+| Versión | 1.0 |
 | Fecha | 2026-09-19 |
-| Estado | **Borrador — pendiente de revisión y aprobación** |
+| Estado | **Aprobada — lista para ejecución** |
 | Autor | Juan Ramón Gutiérrez (borrador preparado con agente Claude Code) |
-| Aprobador | *(pendiente)* |
-| Fecha de aprobación | *(pendiente)* |
+| Aprobador | Juan Ramón Gutiérrez |
+| Fecha de aprobación | 2026-09-19 |
 | Tipo | investigación técnica reproducible |
 | Proyecto | Sinatra · Proyecto Radio |
 | Decisión vigente | ADR-001 — no fork · ver `00_DOCS/DECISIONES.md` |
 | Depende de | **001-A cerrada** (build limpia reproducida, commit `81a5eb87`) **+ aprobación explícita** de esta spec |
 
-> **Este documento es un borrador.** Sin aprobador y fecha de aprobación **no autoriza ningún trabajo**: no conectar la FLX4, no configurar audio, no ejecutar pruebas. Es la base para que el responsable revise alcance y guardarraíles antes de habilitar 001-B.
+> **Spec aprobada el 2026-09-19.** Autoriza ejecutar 001-B siguiendo este alcance. La ejecución requiere una sesión con la **DDJ-FLX4 conectada** al equipo `GARAGE1`; hasta que se realice, no se ha tocado hardware. 001-C/D, Learn, DJ y Radio siguen bloqueados.
 
 ## 1. Objetivo
 
@@ -23,7 +23,7 @@ Esta fase valida únicamente la integración hardware↔build con recursos ofici
 
 ## 2. Entorno objetivo
 
-- **Equipo:** el mismo de 001-A — ASUS ROG Zephyrus G14 (etiqueta de proyecto "SA97"; hostname real `GARAGE1` — pendiente de unificar por el responsable), Windows 11.
+- **Equipo:** el mismo de 001-A — `GARAGE1` (ASUS ROG Zephyrus G14 GA403UV), Windows 11.
 - **Build de Mixxx:** el artefacto local de 001-A en `C:\dev\mixxx\build\x64-portable\mixxx.exe`, del commit `81a5eb877f15140136ec07148f3df3d1065cba6c` (`main`). Si se recompila, registrar el commit real usado.
 - **Hardware:** Pioneer DJ DDJ-FLX4 + cable USB; auriculares para preescucha.
 - **Interfaz de audio (fijada):** la **tarjeta de sonido integrada de la propia FLX4**. Master por las salidas de la FLX4 (RCA/altavoces) y preescucha (Cue) por el jack de auriculares de la FLX4, en canales separados. En Windows requiere el **driver oficial Pioneer DDJ-FLX4 (ASIO)**; se instala y se registra su versión.
@@ -125,4 +125,5 @@ Un éxito parcial no es cierre.
 
 | Versión | Fecha | Cambio | Autor |
 |---|---|---|---|
-| 0.1 | 2026-09-19 | Borrador inicial de 001-B (FLX4 baseline), preparado tras el cierre de 001-A. Interfaz de audio fijada a la tarjeta integrada de la FLX4 (Master + Cue por la controladora, driver oficial Pioneer ASIO en Windows), con fallback degradado al audio del G14. Pendiente de revisión y aprobación del responsable. | Juan Ramón Gutiérrez (con agente Claude Code) |
+| 0.1 | 2026-09-19 | Borrador inicial de 001-B (FLX4 baseline), preparado tras el cierre de 001-A. Interfaz de audio fijada a la tarjeta integrada de la FLX4 (Master + Cue por la controladora, driver oficial Pioneer ASIO en Windows), con fallback degradado al audio del G14. | Juan Ramón Gutiérrez (con agente Claude Code) |
+| 1.0 | 2026-09-19 | **Aprobada** por el responsable (Juan Ramón Gutiérrez). Etiqueta de equipo unificada a `GARAGE1`. Habilita la ejecución de 001-B en una sesión con la FLX4 conectada. | Juan Ramón Gutiérrez |

@@ -10,13 +10,13 @@ El proyecto se organiza alrededor de tres modos futuros:
 
 ## Rumbo y decisión vigente
 
-Ruta ratificada: **Windows 11 en SA97 → Mixxx como motor → FLX4 → interfaz Sinatra → QML → Learn.**
+Ruta ratificada: **Windows 11 en GARAGE1 → Mixxx como motor → FLX4 → interfaz Sinatra → QML → Learn.**
 
 La [Decisión 001](00_DOCS/DECISIONES.md) sigue vigente: **no crear un fork de Mixxx todavía**. Primero se comprueba, con una build limpia y experimentos aislados, cuánto puede construirse encima de Mixxx sin tocar el motor. La versión móvil queda como posible evolución futura y no forma parte del alcance actual.
 
 ## Fase activa
 
-**Hito 001-A — Build limpia** en SA97 (ASUS Zephyrus G14, Windows 11).
+**Hito 001-A — Build limpia** en GARAGE1 (ASUS ROG Zephyrus G14, Windows 11).
 
 - Estado formal, alcance, entregables y aceptación: [`01_SPECS/SINATRA_Hito001A_Build_Limpia.md`](01_SPECS/SINATRA_Hito001A_Build_Limpia.md)
 - Progreso operativo: [`00_DOCS/SINATRA_Hito001_Checklist_Tecnico.md`](00_DOCS/SINATRA_Hito001_Checklist_Tecnico.md)
