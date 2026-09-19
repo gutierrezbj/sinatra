@@ -29,8 +29,8 @@ compile_commands.json
 vcpkg/
 downloads/
 
-# Evidencia pesada o específica de una máquina
-04_TESTS/evidence/
+# Evidencia: 04_TESTS/evidence/ se versiona (texto pequeño y sanitizado).
+# Artefactos pesados o específicos de una máquina: ignorados.
 04_TESTS/artifacts/
 
 # Credenciales y configuración local

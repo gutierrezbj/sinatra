@@ -1,27 +1,32 @@
 # SINATRA — Hito 001 · Checklist técnico
 
 **Nombre:** Hacer que Frankenstein respire  
-**Estado:** 001-A preparado · resto bloqueado  
-**Máquina objetivo:** SA97 · ASUS Zephyrus G14 · Windows 11
+**Máquina objetivo:** SA97 · ASUS Zephyrus G14 · Windows 11  
+**Estado formal de cada fase:** vive en la cabecera de su spec en `01_SPECS/`. Este documento registra únicamente progreso operativo (qué pasos se han hecho).
 
 ## Regla de avance
 
-Cada fase se cierra con evidencia y una entrada en `03_NOTAS/BITACORA.md`. No se comienza la fase siguiente por conveniencia ni mientras queden criterios de aceptación pendientes.
+Cada fase se cierra con evidencia y una entrada en `03_NOTAS/BITACORA.md`, y termina en uno de los tres estados de salida definidos en su spec: cerrada, abierta con bloqueo diagnosticado o requiere nueva decisión/spec. No se comienza la fase siguiente por conveniencia ni mientras queden criterios de aceptación pendientes.
 
 ## 001-A — Build limpia de Mixxx
 
-- [ ] Confirmar que el repo de Mixxx está fuera de OneDrive, preferiblemente en `C:\dev\mixxx`.
-- [ ] Registrar versión de Windows y arquitectura.
-- [ ] Registrar commit exacto de Mixxx usado.
+Spec: `01_SPECS/SINATRA_Hito001A_Build_Limpia.md` · v1.1 · Aprobada — lista para ejecución
+
+- [ ] Confirmar que el repo de Mixxx está fuera de OneDrive, preferiblemente en `C:\dev\mixxx`; si ya existe, inspeccionar su estado antes de actuar.
+- [ ] Registrar versión de Windows, build, CPU/arquitectura y espacio disponible.
+- [ ] Registrar remoto, rama, commit exacto de Mixxx, fecha y estado inicial del árbol.
 - [ ] Verificar Visual Studio 2022 y el workload **Desktop development with C++**.
-- [ ] Verificar Git y CMake requeridos por el procedimiento oficial.
+- [ ] Verificar Git, CMake, Python y demás herramientas requeridas por el procedimiento oficial.
+- [ ] Registrar el entorno oficial de dependencias de Mixxx (versión/hash), según la guía oficial.
 - [ ] Ejecutar el procedimiento oficial de compilación para Windows.
 - [ ] Documentar cualquier desviación antes de aplicarla.
 - [ ] Conseguir una compilación completa sin cambios funcionales.
-- [ ] Arrancar `Mixxx.exe` desde la build local.
-- [ ] Confirmar que no se modificaron motor, audio, skins ni mappings.
+- [ ] Arrancar `Mixxx.exe` desde la build local, comprobar que abre y cerrar de forma normal.
+- [ ] Anotar opciones de compilación relevantes para una futura prueba QML, sin activarlas.
+- [ ] Confirmar que no se modificaron motor, audio, skins ni mappings; árbol de Mixxx limpio.
 - [ ] Completar `04_TESTS/BUILD_NOTES.md` a partir de la plantilla.
-- [ ] Añadir evidencia suficiente sin incluir binarios ni archivos pesados en Git.
+- [ ] Guardar evidencia textual sanitizada en `04_TESTS/evidence/`; nada pesado en Git.
+- [ ] Actualizar el estado en la cabecera de la spec con el estado de salida alcanzado.
 - [ ] Registrar cierre y aprendizaje en la bitácora.
 
 ### Puerta de salida 001-A
@@ -42,7 +47,7 @@ Cada fase se cierra con evidencia y una entrada en `03_NOTAS/BITACORA.md`. No se
 - [ ] Probar decks, transporte, jogs, tempo, mixer, EQ, filtro, faders y crossfader.
 - [ ] Probar pads, hot cues, loops, FX y LEDs.
 - [ ] Registrar latencia y anomalías.
-- [ ] Completar `04_TESTS/FLX4_BASELINE.md`.
+- [ ] Completar `04_TESTS/FLX4_BASELINE.md` (su plantilla se crea al aprobar la spec de 001-B, no antes).
 
 ## 001-C — Sinatra Skin
 
@@ -69,5 +74,5 @@ Cada fase se cierra con evidencia y una entrada en `03_NOTAS/BITACORA.md`. No se
 - [ ] Comparar skin clásica y QML con evidencia.
 - [ ] Revisar límites entre interfaz y motor.
 - [ ] Revisar implicaciones GPL solo si se plantea distribución.
-- [ ] Mantener o reconsiderar la Decisión 001: no fork.
+- [ ] Mantener o reconsiderar la Decisión 001 (no fork) según las condiciones de `00_DOCS/DECISIONES.md`; si cambia, nueva ADR.
 
