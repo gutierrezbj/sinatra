@@ -8,19 +8,25 @@ El proyecto se organiza alrededor de tres modos futuros:
 - **DJ:** una cabina clara, progresiva y conectada con hardware real.
 - **Radio:** emisión, AutoDJ, micrófono y continuidad con Radio Pirata.
 
-## Estado actual
+## Rumbo y decisión vigente
 
-**Exploración técnica · Hito 001-A en preparación.**
+Ruta ratificada: **Windows 11 en SA97 → Mixxx como motor → FLX4 → interfaz Sinatra → QML → Learn.**
 
-La Decisión 001 sigue vigente: **no crear un fork de Mixxx todavía**. Primero se comprobará, con una compilación limpia y experimentos aislados, cuánto puede construirse encima de Mixxx sin tocar el motor.
+La [Decisión 001](00_DOCS/DECISIONES.md) sigue vigente: **no crear un fork de Mixxx todavía**. Primero se comprueba, con una build limpia y experimentos aislados, cuánto puede construirse encima de Mixxx sin tocar el motor. La versión móvil queda como posible evolución futura y no forma parte del alcance actual.
 
-El foco inmediato es conseguir una build reproducible y sin modificaciones del branch `main` de Mixxx en Windows 11, dentro de la máquina SA97 (ASUS Zephyrus G14).
+## Fase activa
+
+**Hito 001-A — Build limpia** en SA97 (ASUS Zephyrus G14, Windows 11).
+
+- Estado formal, alcance, entregables y aceptación: [`01_SPECS/SINATRA_Hito001A_Build_Limpia.md`](01_SPECS/SINATRA_Hito001A_Build_Limpia.md)
+- Progreso operativo: [`00_DOCS/SINATRA_Hito001_Checklist_Tecnico.md`](00_DOCS/SINATRA_Hito001_Checklist_Tecnico.md)
+- Reglas para quien trabaja aquí, humano o agente: [`AGENTS.md`](AGENTS.md)
 
 ## Separación de responsabilidades
 
-Este repositorio contiene únicamente la documentación, las especificaciones, las notas, las pruebas y, más adelante, copias aisladas de mods de Sinatra.
+Este repositorio contiene únicamente documentación, especificaciones, notas, evidencia textual y, más adelante, copias aisladas de mods de Sinatra.
 
-El código de Mixxx debe clonarse por separado, fuera de OneDrive, por ejemplo:
+El código de Mixxx debe clonarse por separado, fuera de OneDrive:
 
 ```text
 C:\dev\mixxx       # repositorio oficial de Mixxx
@@ -33,23 +39,26 @@ No se debe copiar Mixxx dentro de este repositorio ni usar este proyecto como fo
 
 ```text
 SINATRA/
-├── 00_DOCS/       # documentos maestros y checklists globales
-├── 01_SPECS/      # una especificación aprobada por cambio
-├── 02_MODS/       # futuras copias aisladas de skins y mappings
+├── AGENTS.md          # reglas de trabajo para humanos y agentes
+├── README.md
+├── 00_DOCS/           # decisiones (ADR) y checklists globales
+├── 01_SPECS/          # una especificación aprobada por cambio, más plantilla
+├── 02_MODS/           # futuras copias aisladas de skins y mappings
 │   ├── skins/
 │   └── controllers/
-├── 03_NOTAS/      # bitácora de trabajo y aprendizaje
-└── 04_TESTS/      # plantillas, evidencias y resultados de pruebas
+├── 03_NOTAS/          # bitácora de trabajo y aprendizaje
+└── 04_TESTS/          # plantillas, notas de build y evidencia
+    ├── evidence/      # texto pequeño y sanitizado, versionado
+    └── artifacts/     # binarios, capturas y builds, ignorado por Git
 ```
 
-## Reglas de trabajo
+## Cómo se trabaja
 
-1. **SDD-first:** se escribe y aprueba una spec antes de modificar o programar.
-2. **Un paso cada vez:** no se inicia una fase hasta cerrar la anterior.
-3. **Upstream intacto:** en 001-A no se modifica código, skin ni mapping de Mixxx.
-4. **Mods aislados:** cuando llegue su fase, se duplica el recurso original y se trabaja sobre una copia identificada como Sinatra.
-5. **Bitácora obligatoria:** cada sesión registra lo realizado, lo aprendido, los fallos y el siguiente paso.
-6. **Evidencia antes que intuición:** las decisiones de arquitectura se toman después de las pruebas de skin y QML, no antes.
+Tres principios; el detalle está en `AGENTS.md` y en cada spec.
+
+1. **SDD-first:** nada se ejecuta sin una spec aprobada.
+2. **Un paso cada vez:** una fase no empieza hasta cerrar la anterior con evidencia y bitácora.
+3. **Upstream intacto:** Mixxx no se modifica; los mods de Sinatra son copias aisladas e identificadas.
 
 ## Ruta del Hito 001
 
@@ -57,7 +66,4 @@ SINATRA/
 2. **001-B — FLX4 baseline:** verificar controles, audio, LEDs y latencia con la DDJ-FLX4.
 3. **001-C — Sinatra Skin:** primera modificación visual aislada sobre una copia de una skin existente.
 4. **001-D — QML spike:** evaluar la ruta QML con un experimento acotado.
-5. **Evaluación:** parar y decidir el siguiente rumbo con evidencia.
-
-El alcance activo está definido en [`01_SPECS/SINATRA_Hito001A_Build_Limpia.md`](01_SPECS/SINATRA_Hito001A_Build_Limpia.md).
-
+5. **Revisión de rumbo:** parar y decidir el siguiente paso con evidencia; incluye mantener o reconsiderar la Decisión 001.

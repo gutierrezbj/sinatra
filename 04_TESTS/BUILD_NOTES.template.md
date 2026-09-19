@@ -17,6 +17,7 @@
 | Commit exacto | |
 | Estado del árbol antes de compilar | |
 | Resultado final | Éxito / Fallo / Parcial |
+| Estado de salida de 001-A | Cerrada / Abierta con bloqueo diagnosticado / Requiere nueva decisión/spec |
 
 ## Toolchain
 
@@ -29,6 +30,8 @@
 | Git | | |
 | CMake | | |
 | PowerShell / terminal | | |
+| Python (si la guía lo exige) | | |
+| **Entorno oficial de dependencias de Mixxx** — versión/hash · *verificar en la guía oficial cómo se llama, cómo se obtiene y cómo se identifica* | | |
 | Otros exigidos por la guía oficial | | |
 
 ## Fuente del procedimiento
@@ -54,6 +57,14 @@ Registrar en orden solo los comandos relevantes y desde qué directorio se ejecu
 - Opciones o flags no predeterminados:
 - Motivo de cada opción no predeterminada:
 
+## Opciones relevantes para una futura prueba QML
+
+> *Verificar en la guía oficial.* Anotar solo lo que la documentación o la configuración de CMake del commit compilado expongan. **No activar ninguna en 001-A.**
+
+| Opción observada | Valor por defecto en este commit | Dónde se documenta | ¿Activada en esta build? |
+|---|---|---|---|
+| | | | No |
+
 ## Resultado de compilación
 
 - Inicio:
@@ -69,7 +80,7 @@ Registrar en orden solo los comandos relevantes y desde qué directorio se ejecu
 - ¿Abre la ventana principal?:
 - ¿Llega al estado usable sin cerrarse?:
 - Mensajes relevantes:
-- Evidencia asociada:
+- Evidencia asociada (archivo en `evidence/`):
 
 ## Problemas y soluciones
 
@@ -96,7 +107,8 @@ Registrar en orden solo los comandos relevantes y desde qué directorio se ejecu
 ## Estado final del árbol de Mixxx
 
 ```text
-# Pegar salida relevante de git status / commit, sin datos sensibles.
+# Pegar salida relevante de git status / git log -1, sin datos sensibles.
+# Guardar la salida completa sanitizada en evidence/ y referenciarla aquí.
 ```
 
 ## Reproducción resumida
@@ -111,6 +123,10 @@ Pasos mínimos, desde un entorno equivalente, para repetir el resultado:
 
 - ¿001-A cumple todos los criterios de aceptación?:
 - Criterios pendientes:
-- Recomendación: cerrar / repetir / investigar bloqueo.
+- Estado de salida (uno solo, según la sección 9 de la spec):
+  - [ ] Cerrada
+  - [ ] Abierta con bloqueo diagnosticado
+  - [ ] Requiere nueva decisión/spec
+- Justificación del estado:
 - Próximo paso autorizado:
 
