@@ -62,14 +62,22 @@ Spec: `01_SPECS/SINATRA_Hito001B_FLX4_Baseline.md` · v1.2 · **Cerrada** (2026-
 
 ## 001-C — Sinatra Skin
 
-Spec: `01_SPECS/SINATRA_Hito001C_Sinatra_Skin.md` · v1.0 · **Aprobada — lista para ejecución** (2026-09-20). Base **LateNight**, nombre **`LateNight_Sinatra`**. Ejecución pendiente.
+Spec: `01_SPECS/SINATRA_Hito001C_Sinatra_Skin.md` · v1.1 · **Cerrada** (2026-09-20, Sesión 05). Base **LateNight**, nombre **`LateNight_Sinatra`**.
 
 - [x] Crear y aprobar una spec propia. → aprobada v1.0.
 - [x] Crear la plantilla `04_TESTS/SKIN_NOTES.md` (se crea al aprobar la spec). → creada.
-- [ ] Duplicar la skin LateNight a `02_MODS/skins/LateNight_Sinatra`; nunca modificar el original.
-- [ ] Desplegarla en la carpeta de skins de usuario de Mixxx y confirmar que carga.
-- [ ] Cambiar solamente fondo, tipografía/escala, decks, mixer y jerarquía visual.
-- [ ] Verificar uso real con la FLX4.
+- [x] Duplicar la skin LateNight a `02_MODS/skins/LateNight_Sinatra`; nunca modificar el original. → hecho; original intacto.
+- [x] Desplegarla en la carpeta de skins de usuario de Mixxx y confirmar que carga. → carga OK (tras resolver el bloqueo del prefijo `skins:`).
+- [x] Cambiar solamente fondo, tipografía/escala, decks, mixer y jerarquía visual. → fondo azul profundo, acento cian, tipografía Bahnschrift.
+- [x] Verificar uso real con la FLX4. → carga desde consola + audio en auriculares OK con la skin puesta.
+
+### Puerta de salida 001-C
+
+- [x] Skin copiada e identificada como Sinatra, distinta del original.
+- [x] Original de Mixxx no modificado; árbol de Mixxx limpio.
+- [x] Skin Sinatra carga y es usable; cambios solo visuales.
+- [x] Uso real verificado con la FLX4.
+- [ ] Aprobación explícita para avanzar a 001-D. → **pendiente del responsable**.
 
 ## 001-D — QML spike
 

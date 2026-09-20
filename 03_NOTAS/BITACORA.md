@@ -305,6 +305,55 @@ Copiar tal cual, al final del archivo, con el mismo nivel de encabezado que las 
 
 ---
 
+## 2026-09-20 · Sesión 05 · Ejecución y cierre de 001-C (Sinatra Skin)
+
+**Fase:** 001-C
+**Responsable:** Juan Ramón Gutiérrez, con agente Claude Code (Opus 4.8)
+**Commit Mixxx:** `81a5eb87` (solo lectura/copia; sin cambios)
+**Objetivo de la sesión:** crear la primera identidad visual propia de Sinatra como copia aislada de LateNight, sin tocar el original ni el repo de Mixxx, y verificarla con la FLX4.
+
+### Qué se hizo
+
+- Duplicada la skin LateNight (902 archivos, 5.5 MB) a `02_MODS/skins/LateNight_Sinatra`; renombrado el manifiesto (title "LateNight Sinatra", atribución CC BY-SA conservada).
+- Desplegada en la carpeta de skins de usuario de Mixxx y fijada en `mixxx.cfg`.
+- Aplicada identidad visual: fondo azul profundo (familia de grises → tintes navy), acento cian `#18b8d8` y tipografía Bahnschrift.
+- Verificado con la FLX4: carga de pista desde la consola y audio por auriculares respondiendo con la skin puesta.
+- Documentado en `04_TESTS/SKIN_NOTES.md`; capturas de verificación (no versionadas).
+
+### Resultado
+
+- **001-C CERRADA** (estado de salida 1). Capa visual propia, aislada, cargando y usable, sin fork y sin tocar Mixxx.
+
+### Qué funcionó
+
+- Copiar + repuntar solo la QSS propia vía prefijo `skin:` permitió customizar sin duplicar toda la lógica ni tocar el original.
+- Verificar con captura de pantalla (el agente) evitó dar por bueno un render roto.
+
+### Qué falló o quedó incierto
+
+- **Pantalla negra** tras repuntar `skins:LateNight/`→`skins:LateNight_Sinatra/` en todos los archivos: el prefijo `skins:` resuelve solo contra `res/skins` del sistema, no contra la carpeta de usuario. Diagnosticado en el log y en el código de Mixxx (`legacyskinparser.cpp:423-424`), y resuelto revirtiendo el repunte y cargando la QSS propia con `skin:` (singular). Aprendizaje clave sobre skins de Mixxx.
+- La skin es, a propósito, LateNight con identidad visual propia; la ambición de UX real (modo Learn) queda para el camino QML (001-D) y posteriores.
+
+### Decisiones y razones
+
+- No desplegar en `res/skins` (aunque haría resolver `skins:<copia>`) para no ensuciar el árbol de Mixxx: se usó `skin:` en su lugar.
+- Alcance mantenido en lo visual; nada de funcionalidad ni QML. Streaming (emisión) reconocido como posible en Mixxx pero reservado al futuro modo Radio.
+
+### Qué aprendimos
+
+- Una copia de skin fuera de `res/skins` no puede auto-referenciarse con `skins:<nombre>/`; para sus propios archivos se usa `skin:` (singular) o rutas relativas.
+- Mixxx (motor libre) + FLX4 + piel propia sin fork le planta cara a rekordbox.
+
+### Evidencia relacionada
+
+- `04_TESTS/SKIN_NOTES.md` · skin en `02_MODS/skins/LateNight_Sinatra` · spec 001-C v1.1.
+
+### Siguiente paso
+
+- Practicar con la herramienta (objetivo del responsable). Y, cuando decida, valorar el avance a **001-D — QML spike** (requiere spec propia). La emisión/streaming pertenece al futuro modo Radio, no a esta fase.
+
+---
+
 ## Correcciones fechadas
 
 > Estas notas corrigen o unifican terminología sin reescribir las entradas anteriores, que se conservan como registro del momento en que se escribieron.

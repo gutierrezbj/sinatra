@@ -2,9 +2,9 @@
 
 | Campo | Valor |
 |---|---|
-| Versión | 1.0 |
+| Versión | 1.1 |
 | Fecha | 2026-09-20 |
-| Estado | **Aprobada — lista para ejecución** |
+| Estado | **Cerrada** — skin Sinatra creada, aislada, cargando y verificada con la FLX4 (Sesión 05, 2026-09-20). Ver `04_TESTS/SKIN_NOTES.md` |
 | Autor | Juan Ramón Gutiérrez (borrador preparado con agente Claude Code) |
 | Aprobador | Juan Ramón Gutiérrez |
 | Fecha de aprobación | 2026-09-20 |
@@ -123,3 +123,4 @@ Un éxito parcial no es cierre.
 |---|---|---|---|
 | 0.1 | 2026-09-20 | Borrador inicial de 001-C (Sinatra Skin), tras el cierre de 001-B. Enfoque: copia aislada de una skin legacy (LateNight), fuente en `02_MODS/skins/`, despliegue en carpeta de usuario de Mixxx, solo cambios visuales, verificación con FLX4. QML reservado para 001-D. | Juan Ramón Gutiérrez (con agente Claude Code) |
 | 1.0 | 2026-09-20 | **Aprobada** por el responsable (Juan Ramón Gutiérrez). Fijados: skin base **LateNight** (legacy) y nombre **`LateNight_Sinatra`**. Habilita la ejecución de 001-C. | Juan Ramón Gutiérrez |
+| 1.1 | 2026-09-20 | **Estado → Cerrada.** Ejecutada en Sesión 05: copia aislada `LateNight_Sinatra` en `02_MODS/skins/`, desplegada y cargando; identidad visual (fondo azul profundo, acento cian, tipografía Bahnschrift); verificada con la FLX4. Bloqueo de pantalla negra (prefijo `skins:` → `res/skins`) diagnosticado y resuelto usando `skin:` para la QSS propia. Original y árbol de Mixxx intactos, sin fork. | Juan Ramón Gutiérrez (con agente Claude Code) |
