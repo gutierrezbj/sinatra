@@ -2,18 +2,18 @@
 
 | Campo | Valor |
 |---|---|
-| Versión | 0.1 |
+| Versión | 1.0 |
 | Fecha | 2026-09-20 |
-| Estado | **Borrador — pendiente de revisión y aprobación** |
+| Estado | **Aprobada — lista para ejecución** |
 | Autor | Juan Ramón Gutiérrez (borrador preparado con agente Claude Code) |
-| Aprobador | *(pendiente)* |
-| Fecha de aprobación | *(pendiente)* |
+| Aprobador | Juan Ramón Gutiérrez |
+| Fecha de aprobación | 2026-09-20 |
 | Tipo | experimento técnico acotado |
 | Proyecto | Sinatra · Proyecto Radio |
 | Decisión vigente | ADR-001 — no fork · ver `00_DOCS/DECISIONES.md` |
 | Depende de | **001-C cerrada** (skin propia) **+ aprobación explícita** de esta spec |
 
-> **Este documento es un borrador.** Sin aprobador y fecha de aprobación **no autoriza ningún trabajo**: no escribir QML, no montar experimentos. Es la base para que el responsable revise la pregunta, el alcance y los guardarraíles.
+> **Spec aprobada el 2026-09-20.** Autoriza ejecutar el spike con este alcance: un único componente QML sobre la build de 001-A, copia aislada, sin fork ni tocar el motor. Termina en una recomendación go/no-go para el modo Learn.
 
 ## 1. Objetivo
 
@@ -27,8 +27,8 @@ Learn necesita UI propia con lógica (mostrar un ejercicio, detectar si se hizo 
 
 **¿Puede un componente QML propio, cargado sobre la build de Mixxx de 001-A, leer un control del motor en vivo (p. ej. el BPM o el estado de reproducción de un deck) y cambiar su presentación cuando se cumple una condición sencilla?**
 
-Criterio de éxito medible (uno, a fijar en aprobación; propuesta):
-- Mostrar en pantalla un indicador que pase a "OK" cuando **los BPM de los dos decks están igualados** (diferencia < umbral), o cuando **se pulsa el pad/tecla esperado**. Reacción visible < 1 s.
+Criterio de éxito medible (**fijado en aprobación, 2026-09-20**):
+- Un indicador QML propio que pase a **"✓ igualados"** cuando la diferencia de BPM entre Deck 1 y Deck 2 sea **< 0.5 BPM**, y vuelva a "✗" al desigualarse, con **reacción visible < 1 s**. Enlaza con Learn/Lección 01 ("igualar el tempo").
 
 ## 3. Entorno objetivo
 
@@ -114,4 +114,5 @@ Un éxito parcial no es cierre.
 
 | Versión | Fecha | Cambio | Autor |
 |---|---|---|---|
-| 0.1 | 2026-09-20 | Borrador inicial de 001-D (QML spike), enfocado a la pregunta que decide el modo Learn: ¿se puede leer el motor y dar feedback en QML sobre Mixxx sin fork? Experimento único y medible. Pendiente de revisión y aprobación. | Juan Ramón Gutiérrez (con agente Claude Code) |
+| 0.1 | 2026-09-20 | Borrador inicial de 001-D (QML spike), enfocado a la pregunta que decide el modo Learn: ¿se puede leer el motor y dar feedback en QML sobre Mixxx sin fork? Experimento único y medible. | Juan Ramón Gutiérrez (con agente Claude Code) |
+| 1.0 | 2026-09-20 | **Aprobada** por el responsable. Criterio de éxito fijado: indicador QML "✓ igualados" cuando |BPM1−BPM2| < 0.5, reacción < 1 s. Habilita la ejecución del spike. | Juan Ramón Gutiérrez |

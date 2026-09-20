@@ -81,13 +81,15 @@ Spec: `01_SPECS/SINATRA_Hito001C_Sinatra_Skin.md` · v1.1 · **Cerrada** (2026-0
 
 ## 001-D — QML spike
 
-**Bloqueado hasta cerrar 001-C.**
+Spec: `01_SPECS/SINATRA_Hito001D_QML_Spike.md` · v1.0 · **Aprobada — lista para ejecución** (2026-09-20). Pregunta: ¿QML puede leer el motor y dar feedback sin fork? Criterio: "✓ igualados" cuando |BPM1−BPM2| < 0.5.
 
-- [ ] Crear y aprobar una spec propia.
-- [ ] Definir una pregunta técnica única y medible.
+- [x] Crear y aprobar una spec propia. → aprobada v1.0.
+- [x] Definir una pregunta técnica única y medible. → indicador BPM igualados < 0.5, < 1 s.
+- [x] Crear la plantilla `04_TESTS/QML_SPIKE_NOTES.md` (se crea al aprobar). → creada.
 - [ ] Construir el experimento mínimo.
 - [ ] Documentar controles expuestos, límites, acoplamiento y coste estimado.
 - [ ] Detenerse y evaluar antes de ampliar el frontend.
+- [ ] Emitir recomendación go/no-go para el modo Learn.
 
 ## Revisión de rumbo
 
