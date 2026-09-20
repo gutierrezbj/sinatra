@@ -39,18 +39,26 @@ Spec: `01_SPECS/SINATRA_Hito001A_Build_Limpia.md` · v1.3 · **Cerrada** (2026-0
 
 ## 001-B — FLX4 baseline
 
-Spec: `01_SPECS/SINATRA_Hito001B_FLX4_Baseline.md` · v1.0 · **Aprobada — lista para ejecución** (2026-09-19). Ejecución pendiente de una sesión con la FLX4 conectada; no se ha tocado hardware.
+Spec: `01_SPECS/SINATRA_Hito001B_FLX4_Baseline.md` · v1.2 · **Cerrada** (2026-09-20, Sesión 04).
 
 - [x] Crear y aprobar una spec propia. → aprobada v1.0.
 - [x] Crear la plantilla `04_TESTS/FLX4_BASELINE.md` (se crea al aprobar la spec). → creada.
 - [x] Preparación sin hardware (Sesión 03): mapping oficial inspeccionado (solo lectura), doc oficial de audio consultada, `FLX4_BASELINE.md` pre-rellenado. → hecho.
-- [ ] Conectar la Pioneer DJ DDJ-FLX4 (class-compliant, sin driver) y configurar audio en Mixxx (Master 1-2 / Cue 3-4, WASAPI).
-- [ ] Conectar la Pioneer DJ DDJ-FLX4 a la build local.
-- [ ] Verificar audio principal y preescucha.
-- [ ] Probar decks, transporte, jogs, tempo, mixer, EQ, filtro, faders y crossfader.
-- [ ] Probar pads, hot cues, loops, FX y LEDs.
-- [ ] Registrar latencia y anomalías.
-- [ ] Completar `04_TESTS/FLX4_BASELINE.md` (su plantilla se crea al aprobar la spec de 001-B, no antes).
+- [x] Conectar la Pioneer DJ DDJ-FLX4 (class-compliant, sin driver) y configurar audio en Mixxx (Master 1-2 / Cue 3-4, WASAPI 48 kHz). → hecho (Sesión 04).
+- [x] Conectar la Pioneer DJ DDJ-FLX4 a la build local. → detectada; mapping oficial cargado a mano y activado.
+- [x] Verificar audio principal y preescucha. → Cue y Master OK vía auriculares; RCA MASTER OUT no verificado (sin altavoces, en tránsito) — limitación documentada.
+- [x] Probar decks, transporte, jogs, tempo, mixer, EQ, filtro, faders y crossfader. → todos OK.
+- [x] Probar pads, hot cues, loops, FX y LEDs. → hot cues OK, beat loop OK, Beat FX OK (algunos sutiles), LEDs/sync bidireccional OK.
+- [x] Registrar latencia y anomalías. → 11 ms; anomalía "Invalid sample rate" (44.1→48 kHz) resuelta y documentada.
+- [x] Completar `04_TESTS/FLX4_BASELINE.md`. → completo, con evidencia `evidence/001B_flx4_detection.txt`.
+
+### Puerta de salida 001-B
+
+- [x] FLX4 detectada con mapping oficial.
+- [x] Audio Master + Cue por la FLX4 (RCA física pendiente de altavoces).
+- [x] Todos los bloques de control ejercitados y registrados.
+- [x] Árbol de Mixxx sin cambios; mapping oficial sin editar.
+- [ ] Aprobación explícita para avanzar a 001-C. → **pendiente del responsable**.
 
 ## 001-C — Sinatra Skin
 

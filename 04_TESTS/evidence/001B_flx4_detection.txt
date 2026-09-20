@@ -1,0 +1,50 @@
+﻿# Evidencia 001-B — Deteccion FLX4 y audio (sanitizado)
+# Fecha: 2026-09-20 · Mixxx build 001-A (81a5eb87) · WASAPI 48000 Hz
+# Master 1-2 / Headphones 3-4 en 'Linea (2- DDJ-FLX4)'
+# Filtrado a lineas de controladora/audio; ruido de enumeracion omitido.
+
+12:29:25.266 Debug [Main] SoundManager::queryDevices()
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "MME" "Asignador de sonido Microsoft - Input, 0" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "MME" "L�nea (2- DDJ-FLX4), 1" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "MME" "Micr�fono (NVIDIA Broadcast), 2" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "MME" "Varios micr�fonos (Realtek(R) A, 3" "ASIO" 0 4
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "MME" "Asignador de sonido Microsoft - Output, 4" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "MME" "Altavoces (Realtek(R) Audio), 5" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "MME" "Speakers (NVIDIA Broadcast), 6" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "MME" "L�nea (2- DDJ-FLX4), 7" "ASIO" 4 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "MME" "1 - PA348CGV (AMD High Definiti, 8" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows DirectSound" "Controlador primario de captura de sonido, 9" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows DirectSound" "L�nea (2- DDJ-FLX4), 10" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows DirectSound" "Micr�fono (NVIDIA Broadcast), 11" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows DirectSound" "Varios micr�fonos (Realtek(R) Audio), 12" "ASIO" 0 4
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows DirectSound" "Controlador primario de sonido, 13" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows DirectSound" "Altavoces (Realtek(R) Audio), 14" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows DirectSound" "Speakers (NVIDIA Broadcast), 15" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows DirectSound" "L�nea (2- DDJ-FLX4), 16" "ASIO" 4 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows DirectSound" "1 - PA348CGV (AMD High Definition Audio Device), 17" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "ASIO" "Realtek ASIO, 18" "ASIO" 2 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "Altavoces (Realtek(R) Audio), 19" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "Speakers (NVIDIA Broadcast), 20" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "L�nea (2- DDJ-FLX4), 21" "ASIO" 4 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "1 - PA348CGV (AMD High Definition Audio Device), 22" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "Micr�fono (NVIDIA Broadcast), 23" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "L�nea (2- DDJ-FLX4), 24" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "Varios micr�fonos (Realtek(R) Audio), 25" "ASIO" 0 4
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "Altavoces (Realtek(R) Audio) [Loopback], 26" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "Speakers (NVIDIA Broadcast) [Loopback], 27" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "L�nea (2- DDJ-FLX4) [Loopback], 28" "ASIO" 0 4
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WASAPI" "1 - PA348CGV (AMD High Definition Audio Device) [Loopback], 29" "ASIO" 0 2
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Output 1 (), 30" "ASIO" 2 0
+12:29:25.266 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Output 2 (), 31" "ASIO" 6 0
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Input (), 32" "ASIO" 0 2
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Output (), 33" "ASIO" 1 0
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Output (), 34" "ASIO" 1 0
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Auriculares con micr�fono (), 35" "ASIO" 0 1
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Auriculares con micr�fono (), 36" "ASIO" 0 1
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Output 1 (), 37" "ASIO" 2 0
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Output 2 (), 38" "ASIO" 6 0
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Input (), 39" "ASIO" 0 2
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Output 1 (), 40" "ASIO" 2 0
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Output 2 (), 41" "ASIO" 6 0
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Input (), 42" "ASIO" 0 2
+12:29:25.267 Debug [Main] SoundManager::getDeviceList "Windows WDM-KS" "Output (), 43" "ASIO" 1 0

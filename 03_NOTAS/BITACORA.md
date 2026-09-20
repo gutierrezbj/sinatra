@@ -253,6 +253,58 @@ Copiar tal cual, al final del archivo, con el mismo nivel de encabezado que las 
 
 ---
 
+## 2026-09-20 · Sesión 04 · Ejecución y cierre de 001-B (FLX4 baseline)
+
+**Fase:** 001-B
+**Responsable:** Juan Ramón Gutiérrez, con agente Claude Code (Opus 4.8)
+**Commit Mixxx:** `81a5eb87` (build de 001-A; no se recompiló)
+**Objetivo de la sesión:** con la DDJ-FLX4 ya conectada a GARAGE1, verificar y documentar el baseline: detección, audio y todos los controles con el mapping oficial, sin tocar Mixxx.
+
+### Qué se hizo
+
+- Confirmada la detección de la FLX4 en Windows (class-compliant, sin drivers) y en Mixxx.
+- Configurado el audio: WASAPI, Master 1-2 y Headphones 3-4 sobre "Línea (2- DDJ-FLX4)".
+- Cargado a mano el mapping oficial "Pioneer DDJ-FLX4" (no se auto-cargó) y activado.
+- Sesión guiada (el responsable movió los controles físicos): audio Master+Cue por auriculares, jogs (scratch y pitch bend), play/pause, CUE, SHIFT+jog (search), faders de canal, crossfader, EQ, filtro/CFX, TRIM, tempo, hot cues, beat loop y Beat FX. Todo OK.
+- Confirmada la **sincronización bidireccional** (mover en consola se refleja en software y viceversa; LEDs).
+- Registrada latencia (11 ms) y resuelta la anomalía "Invalid sample rate" pasando 44.1→48 kHz.
+- Evidencia sanitizada del log (detección + enumeración WASAPI de la FLX4 con 4 canales) en `evidence/001B_flx4_detection.txt`.
+
+### Resultado
+
+- **001-B CERRADA** (estado de salida 1). Todos los criterios cumplidos, con una limitación documentada no bloqueante (ver abajo).
+
+### Qué funcionó
+
+- La preparación sin hardware de la Sesión 03 hizo que la ejecución fuera rápida y sin sorpresas de configuración.
+- Guiar paso a paso a un usuario nuevo (el responsable empezaba de cero con DJ) funcionó: se validó todo el hardware sin tocar código.
+
+### Qué falló o quedó incierto
+
+- **RCA MASTER OUT no verificada:** no hay altavoces (perdidos en tránsito, DHL). La señal Master sí se validó por monitorización de auriculares; falta solo la comprobación física del conector RCA. Es una limitación, no un defecto; no reabre la fase.
+- Algunos presets de Beat FX son poco perceptibles (normal según efecto/profundidad).
+- El preset del mapping no se auto-carga en Mixxx; hay que seleccionarlo a mano (comportamiento normal de Mixxx, anotado).
+
+### Decisiones y razones
+
+- El error "Invalid sample rate" se resolvió alineando Mixxx al formato del dispositivo (48 kHz), config de entorno dentro del alcance; no se tocó Mixxx ni el mapping.
+- Se cierra como Cerrada pese a la RCA sin verificar porque el criterio de audio Master quedó validado por otra vía (monitorización) y la limitación es por falta de hardware ajeno, no por fallo; documentada de forma explícita.
+
+### Qué aprendimos
+
+- La FLX4 expone 4 canales por WASAPI (Master 1-2 + Cue 3-4) sin drivers; el mic no vuelve al PC.
+- Regla útil para el usuario: para cargar/expulsar, pausar primero.
+
+### Evidencia relacionada
+
+- `04_TESTS/FLX4_BASELINE.md` (registro completo) · `04_TESTS/evidence/001B_flx4_detection.txt` · spec 001-B v1.2.
+
+### Siguiente paso
+
+- Decisión del responsable: aprobar (o no) el avance a **001-C — Sinatra Skin**, que requiere su propia spec independiente. Recomendable (no bloqueante) una comprobación de 2 min de las salidas RCA cuando lleguen los altavoces. La build local y la config de la FLX4 quedan listas para reusar.
+
+---
+
 ## Correcciones fechadas
 
 > Estas notas corrigen o unifican terminología sin reescribir las entradas anteriores, que se conservan como registro del momento en que se escribieron.

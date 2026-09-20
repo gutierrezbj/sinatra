@@ -2,9 +2,9 @@
 
 | Campo | Valor |
 |---|---|
-| Versión | 1.1 |
-| Fecha | 2026-09-19 |
-| Estado | **Aprobada — lista para ejecución** |
+| Versión | 1.2 |
+| Fecha | 2026-09-20 |
+| Estado | **Cerrada** — baseline FLX4 verificado en Sesión 04 (2026-09-20). Ver `04_TESTS/FLX4_BASELINE.md` |
 | Autor | Juan Ramón Gutiérrez (borrador preparado con agente Claude Code) |
 | Aprobador | Juan Ramón Gutiérrez |
 | Fecha de aprobación | 2026-09-19 |
@@ -130,3 +130,4 @@ Un éxito parcial no es cierre.
 | 0.1 | 2026-09-19 | Borrador inicial de 001-B (FLX4 baseline), preparado tras el cierre de 001-A. Interfaz de audio fijada a la tarjeta integrada de la FLX4 (Master + Cue por la controladora, driver oficial Pioneer ASIO en Windows), con fallback degradado al audio del G14. | Juan Ramón Gutiérrez (con agente Claude Code) |
 | 1.0 | 2026-09-19 | **Aprobada** por el responsable (Juan Ramón Gutiérrez). Etiqueta de equipo unificada a `GARAGE1`. Habilita la ejecución de 001-B en una sesión con la FLX4 conectada. | Juan Ramón Gutiérrez |
 | 1.1 | 2026-09-19 | **Corrección desde doc oficial** (prep sin hardware): la FLX4 es class-compliant y **no requiere driver** en Windows (ASIO opcional). Configuración de sonido fijada: Master 1-2, Headphones 3-4; Sound API WASAPI. Añadida nota de mic no enrutado. Sin cambio de alcance. | Juan Ramón Gutiérrez (con agente Claude Code) |
+| 1.2 | 2026-09-20 | **Estado → Cerrada.** Ejecutada en Sesión 04 con la FLX4 conectada a GARAGE1: detección, audio Master+Cue (WASAPI 48 kHz, 11 ms), y todos los bloques de control ejercitados y registrados, con sync bidireccional. Único punto no verificado: RCA MASTER OUT (falta de altavoces), documentado como limitación no bloqueante. Mapping oficial sin editar; árbol de Mixxx limpio. | Juan Ramón Gutiérrez (con agente Claude Code) |
