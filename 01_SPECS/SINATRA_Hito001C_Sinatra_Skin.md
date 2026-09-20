@@ -2,18 +2,18 @@
 
 | Campo | Valor |
 |---|---|
-| Versión | 0.1 |
+| Versión | 1.0 |
 | Fecha | 2026-09-20 |
-| Estado | **Borrador — pendiente de revisión y aprobación** |
+| Estado | **Aprobada — lista para ejecución** |
 | Autor | Juan Ramón Gutiérrez (borrador preparado con agente Claude Code) |
-| Aprobador | *(pendiente)* |
-| Fecha de aprobación | *(pendiente)* |
+| Aprobador | Juan Ramón Gutiérrez |
+| Fecha de aprobación | 2026-09-20 |
 | Tipo | modificación visual aislada |
 | Proyecto | Sinatra · Proyecto Radio |
 | Decisión vigente | ADR-001 — no fork · ver `00_DOCS/DECISIONES.md` |
 | Depende de | **001-B cerrada** (baseline FLX4 verificado) **+ aprobación explícita** de esta spec |
 
-> **Este documento es un borrador.** Sin aprobador y fecha de aprobación **no autoriza ningún trabajo**: no duplicar skins, no editar QSS/XML, no desplegar nada. Es la base para que el responsable revise alcance y guardarraíles antes de habilitar 001-C.
+> **Spec aprobada el 2026-09-20.** Autoriza ejecutar 001-C con este alcance: copia aislada de **LateNight** como **`LateNight_Sinatra`**, solo cambios visuales, sin tocar el original ni el repo de Mixxx. 001-D (QML) sigue bloqueado.
 
 ## 1. Objetivo
 
@@ -26,7 +26,8 @@ Esta fase valida que se puede construir una capa visual propia encima de Mixxx *
 - **Equipo:** `GARAGE1` (ASUS ROG Zephyrus G14 GA403UV), Windows 11.
 - **Build de Mixxx:** la de 001-A en `C:\dev\mixxx\build\x64-portable\mixxx.exe` (commit `81a5eb87`).
 - **Hardware:** DDJ-FLX4 (baseline de 001-B) para la verificación de uso real.
-- **Skin base (a fijar en aprobación):** una skin **legacy (no QML)** existente de Mixxx. Recomendada: **LateNight** (la que el responsable ya usa). La skin QML queda reservada para 001-D.
+- **Skin base (fijada):** **LateNight** (legacy, no QML) — la que el responsable ya usa. La skin QML queda reservada para 001-D.
+- **Nombre de la copia (fijado):** **`LateNight_Sinatra`**.
 - **Ubicación de la copia (propuesta):**
   - **Fuente versionada** de la skin Sinatra: `02_MODS/skins/` de este repo (carpeta ya reservada para copias aisladas de skins).
   - **Despliegue para que Mixxx la cargue:** carpeta de skins de usuario de Mixxx (`%LOCALAPPDATA%\Mixxx\skins\`), **fuera del repo de Mixxx**. Así Mixxx la ve sin modificar su repositorio.
@@ -120,4 +121,5 @@ Un éxito parcial no es cierre.
 
 | Versión | Fecha | Cambio | Autor |
 |---|---|---|---|
-| 0.1 | 2026-09-20 | Borrador inicial de 001-C (Sinatra Skin), tras el cierre de 001-B. Enfoque: copia aislada de una skin legacy (LateNight), fuente en `02_MODS/skins/`, despliegue en carpeta de usuario de Mixxx, solo cambios visuales, verificación con FLX4. QML reservado para 001-D. Pendiente de revisión y aprobación. | Juan Ramón Gutiérrez (con agente Claude Code) |
+| 0.1 | 2026-09-20 | Borrador inicial de 001-C (Sinatra Skin), tras el cierre de 001-B. Enfoque: copia aislada de una skin legacy (LateNight), fuente en `02_MODS/skins/`, despliegue en carpeta de usuario de Mixxx, solo cambios visuales, verificación con FLX4. QML reservado para 001-D. | Juan Ramón Gutiérrez (con agente Claude Code) |
+| 1.0 | 2026-09-20 | **Aprobada** por el responsable (Juan Ramón Gutiérrez). Fijados: skin base **LateNight** (legacy) y nombre **`LateNight_Sinatra`**. Habilita la ejecución de 001-C. | Juan Ramón Gutiérrez |

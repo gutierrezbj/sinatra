@@ -62,11 +62,12 @@ Spec: `01_SPECS/SINATRA_Hito001B_FLX4_Baseline.md` · v1.2 · **Cerrada** (2026-
 
 ## 001-C — Sinatra Skin
 
-**Bloqueado hasta cerrar 001-B.**
+Spec: `01_SPECS/SINATRA_Hito001C_Sinatra_Skin.md` · v1.0 · **Aprobada — lista para ejecución** (2026-09-20). Base **LateNight**, nombre **`LateNight_Sinatra`**. Ejecución pendiente.
 
-- [ ] Crear y aprobar una spec propia.
-- [ ] Duplicar una skin; nunca modificar el original.
-- [ ] Identificarla como `Sinatra` o `LateNight_Sinatra`.
+- [x] Crear y aprobar una spec propia. → aprobada v1.0.
+- [x] Crear la plantilla `04_TESTS/SKIN_NOTES.md` (se crea al aprobar la spec). → creada.
+- [ ] Duplicar la skin LateNight a `02_MODS/skins/LateNight_Sinatra`; nunca modificar el original.
+- [ ] Desplegarla en la carpeta de skins de usuario de Mixxx y confirmar que carga.
 - [ ] Cambiar solamente fondo, tipografía/escala, decks, mixer y jerarquía visual.
 - [ ] Verificar uso real con la FLX4.
 
