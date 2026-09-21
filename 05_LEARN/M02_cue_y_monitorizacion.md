@@ -1,66 +1,91 @@
-# Módulo 2 · Cue y monitorización
+# Módulo 2 · Cue, monitorización y niveles — v2
 
-**Objetivo:** preparar la siguiente canción **en secreto por el casco**, con los niveles bien igualados, y saber en todo momento **qué estás oyendo tú y qué oye el público**. Este módulo es el «taller» del DJ: todo lo bueno se cocina aquí antes de salir por el master.
+**Objetivo:** preparar la siguiente canción **en secreto por el casco**, con los niveles igualados y **sin distorsión**, sabiendo siempre qué oyes tú y qué oye el público. Y cuidar el instrumento: tus oídos. Este módulo es el «taller» del DJ; todo lo bueno se cocina aquí.
 
-**Tiempo:** 2 sesiones de 30 min. **Necesitas:** 2 canciones cargadas, casco puesto.
+**Tiempo:** 1-2 semanas para N3. **Necesitas:** 2 canciones cargadas, casco, y el drill D6 cada día.
 
 ---
 
 ## 1. Concepto: dos mundos, un casco
 
-Hay dos «salidas» que debes dominar como si fueran dos habitaciones:
-- **MASTER** → lo que oye el público. Solo pasa lo que dejan pasar **faders + crossfader**.
-- **CUE (auriculares)** → lo que oyes **tú**, aunque el fader esté abajo. Lo activa el **botón CUE del canal** (el del icono de casco).
+- **MASTER** → lo que oye el público. Solo pasa lo que dejan **faders + crossfader**.
+- **CUE (auriculares)** → lo que oyes tú, aunque el fader esté abajo. Lo activa el **CUE de canal** (icono casco).
+- **HEADPHONES MIX**: a **CUE** = solo lo que preparas; a **MASTER** = lo del público; **centro** = ambos (para comprobar si van a tiempo).
 
-El mando **HEADPHONES MIX** decide qué mezcla de esas dos habitaciones te llega al casco:
-- Girado a **CUE**: solo la canción que preparas.
-- Girado a **MASTER**: lo mismo que el público.
-- **Al centro**: las dos a la vez → así compruebas si van **a tiempo** entre sí.
+## 2. Concepto: gain staging (niveles)
 
-## 2. Concepto: igualar niveles (gain staging)
+La cadena de volumen tiene varias «puertas»: **TRIM** (entrada del canal) → **EQ** → **fader** → **MASTER LEVEL** → altavoces. Regla: **cada puerta trabaja en su zona sana, ninguna compensa a otra.**
 
-Si la canción B entra más fuerte que la A, la transición «pega un salto». El nivel de entrada se iguala con **TRIM**, mirando el **VU** (la columna de luces de cada canal): las dos canciones deben pintar **el mismo nivel** en su parte fuerte, tocando el amarillo/naranja y **nunca el rojo**. Esto se ajusta **al cargar**, no mientras mezclas.
+- **TRIM** iguala las canciones entre sí **al cargar**: las dos pintan el mismo nivel en el **VU** en su parte fuerte, tocando **amarillo/naranja**, **nunca rojo** (rojo = *clipping* = distorsión, y en digital suena a rascado).
+- **Fader** es para **entrar y salir**, no para nivelar.
+- **MASTER LEVEL** se ajusta **una vez** al empezar (el VU del master en amarillo sin rojo) y no se toca en la sesión. El volumen de la sala se sube en los altavoces.
+- **Headroom**: deja margen. Una mezcla «limpia» a -6 dB suena mejor que una «fuerte» clipeando.
 
-Regla de oídos: **HEADPHONES LEVEL** moderado. Vas a pinchar años; cuida el instrumento.
+## 3. Concepto: latencia y búfer
+
+Tu cabina va a **48000 Hz** con un búfer de **~23 ms** y **11 ms** de latencia reportada. Eso es bueno. Si oyes **chasquidos** o el contador de «vaciado de búfer» crece (Preferencias → Hardware de sonido), **sube el búfer** un escalón. Si el jog «responde tarde», bájalo. Es el equilibrio: menos búfer = más respuesta, más riesgo de chasquidos.
+
+## 4. Concepto: monitorizar sin altavoces (tu caso ahora) y con ellos
+
+- **Sin altavoces:** MIX a **MASTER** para oír «lo del público» por el casco; a **CUE** para preparar; al **centro** para comparar. Todo el curso se puede hacer así.
+- **Con altavoces:** el casco pasa a ser **solo cue** (MIX hacia CUE), y el master lo oyes por la sala. Aprenderás a llevar el casco **en un solo oído** y comparar sala vs cue. (Mixxx tiene también **SPLIT**: cue en un oído y master en el otro; pruébalo en Preferencias → Hardware de sonido.)
+
+## 5. Oídos
+
+- **HEADPHONES LEVEL** moderado: si al quitarte el casco «oyes zumbido», estaba alto.
+- Descansos: 5 min cada hora sin casco.
+- En sala, **tapones de músico** para el oído libre. Vas a pinchar años.
 
 ---
 
-## 3. En la FLX4 — qué tocas
+## 6. En la FLX4 / Mixxx — qué tocas
 
-| Acción | Control exacto |
+| Acción | Control |
 |---|---|
-| Mandar el canal 2 al casco | Botón **CUE del canal 2** (icono casco, junto al fader 2) |
-| Elegir qué oyes en el casco | Mando **HEADPHONES MIX** (CUE ↔ MASTER, arriba a la izquierda del mezclador) |
-| Volumen del casco | Mando **HEADPHONES LEVEL** |
-| Igualar nivel de entrada | Mando **TRIM** de cada canal (arriba de los EQ) mirando el **VU** |
-| Que el público no oiga B | **Fader del canal 2** abajo del todo |
+| Mandar el canal al casco | **CUE de canal** (icono casco) |
+| Qué oyes en el casco | **HEADPHONES MIX** (CUE ↔ MASTER) |
+| Volumen del casco | **HEADPHONES LEVEL** |
+| Igualar entrada | **TRIM** de cada canal mirando el **VU** |
+| Nivel general | **MASTER LEVEL** (una vez) |
+| Que el público no oiga B | **Fader 2** abajo del todo |
+| Búfer / latencia | Mixxx → Preferencias → Hardware de sonido → **Búfer de audio** |
+| Split cue | Mixxx → Preferencias → Hardware de sonido → **Salida de auriculares / SPLIT** |
 
-## 4. Ejercicio: «La cocina secreta»
+## 7. Escalera de niveles (Regla 3×5)
 
-1. Canción A en el **Deck 1**: **fader 1 arriba**, **PLAY**. Suena por el master (compruébalo con **MIX** hacia MASTER en el casco).
-2. Carga la canción B en el **Deck 2** (pausa el deck si tenía algo; **LOAD** del deck 2). **Fader 2 abajo del todo.**
-3. Pulsa el **CUE del canal 2** (se enciende). Gira **HEADPHONES MIX** hacia **CUE**. Dale **PLAY** al Deck 2. → La oyes **solo tú**. El público sigue con A. *Ese es el truco de magia de todo DJ.*
-4. **Iguala niveles:** mira el **VU del canal 1** (A) y el **VU del canal 2** (B) en sus partes fuertes. Gira el **TRIM del canal 2** hasta que ambos VU «suban igual». Si alguno toca rojo, baja su TRIM.
-5. Gira **MIX** al **centro**: ahora oyes A (público) y B (tuya) a la vez. ¿Van a tiempo? (Da igual ahora; en el módulo 3 aprendes a igualarlas. Aquí solo *escuchas* la diferencia.)
-6. Gira **MIX** a **MASTER**: B desaparece de tu casco (sigue sonando en el deck, pero el público no la oye porque el fader está abajo). Vuelve a **CUE**: reaparece.
-7. **Cambio de foco:** pulsa el **CUE del canal 1** y apaga el del 2 → ahora preescuchas A. Practica alternar A/B cinco veces, rápido y sin mirar.
-8. Al terminar, **apaga los dos CUE de canal** y deja **MIX** a MASTER. Hábito: acabar limpio.
+**N1 · La cocina.** Preparas B en el casco (fader 2 abajo, CUE canal 2, MIX a CUE) sin que se cuele por el master, en < 10 s. 5 de 5.
+**N2 · Niveles.** Igualas TRIM de B al de A mirando el VU (mismo nivel, sin rojo) en < 15 s, y sabes decir «esta viene más fuerte» **antes** de mirar el VU. 5 de 5.
+**N3 · Alternar.** Cambias el CUE de canal 1 ↔ 2 y el MIX (CUE / centro / MASTER) **sin mirar**, y describes qué oyes en cada posición. 10 cambios seguidos.
+**N4 · Comparar.** Con MIX al centro, dices si B «va a tiempo o no» respecto a A (enlaza con M1b/M3). 5 de 5.
+**N5 · Sala.** (Cuando lleguen los altavoces) Trabajas con casco en un oído, master por la sala, split o MIX a CUE, sin perderte ni una vez en 30 min.
 
-## 5. Criterio de dominio
+## 8. Ejercicios
 
-- Preparas una canción en el casco **sin que se cuele por el master** (fader abajo, CUE de canal encendido) en menos de 10 segundos.
-- Los dos VU quedan igualados a ojo y **nunca en rojo**.
-- Con **MIX** al centro, distingues sin dudar «cuál es la del público y cuál la mía».
-- Alternas el CUE de canal 1 ↔ 2 sin mirar.
+### E1 · «La cocina secreta» (N1)
+A en Deck 1, fader 1 arriba, PLAY. Carga B en Deck 2 (**pausa antes**, LOAD 2), **fader 2 abajo**. CUE de canal 2 → MIX a CUE → PLAY B. Solo tú la oyes. MIX al centro (ambas), a MASTER (B desaparece). Apaga CUE 2 al terminar.
 
-## 6. Errores típicos
+### E2 · «VU gemelos» (N2)
+Con las dos sonando (B en el casco), mira los **VU** de canal 1 y 2 en sus partes fuertes. Gira **TRIM 2** hasta que suban igual. Si alguno toca rojo, baja. Luego **oye** primero y **mira** después: adivina cuál viene más fuerte antes del VU.
 
-- **No oigo nada en el casco.** El **CUE del canal** no está encendido, o **MIX** está hacia MASTER y el fader de esa canción abajo. Es el error nº 1 del principiante.
-- **El público oye la canción que estoy preparando.** El **fader** no estaba abajo del todo. Mira siempre el fader antes de dar PLAY.
-- **La B entra «pegando un salto».** No igualaste el **TRIM**. Ajústalo al cargar.
-- **Dejar el CUE de canal encendido** y luego no entender qué oyes. Apaga lo que no uses.
-- **Casco a tope.** Baja el **HEADPHONES LEVEL**; el detalle se oye mejor a volumen medio.
+### E3 · «Alternar a ciegas» (N3)
+Ojos cerrados: CUE 1 on / CUE 2 off → MIX a CUE → ¿qué oyes? → MIX centro → MASTER → CUE 2 on / CUE 1 off… Di en voz alta qué suena en cada paso. 10 cambios.
 
-## 7. Reto del módulo
+### E4 · «Master fijo» (todos)
+Al empezar la sesión: MASTER LEVEL para que el VU del master toque amarillo sin rojo con una canción fuerte. **No lo vuelvas a tocar.** Si luego «suena bajo», es el fader o el TRIM, no el master.
 
-Carga **5 canciones seguidas** en el Deck 2 (una tras otra, pausando y con LOAD), y con cada una: CUE de canal → escuchar en el casco → igualar TRIM con el VU → apagar el CUE. Sin que ninguna se cuele por el master. Si lo haces con las 5 sin mirar el mezclador, **Módulo 3**.
+### E5 · «Búfer» (N2+)
+Abre Preferencias → Hardware de sonido. Mira el contador de vaciado de búfer. Pincha 10 min. Si crece o hay chasquidos: sube el búfer un escalón y repite. Anota el valor «bueno» en el diario.
+
+## 9. Errores típicos
+
+- **No oigo nada en el casco:** CUE de canal apagado o MIX a MASTER con el fader abajo.
+- **El público oye la que preparo:** fader no a cero. Mira el fader antes de PLAY.
+- **B entra «pegando un salto» (S5):** TRIM no igualado.
+- **Rojo en el VU:** clipping. Baja TRIM, no el master.
+- **Compensar con el master** («es que suena bajo»): el master no se toca; revisa TRIM/fader.
+- **Casco a tope.** Baja LEVEL; el detalle se oye mejor a volumen medio.
+- **Dejar CUEs encendidos** y no entender qué oyes. Apaga lo que no uses.
+
+## 10. Reto del módulo
+
+N1-N3 superados con la Regla 3×5 **y** una sesión de 30 min con **cero rojos** en ningún VU y el master sin tocar. Entonces, M3 (con M1b N3 ya en el bolsillo).
