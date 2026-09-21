@@ -1,87 +1,88 @@
-# Módulo 6 · Hot cues, loops y beat jump
+# Módulo 6 · Hot cues, loops y beat jump — v2 (uso en directo)
 
-**Objetivo:** **preparar** tus canciones para que en directo nunca busques nada, **alargar** intros/outros cuando necesitas tiempo, y **corregir frases** sin perder el ritmo. Son las tres herramientas que hacen que un set fluya sin sustos.
+**Objetivo:** que hot cues, loops y beat jump sean **reflejos** en directo: saltar sin mirar, alargar sin que se note, corregir sin perder el ritmo, y usar loops como **instrumento** (loop roll, cortes de loop). La **preparación** de las pistas (dónde van los cues) vive en M6b; aquí se trata de **tocarlos**.
 
-**Tiempo:** 2-3 sesiones de 30 min. **Necesitas:** 3-5 canciones que vayas a usar en tu set.
+**Tiempo:** 2-3 semanas. **Necesitas:** biblioteca en M6b N3 (cues estándar), M4 N2.
 
 ---
 
-## 1. Concepto: preparar = decidir antes
+## 1. Concepto: los cues como teclas
 
-Un DJ tranquilo en cabina es un DJ que **decidió en casa**. Preparar una pista es marcar sus puntos clave con **hot cues** (los pads), de forma que en directo pulses y ya:
+Con el estándar de M6b (pad 1 intro · 2 voz · 3 estribillo · 4 outro), cada pista tiene **cuatro teclas** conocidas. En directo no «buscas»: **pulsas**. Y los pads 5-8 son tus **teclas libres**: palabras, golpes, un bombo seco para juggling (M8b).
 
-| Pad | Qué marcas | Para qué |
+## 2. Concepto: loops (tres usos)
+
+| Uso | Qué es | Control |
 |---|---|---|
-| **1** | El **1 de la intro** (primer bombo) | Entrar |
-| **2** | Donde **entra la voz** | Saber cuánto tiempo tienes |
-| **3** | El **estribillo / drop** | Saltar a la energía si hace falta |
-| **4** | El **1 del outro / acapella** | Salir |
+| **Ganar tiempo** | Repetir el outro/intro hasta que la otra esté lista | **4 BEAT** (+ **2X**) y soltar |
+| **Loop roll** *(si el mapping lo ofrece)* | Loop momentáneo que al soltar **vuelve a donde iría** la canción (no pierde el sitio) | **SHIFT + modo BEAT LOOP** / pads de loop, o loop + soltar rápido |
+| **Instrumento** | Loop de 1/2 o 1/4 beat para crear un «redoble» antes de un drop | **1/2X** repetido, luego soltar en el 1 |
 
-Con esto, un pad = un lugar. Mixxx los **guarda** con la pista: prepáralos una vez y quedan para siempre. Ponlos **exactamente en un 1** (módulo 1): un hot cue fuera del 1 es una trampa para más tarde.
+Regla: **siempre en un 1 y en múltiplos de 4** (4, 8, 16, 32), o «cojea» (S10).
 
-## 2. Concepto: loops para ganar tiempo
+## 3. Concepto: beat jump (dos usos)
 
-Si A está llegando al final y B aún no está lista, **haces un loop** en el outro de A: se repite (4, 8, 16 beats) hasta que la sueltes. Siempre en múltiplos de 4 y arrancando en un 1, o el loop «cojea».
+- **Corregir frase:** B a tiempo pero cruzada 4/8 beats → salto de ±4/±8 y cuadra, sin galope.
+- **Navegar a tiempo:** saltar 32 beats hacia delante para llegar al estribillo **sin perder la sincronía** (mejor que buscar con el jog).
 
-## 3. Concepto: beat jump para arreglar frases
+## 4. Concepto: slip (si está disponible)
 
-Si te diste cuenta de que B va **4 beats desplazada** en la frase (está a tiempo pero el estribillo entra «a medias»), **beat jump** salta esos 4 beats **sin desincronizar**. Es la corrección invisible.
+En modo *slip*, lo que hagas (scratch, loop, cue) **no mueve** la canción «de fondo»: al soltar, sigue donde habría estado. Ideal para trucos sin arriesgar la frase. En el mapping de la FLX4 puede ir en SHIFT + PLAY o no estar; si está, anótalo en el diario.
 
 ---
 
-## 4. En la FLX4 — qué tocas
+## 5. En la FLX4 — qué tocas
 
-| Acción | Control exacto |
+| Acción | Control |
 |---|---|
-| Modo hot cue | Botón **HOT CUE** (junto a los pads) |
-| Poner / saltar a un cue | **Pad** (vacío = pone; con cue = salta) |
-| Borrar un cue | **SHIFT + pad** |
-| Loop automático de 4 beats | Botón **4 BEAT** (sección loop) |
-| Loop manual | **IN** (inicio) … **OUT** (fin) |
-| Acortar / alargar | **1/2X** · **2X** |
+| Modo hot cue | **HOT CUE** |
+| Saltar / poner | **pad** (SHIFT + pad borra) |
+| Loop 4 beats | **IN/4 BEAT** |
+| Acortar / alargar | **1/2X** / **2X** |
+| Loop manual | **IN** … **OUT** |
 | Salir del loop | **4 BEAT** otra vez (o **OUT**) |
-| Guardar / recuperar loops | **MEMORY** · **CUE/LOOP CALL ◄ ►** |
-| Modo beat jump | Botón **BEAT JUMP** |
-| Saltar N beats | **Pads** (cada pad = un tamaño de salto; en Mixxx se ve el tamaño) |
-| Cambiar tamaño de salto | En Mixxx: el número junto al deck (4, 8, 16…) |
+| Guardar / recuperar | **MEMORY** · **CUE/LOOP CALL ◄ ►** · **ACTIVE** |
+| Modo beat jump | **BEAT JUMP** + pads (tamaño en Mixxx) |
+| Tamaño de salto | En Mixxx, el número junto al deck (4 / 8 / 16 / 32) |
+| Modo beat loop (pads) | **SHIFT + BEAT LOOP** (cada pad = tamaño de loop) |
 
-## 5. Ejercicio A: «Preparar la caja» (hot cues)
+## 6. Escalera de niveles (Regla 3×5)
 
-Para **cada** canción del set (mínimo 3):
-1. Cárgala en el Deck 1, **CUE de canal 1** y casco.
-2. Encuentra el **1 de la intro** (módulo 1). Para el deck ahí (o usa el **borde del jog** para clavarlo). Pulsa **HOT CUE** y luego el **pad 1**: se enciende.
-3. Reproduce hasta que **entre la voz**; en ese 1, **pad 2**. Sigue hasta el **estribillo**; **pad 3**. Al **outro/acapella**; **pad 4**.
-4. Comprueba: pulsa los pads en orden. Cada uno debe sonar a «principio de frase». Si uno suena «a medias», **SHIFT + pad** y vuelve a ponerlo en el 1.
-5. Mixxx lo guarda solo. Siguiente canción.
+**N1 · Teclas.** Con 5 pistas preparadas, saltas a cualquier cue que te nombren (pad 1-4) y **suena a principio** siempre. 20 saltos sin fallo.
+**N2 · Loop salvavidas.** Alargas un outro con 4 BEAT → 2X, preparas B, lanzas B en un 1 del loop, sueltas: sin S10. 5 de 5, 3 días.
+**N3 · Salto invisible.** Detectas de oído una frase cruzada (4/8 beats) y la corriges con **un** beat jump. 5 de 5, 3 días.
+**N4 · Navegar a tiempo.** En una mezcla, llegas al estribillo de B saltando de 32 en 32 sin perder la fase, y entras en el 1. 5 de 5.
+**N5 · Instrumento.** Un «redoble» de loop (4 → 2 → 1 → 1/2) que suelta en el 1 del drop, y un loop roll (si hay) sin perder la frase. Sin S10, en una mezcla real. 5 de 5.
 
-## 6. Ejercicio B: «El loop salvavidas»
+## 7. Ejercicios
 
-1. A sonando, llegando a su outro. B **no** está lista (a propósito).
-2. En el **1 del outro** de A, pulsa **4 BEAT**: A se repite en 4 beats. Pulsa **2X**: ahora 8 beats (más natural).
-3. Con calma, prepara B (CUE de canal, tempo, pad 1).
-4. Cuando B esté, en un **1 del loop** lanza B (pad 1) y mezcla (módulo 4). Luego suelta el loop de A (**4 BEAT**) y sácala.
-5. Repite tres veces variando el tamaño (4 → 8 → 16 con **2X**).
+### E1 · «Piano de cues» (N1)
+Pista preparada en el Deck 1, fader arriba. Alguien (o tú al azar) dice «3», «1», «4», «2»… pulsas el pad. Cada salto debe sonar a **principio de frase**. Si uno suena «a medias», arréglalo en M6b.
 
-## 7. Ejercicio C: «El salto invisible» (beat jump)
+### E2 · «Loop salvavidas» (N2)
+A en su outro; B **no** lista a propósito. En el 1 del outro: **4 BEAT** → **2X** (8 beats). Prepara B con calma (CUE canal, tempo, pad 1). En un 1 del loop: lanza B y mezcla (M4 T1). Suelta el loop de A (**4 BEAT**) y saca A. Repite con 4, 8 y 16.
 
-1. Iguala A y B (módulo 3), pero **arranca B a propósito 4 beats tarde** (en el 2 del compás en vez del 1 del bloque). Está a tiempo pero la frase va cruzada.
-2. Pulsa **BEAT JUMP** y el pad de **-4** (o +4, según): B salta y ahora las frases cuadran, **sin galope**.
-3. Repite con 8 beats. Practica hasta oír la frase cruzada y saber cuántos beats saltar.
+### E3 · «Salto invisible» (N3)
+Iguala A y B; arranca B en el 3 a propósito (cruzada). Escucha: sin galope pero la frase «no cuadra». **BEAT JUMP** −4 (o +4). Repite con 8. Luego con los ojos cerrados: primero oír, después saltar.
 
-## 8. Criterio de dominio
+### E4 · «Autopista» (N4)
+B mezclada en su intro. Sin perder la fase, **BEAT JUMP +32** dos veces para llegar al estribillo y entrar en el 1 con un corte (T2). Comprueba que el estribillo cae en el 1 de A.
 
-- 3 canciones preparadas con **4 hot cues cada una, todos en un 1**.
-- Alargas un outro con loop y **sales de él en un 1** sin que se note.
-- Detectas una frase cruzada y la arreglas con **un** beat jump.
+### E5 · «Redoble» (N5)
+Con B en la parte tranquila antes del drop, 8 beats antes del 1: **4 BEAT** → **1/2X** cada 2 beats (4 → 2 → 1 → 1/2) → en el 1 del drop, suelta (**4 BEAT**) o **pad 3** (drop). Debe sonar a subida y caer en el 1.
 
-## 9. Errores típicos
+### E6 · «Loop roll» (N5, si el mapping lo tiene)
+SHIFT + BEAT LOOP; pulsa un pad de loop corto 2 beats y suelta: la canción debe seguir «como si nada». Si no vuelve al sitio, tu mapping no tiene roll: usa slip + loop o anótalo como bug/idea.
 
-- **Hot cue fuera del 1.** Suena bien hoy, te arruina una mezcla mañana. Clávalo con el borde del jog.
-- **Loop lanzado en el 3.** Cojea. Siempre en el 1 y en múltiplos de 4.
-- **Demasiados cues.** Cuatro claros valen más que ocho confusos.
-- **Beat jump con el tamaño equivocado**: saltas 8 cuando era 4. Mira el número en Mixxx antes.
-- **Confiar en la rejilla sin comprobar**: si el beatgrid de Mixxx está mal, los loops «cojearán» aunque hagas todo bien. Si una pista cuenta raro, revisa su rejilla en Mixxx (**Ajustar beatgrid** en el menú del deck) antes de prepararla.
+## 8. Errores típicos
 
-## 10. Reto del módulo
+- **Loop en el 3** (S10). Siempre en el 1.
+- **Loop de 6 o de 3 beats.** Múltiplos de 4.
+- **Beat jump con tamaño equivocado.** Mira el número antes.
+- **Saltar a un cue mal puesto.** El problema está en M6b, no aquí.
+- **Olvidar soltar el loop.** A se queda girando eternamente sobre B. Suelta en el 1.
+- **Redoble demasiado largo.** 8 beats bastan; 16 cansa.
 
-Prepara **5 canciones** (20 hot cues, todos en un 1) y haz una mezcla de 3 usando **un loop** para ganar tiempo y **un beat jump** para corregir. Si no hubo cojera ni galope, **Módulo 7**.
+## 9. Reto del módulo
+
+Un set de 6 canciones con: un loop salvavidas, un salto invisible, una autopista al estribillo y un redoble que cae en el drop. Rúbrica: **cero S10**, mediana B+. Tres sets, tres días.
