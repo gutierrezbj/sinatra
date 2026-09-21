@@ -18,7 +18,7 @@
 | Bloque | Módulos | Qué construyes |
 |---|---|---|
 | **0 · Método** | [Método y drills](00_METODO.md) · [Diario](DIARIO_plantilla.md) · [Rúbricas](RUBRICAS.md) · [Bugs](BUGS.md) | Cómo practicar, cómo medirte, cómo registrar |
-| **1 · Cimientos** | M0 Consola · M1 Fundamentos musicales · **M1b Entrenamiento del oído** · M2 Cue y monitorización | Manos automáticas, oído despierto, laboratorio del casco |
+| **1 · Cimientos** | **M0a Mapa de activos (¿dónde está cada cosa?)** · M0 Consola · M1 Fundamentos musicales · **M1b Entrenamiento del oído** · M2 Cue y monitorización | Manos automáticas, oído despierto, laboratorio del casco |
 | **2 · Tempo y mezcla** | M3 Beatmatching (5 niveles) · M4 Transiciones (taxonomía completa) · M6 Cues, loops y beat jump · **M6b Preparación de biblioteca** | El corazón: igualar y mezclar, con la biblioteca lista |
 | **3 · Herramientas y estilo** | M5 DJ edits y open-format · M7 EQ, filtro y efectos · M8 Mezcla armónica · **M8b Scratch básico y cue juggling** | Tu voz como DJ |
 | **4 · Tocar de verdad** | M9 Construir sets · **M9b Pinchar para gente** (fiesta, radio, stream) · M10 Rescates · M11 Evaluación, mesetas y graduación | De la habitación al público |
@@ -30,6 +30,7 @@ Los módulos en **negrita** son nuevos en v2. Los demás se amplían con escaler
 | Módulo | Estado |
 |---|---|
 | 00 Método y drills · Diario · Rúbricas · Bugs | ✅ v2 |
+| [M0a Mapa de activos — ¿dónde está cada cosa?](M00a_mapa_de_activos_FLX4.md) | ✅ v2 · **empieza aquí** |
 | [M0 La consola FLX4 al dedillo](M00_la_consola_FLX4.md) | ✅ v2 |
 | [M1 Fundamentos musicales](M01_fundamentos_musicales.md) | ✅ v2 |
 | [M1b Entrenamiento del oído](M01b_entrenamiento_del_oido.md) | ✅ v2 |

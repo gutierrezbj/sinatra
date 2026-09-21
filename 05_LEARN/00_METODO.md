@@ -38,7 +38,7 @@ Como las escalas de un músico: cortos, diarios, aburridos, y son lo que te hace
 
 | Drill | Min | Qué haces | Entrena |
 |---|---|---|---|
-| **D1 · Manos** | 2 | Tour de la consola a ciegas nombrando 10 controles | Automatismo |
+| **D1 · Manos** | 2 | Recorrido fijo de 20 activos a ciegas (M0a E6) nombrándolos | Localización / automatismo |
 | **D2 · Pulso** | 3 | Una canción nueva: encontrar el 1 en < 10 s y contar 32 beats en voz alta | Conteo |
 | **D3 · Nudge** | 3 | Dos canciones con SYNC; sabotear con el borde del jog y recuperar, 10 veces | Fase / mano |
 | **D4 · Graves** | 2 | Intercambio de LOW en el 1, 10 veces, con las dos manos | Timing |

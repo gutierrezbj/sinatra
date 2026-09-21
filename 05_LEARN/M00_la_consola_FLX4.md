@@ -83,6 +83,8 @@ No hace falta memorizarla hoy: **descubre una función de SHIFT por sesión** y 
 
 ## 5. Escalera de niveles (Regla 3×5)
 
+**Requisito previo:** M0a N5 (encuentras cualquier activo a ciegas).
+
 **N1 · Diez a ciegas.** Con los ojos cerrados, mano en: PLAY, CUE plato, CUE canal, fader 1, fader 2, crossfader, LOW 1, CFX 1, TEMPO, LOAD 2. 10 de 10, 5 veces, 3 días.
 
 **N2 · Todo a ciegas.** Cualquier control de las zonas A-D que te nombren (o te nombres). 20 seguidos sin fallo.

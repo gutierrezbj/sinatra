@@ -8,6 +8,7 @@ Un nivel se marca superado solo con la **Regla 3×5** (5 de 5 en 3 días distint
 
 | Habilidad | Módulo | Nivel actual | Superado el | Días 5/5 (fechas) | Notas |
 |---|---|---|---|---|---|
+| Mapa de activos (encontrar cada control) | M0a | 1 | | | |
 | Consola a ciegas | M0 | 1 | | | |
 | Cazar el «1» | M1 | 1 | | | |
 | Contar 32 | M1 | 1 | | | |
