@@ -81,15 +81,23 @@ Spec: `01_SPECS/SINATRA_Hito001C_Sinatra_Skin.md` · v1.1 · **Cerrada** (2026-0
 
 ## 001-D — QML spike
 
-Spec: `01_SPECS/SINATRA_Hito001D_QML_Spike.md` · v1.0 · **Aprobada — lista para ejecución** (2026-09-20). Pregunta: ¿QML puede leer el motor y dar feedback sin fork? Criterio: "✓ igualados" cuando |BPM1−BPM2| < 0.5.
+Spec: `01_SPECS/SINATRA_Hito001D_QML_Spike.md` · v1.1 · **Cerrada — GO** (2026-09-21, Sesiones 05-06).
 
 - [x] Crear y aprobar una spec propia. → aprobada v1.0.
 - [x] Definir una pregunta técnica única y medible. → indicador BPM igualados < 0.5, < 1 s.
 - [x] Crear la plantilla `04_TESTS/QML_SPIKE_NOTES.md` (se crea al aprobar). → creada.
-- [ ] Construir el experimento mínimo.
-- [ ] Documentar controles expuestos, límites, acoplamiento y coste estimado.
-- [ ] Detenerse y evaluar antes de ampliar el frontend.
-- [ ] Emitir recomendación go/no-go para el modo Learn.
+- [x] Construir el experimento mínimo. → indicador QML en `LateNightQML_Sinatra/main.qml` (ControlProxy de `[ChannelN],bpm`).
+- [x] Documentar controles expuestos, límites, acoplamiento y coste estimado. → en QML_SPIKE_NOTES.
+- [x] Detenerse y evaluar antes de ampliar el frontend. → un solo indicador; no se amplió.
+- [x] Emitir recomendación go/no-go para el modo Learn. → **GO** (con nota de empaquetado).
+
+### Puerta de salida 001-D
+
+- [x] Pregunta respondida con evidencia (SÍ se puede).
+- [x] Recomendación go/no-go emitida (GO).
+- [x] Controles/límites/acoplamiento/coste documentados.
+- [x] Originales de Mixxx intactos; sin fork.
+- [ ] Decisión de rumbo del responsable (Revisión de Hito 001 / solicitar spec de Learn). → **pendiente**.
 
 ## Revisión de rumbo
 

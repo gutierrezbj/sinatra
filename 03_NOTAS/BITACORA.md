@@ -354,6 +354,55 @@ Copiar tal cual, al final del archivo, con el mismo nivel de encabezado que las 
 
 ---
 
+## 2026-09-20/21 · Sesión 06 · Ejecución y cierre de 001-D (QML spike) — GO para Learn
+
+**Fase:** 001-D
+**Responsable:** Juan Ramón Gutiérrez, con agente Claude Code (Opus 4.8)
+**Commit Mixxx:** `81a5eb87` (solo lectura/copia; sin cambios)
+**Objetivo de la sesión:** responder si el modo Learn es viable — ¿puede un QML propio leer el motor de Mixxx en vivo y dar feedback, sin fork?
+
+### Qué se hizo
+
+- Confirmada la API en el código de Mixxx: `import Mixxx 1.0` + `Mixxx.ControlProxy { group; key }` con `.value` reactivo.
+- Copia aislada de la skin QML → `02_MODS/skins/LateNightQML_Sinatra`; inyectado un indicador "SINATRA Learn" en `main.qml` que lee `[Channel1],bpm` y `[Channel2],bpm` y da feedback (verde "✓ igualados" con tolerancia 0.5 BPM).
+- Resueltos tres bloqueos de integración: (1) skins QML solo cargan con `--developer`; (2) junction `<Mixxx>/qml`→`res/qml` para la librería QML compartida; (3) junction `skins/LateNight`→`res/skins/LateNight` para assets SVG. Y un bug propio: los `ControlProxy` deben crearse tras `Mixxx.Core.ready` (via `Loader`), o quedan a 0.
+- Probado en vivo con la FLX4: dos pistas a 100 BPM → verde; desplazar tempo (consola o software) → "✗" al instante; re-sincronizar → verde. Reacción < 1 s.
+- Creado un lanzador de Escritorio `Mixxx Sinatra.cmd` (arranca con `--developer`).
+
+### Resultado
+
+- **001-D CERRADA con recomendación GO.** El modo Learn es **técnicamente viable** sobre Mixxx en QML, sin fork.
+
+### Qué funcionó
+
+- Leer el motor y dar feedback reactivo en QML es trivial (~40 líneas). La mecánica núcleo de Learn está demostrada.
+- Verificar con captura/log y recarga en caliente (`Ctrl+Shift+R`) aceleró la depuración.
+
+### Qué falló o quedó incierto
+
+- **Empaquetado:** una skin QML fuera de `res/skins` no es autocontenida (developer mode + deps compartidas vía junctions). Antes de construir Learn hay que decidir cómo se distribuye.
+- Las skins QML de Mixxx son "developer preview" → hay algo de riesgo de inestabilidad/cambios upstream a vigilar.
+
+### Decisiones y razones
+
+- No desplegar en `res/skins` (ensuciaría Mixxx): se usaron junctions en la carpeta de usuario, documentados como coste de acoplamiento.
+- Tolerancia de 0.5 BPM en el "igualado": realista para DJ (no hace falta clavar el decimal) y ajustable.
+
+### Qué aprendimos
+
+- `ControlProxy` da acceso a toda la superficie de controles de Mixxx desde QML; el timing (crear tras `ready`) importa.
+- El sueño de Learn (ejercicios + feedback en cabina) es construible; el trabajo gordo será la UI/lógica de lecciones y el empaquetado, no el acceso al motor.
+
+### Evidencia relacionada
+
+- `04_TESTS/QML_SPIKE_NOTES.md` · skin en `02_MODS/skins/LateNightQML_Sinatra` · spec 001-D v1.1 · lección semilla `05_LEARN/L01`.
+
+### Siguiente paso
+
+- **Revisión de rumbo del Hito 001** (001-A…D cerradas): decidir con evidencia si se abre el **modo Learn** (spec propia, con plan de empaquetado) y si se mantiene o revisa ADR-001 (no fork). Decisión del responsable.
+
+---
+
 ## Correcciones fechadas
 
 > Estas notas corrigen o unifican terminología sin reescribir las entradas anteriores, que se conservan como registro del momento en que se escribieron.

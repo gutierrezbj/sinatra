@@ -2,9 +2,9 @@
 
 | Campo | Valor |
 |---|---|
-| Versión | 1.0 |
-| Fecha | 2026-09-20 |
-| Estado | **Aprobada — lista para ejecución** |
+| Versión | 1.1 |
+| Fecha | 2026-09-21 |
+| Estado | **Cerrada — GO.** QML lee el motor en vivo y da feedback (Sesiones 05-06). Ver `04_TESTS/QML_SPIKE_NOTES.md` |
 | Autor | Juan Ramón Gutiérrez (borrador preparado con agente Claude Code) |
 | Aprobador | Juan Ramón Gutiérrez |
 | Fecha de aprobación | 2026-09-20 |
@@ -116,3 +116,4 @@ Un éxito parcial no es cierre.
 |---|---|---|---|
 | 0.1 | 2026-09-20 | Borrador inicial de 001-D (QML spike), enfocado a la pregunta que decide el modo Learn: ¿se puede leer el motor y dar feedback en QML sobre Mixxx sin fork? Experimento único y medible. | Juan Ramón Gutiérrez (con agente Claude Code) |
 | 1.0 | 2026-09-20 | **Aprobada** por el responsable. Criterio de éxito fijado: indicador QML "✓ igualados" cuando |BPM1−BPM2| < 0.5, reacción < 1 s. Habilita la ejecución del spike. | Juan Ramón Gutiérrez |
+| 1.1 | 2026-09-21 | **Estado → Cerrada (GO).** Spike ejecutado (Sesiones 05-06): indicador QML aislado en `LateNightQML_Sinatra` que lee `[ChannelN],bpm` vía `Mixxx.ControlProxy` y da feedback reactivo en vivo (verde "✓ igualados", vuelve a "✗" al desigualar, < 1 s), probado desde consola y software. Recomendación **GO** para Learn con nota de empaquetado (developer mode + deps compartidas). Sin fork; originales de Mixxx intactos. | Juan Ramón Gutiérrez (con agente Claude Code) |
