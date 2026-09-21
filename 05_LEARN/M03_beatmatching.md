@@ -1,79 +1,96 @@
-# Módulo 3 · Beatmatching (igualar tempos)
+# Módulo 3 · Beatmatching (igualar tempos) — v2, escalera de 5 niveles
 
-**Objetivo:** poner dos canciones **a la misma velocidad y en fase** (el «1» sobre el «1») — primero con ayuda de SYNC, y después **a mano y de oído**, que es lo que te convierte en DJ y no en «pulsador de botones». Esta es la habilidad central del curso; dedícale tiempo.
+**Objetivo:** poner dos canciones **a la misma velocidad y en fase** (el «1» sobre el «1»), con SYNC como ruedines al principio y **a mano y de oído** al final. Es **la** habilidad del DJ y la que más se resiste. Por eso aquí no hay un ejercicio: hay una **escalera de cinco niveles** y semanas por delante. Tómatelo como un músico se toma las escalas.
 
-**Tiempo:** 4-6 sesiones de 30 min (sí, más que los otros). **Necesitas:** 2 canciones de **BPM parecido** (±4) y **el mismo par** durante varios días.
-
----
-
-## 1. Concepto: dos problemas distintos
-
-«Igualar» son en realidad **dos cosas**:
-1. **Tempo** (velocidad): que las dos vayan al mismo BPM. Se ajusta con el **TEMPO fader** (cambio permanente).
-2. **Fase** (alineación): que el «1» de una caiga **exactamente** sobre el «1» de la otra. Se ajusta con el **borde del jog** (empujón temporal) y arrancando **en el beat correcto**.
-
-Puedes tener el tempo perfecto y estar «desfasado» (suena a galope, *tu-tum tu-tum*), o estar en fase un segundo y luego separarse (el tempo no era exacto). Ambas se oyen, y aprender a **oír cuál falla** es el 90 % del beatmatching.
-
-## 2. Concepto: cómo suena el error
-
-- **Galope / eco de bombo** (dos bombos casi juntos): fase mal → toca **el borde del jog**.
-- **Se separan poco a poco** (estaban juntas y se van): tempo mal → toca **TEMPO** un pelín.
-- **Regla de dirección:** si B va **por delante** (su bombo suena antes), **fréna**la (borde del jog hacia atrás / TEMPO hacia lento). Si va **por detrás**, **empú**jala.
-
-## 3. SYNC: ruedines, no bicicleta
-
-**BEAT SYNC** iguala tempo y fase de golpe. Úsalo para **aprender cómo suena «bien»** y para salir del paso. Pero entrena **sin él**: los BPM de Mixxx pueden fallar, en otros equipos no lo tendrás, y el oído solo se entrena a mano.
+**Tiempo:** el que haga falta. Orientativo: 2-6 semanas para N3 con 20 min diarios. **Necesitas:** tu **par de entreno** (mismo par durante semanas), casco, y haber superado **M1b N3** (oír si B va delante o detrás).
 
 ---
 
-## 4. En la FLX4 — qué tocas
+## 1. Concepto: dos problemas, dos controles
+
+| Problema | Qué es | Cómo suena mal | Control | Tipo de cambio |
+|---|---|---|---|---|
+| **Tempo** | Misma velocidad (BPM) | Empiezan juntas y **se van separando** | **TEMPO fader** | Permanente |
+| **Fase** | El 1 sobre el 1 | **Galope** inmediato («tu-tum») | **Borde del jog** (nudge) | Temporal |
+
+Diagnóstico en 16 beats: si galopa **ya**, es fase; si estaba bien y **se va**, es tempo. Si ambas, arregla primero el tempo (si no, la fase se te escapa cada pocos compases).
+
+## 2. Concepto: dirección
+
+- B **va delante** (su bombo suena antes) → **fréna**la: borde del jog **hacia atrás** (o TEMPO hacia más lento si es de tempo).
+- B **va detrás** → **empú**jala: borde del jog **hacia delante** (o TEMPO hacia más rápido).
+- Si no sabes cuál va delante: **M1b E3** hasta que lo oigas. Adivinar la dirección al 50 % es lo que hace que «nunca me sale».
+
+## 3. Concepto: cómo se hace el tempo de oído
+
+Sin mirar números: pones B en el 1 y la lanzas en el 1 de A. Escuchas 8 compases. Si al final galopa **un poco** y antes no, B es un pelín más rápida o lenta; **empuja el TEMPO 1 mm** en la dirección que te dijo el oído (M1b), realinea con el jog y **vuelve a escuchar 8 compases**. Repite hasta que aguanten 32-64 beats. Es un bucle: **lanzar → escuchar → tempo → realinear**. Nunca muevas el tempo sin realinear después.
+
+## 4. Concepto: el «riding» (cabalgar el pitch)
+
+En canciones viejas o con tempo flotante, nunca quedan **clavadas**: se corrigen con **micro-toques de jog cada 8-16 compases** sin mover el TEMPO. Eso es «cabalgar». Los DJs de vinilo lo hacen todo el set. Aprenderlo te libera de la rejilla.
+
+---
+
+## 5. En la FLX4 / Mixxx — qué tocas
 
 | Acción | Control exacto |
 |---|---|
-| Cambiar velocidad (permanente) | **TEMPO fader** del deck (vertical, derecha del plato). Mira el signo: en Pioneer, **arriba = más lento**, abajo = más rápido. |
-| Empujón/frenazo temporal (fase) | **Borde del jog** (el aro exterior). Girar a favor = empuja; en contra = frena. **No toques la superficie** (eso frena en seco). |
-| Fijar el «1» de B como punto de arranque | **CUE de plato** del Deck 2 (parado, en el 1) |
-| Ensayar el arranque | Mantener **CUE de plato** (suena y vuelve al soltar) |
-| Arrancar B en el 1 de A | **PLAY** del Deck 2 justo en el 1 de A |
-| Igualar automáticamente | **BEAT SYNC** (para comparar y aprender) |
-| Ver los BPM | Pantalla de Mixxx (número grande de cada deck) |
+| Velocidad permanente | **TEMPO fader** del deck (en Pioneer: **arriba = más lento**, abajo = más rápido; mira el signo en pantalla) |
+| Empujón / frenazo | **Borde del jog** (aro exterior): a favor = empuja, en contra = frena. **Nunca la superficie** (frena en seco) |
+| Fijar el 1 de B | **CUE de plato** del Deck 2 con B parada en su 1 |
+| Ensayar | Mantener **CUE de plato** (suena, vuelve al soltar) |
+| Lanzar B en el 1 de A | **PLAY** del Deck 2 (o el pad 1 si tienes hot cue en el 1) |
+| Igualar automático | **BEAT SYNC** (solo N1 y para comparar) |
+| Rango del tempo | **SHIFT + BEAT SYNC** (TEMPO RANGE): ±6 % normal; ±10/16 % si el par está lejos |
+| Ver BPM y fase | Pantalla de Mixxx: BPM grande; y las **formas de onda apiladas** (arriba) muestran si los bombos coinciden |
+| Tapar los BPM | Un post-it en la pantalla (N3+) o el modo «solo forma de onda» |
 
-## 5. Ejercicio A: «Con red» (SYNC, para calibrar el oído)
+## 6. La escalera (Regla 3×5 en cada nivel)
 
-1. A en el **Deck 1**, sonando, fader arriba. B en el **Deck 2**, **fader abajo**, **CUE de canal 2** encendido, **MIX** al centro (oyes las dos).
-2. **PLAY** en B. Suena a galope, seguro. Escúchalo 8 beats: **memoriza ese sonido de «mal»**.
-3. Pulsa **BEAT SYNC** en el Deck 2. Se alinea de golpe. Escucha 32 beats: **memoriza el sonido de «bien»** (un solo bombo, limpio).
-4. Ahora **sabotéalo a propósito**: toca el **borde del jog** de B medio segundo. Se desfasa. Corrígelo con el borde en sentido contrario hasta que vuelva a sonar «bien». Repite 10 veces. Esto entrena la mano.
+### N1 · Oír «bien» y «mal» (con SYNC)
+- A suena. B en el casco (CUE canal 2, MIX centro). PLAY B → galope. **BEAT SYNC** → limpio. Memoriza los dos sonidos.
+- Sabotaje: toque de borde del jog → galope → corriges con el borde hasta limpio. **10 correcciones seguidas sin pasarte** = 1 intento. 5 de 5, 3 días.
+- Requisito de salida: M1b N3 (dirección) superado.
 
-## 6. Ejercicio B: «Sin red» (a mano, el de verdad)
+### N2 · A mano, con BPM visibles, mismo par
+- SYNC OFF. B en su 1 (CUE de plato). **TEMPO** de B hasta que el número iguale al de A.
+- Cuenta A, PLAY B en el 1. Realinea con el borde (toques cortos). **Aguanta 32 beats sin tocar.**
+- Si se van: TEMPO 1 mm en la dirección correcta, realinear, otra vez 32.
+- Éxito = lanzada y estable 32 beats en **< 8 compases** de ajuste. 5 de 5, 3 días.
 
-1. Mismas canciones. **SYNC apagado** en los dos decks.
-2. Encuentra el **1** de B (módulo 1). Con B **parada** en ese beat, pulsa **CUE de plato** del Deck 2: ahora B «vive» en su 1.
-3. **Iguala el tempo por números** (primera vez): mueve el **TEMPO** de B hasta que el BPM de pantalla sea el de A. *(Más adelante, tapa los números.)*
-4. Escucha A. Cuenta **1-2-3-4** con ella. En el **1**, pulsa **PLAY** de B. Ya suenan las dos (B solo en tu casco).
-5. ¿Galope? Toca el **borde del jog** de B: si B va delante, frena; si va detrás, empuja. Toques cortos, escuchar, repetir. Cuando suene un solo bombo, deja de tocar.
-6. Aguanta **32 beats sin tocar**. ¿Se separan? Entonces el tempo no era exacto: mueve **TEMPO** un milímetro en la dirección correcta y vuelve a alinear con el borde. Repite hasta que aguante los 32.
-7. Cuando esté clavado, sube el **fader 2** poco a poco y escúchalas por el master. Si aguanta, **lo tienes**.
-8. **Reset**: para B, pulsa CUE de plato (vuelve al 1), y repite desde el paso 4. **Cinco veces seguidas.**
+### N3 · A ciegas, mismo par
+- Igual que N2 pero **BPM tapados**. El tempo lo ajustas **solo de oído** con el bucle del punto 3.
+- Éxito = estable 32 beats en **< 1 minuto**. 5 de 5, 3 días. *(Aquí es donde la mayoría abandona. Aquí es donde naces como DJ.)*
 
-## 7. Ejercicio C: «A ciegas»
+### N4 · A ciegas, par nuevo cada día
+- Cada día un par distinto de tu biblioteca (BPM ±4). Sin mirar. Estable **64 beats**.
+- Éxito = **< 1 minuto**. 5 de 5, 3 días (15 pares distintos en total).
 
-Igual que B, pero **tapa los BPM de la pantalla** (un post-it) y ajusta el **TEMPO solo de oído**. Es lento y frustrante al principio; es también donde nace el oído de DJ.
+### N5 · Automatizado
+- Igualas a ciegas **mientras** haces otra cosa: cue de canal, subir el fader, girar un LOW. O con una canción de tempo flotante, **cabalgando** el pitch 64 beats con micro-toques.
+- Éxito = la mezcla sale limpia (rúbrica: sin S1/S2) y no «pensaste» en el jog. 5 de 5, 3 días.
 
-## 8. Criterio de dominio
+## 7. Drills de apoyo (además de D3)
 
-- Ejercicio B: alineas en **menos de 8 compases** y aguanta **32 beats** sin tocar. **5 de 5.**
-- Distingues al oír si el fallo es de **fase** (jog) o de **tempo** (TEMPO).
-- Ejercicio C: llegas a igualar a ciegas en menos de 1 minuto con el par de canciones de entreno.
+- **Drill del 1 mm:** con SYNC OFF y las dos ya igualadas, mueve TEMPO 1 mm, escucha 16 beats, vuélvelo. Aprende cuánto es «un pelín».
+- **Drill de dirección:** M1b E3, 10 rondas, cada día hasta N3.
+- **Drill de lanzamiento:** 10 lanzamientos de B en el 1 de A con CUE de plato, sin ajustar nada más. Solo el timing del PLAY.
 
-## 9. Errores típicos
+## 8. Errores típicos
 
-- **Tocar la superficie del jog** en vez del borde: frena en seco y rompes todo. Solo el **aro exterior**.
-- **Mover el TEMPO cuando ya estaba en fase.** Si suena bien, no toques. Si se separan lentamente, entonces sí.
-- **Arrancar B en un beat que no es el 1.** Estarás «a tiempo» pero con las frases cruzadas (módulo 4 lo sufre). Cuenta y arranca en el 1.
-- **Toques largos del jog**: sobrecorriges y pasas al otro lado. Toques cortos y escuchar.
-- **Cambiar de canciones cada día**: el oído aprende con repetición. **Mismo par** hasta dominarlo.
+- **Tocar la superficie del jog.** Frena en seco. Solo el aro.
+- **Mover TEMPO cuando ya estaba en fase** («por si acaso»). Si aguanta 32 beats, no toques.
+- **Toques largos.** Sobrecorriges y pasas al otro lado. Cortos, escuchar, repetir.
+- **No realinear tras mover el TEMPO.** El tempo cambia la fase. Siempre: tempo → jog.
+- **Cambiar de par cada día antes de N4.** El oído aprende por repetición. Mismo par.
+- **Empezar N2 sin M1b N3.** Sin oír la dirección estás adivinando al 50 %.
+- **Escuchar con MIX solo en CUE o solo en MASTER.** Para comparar, **al centro**.
+- **Rango de tempo corto.** Si el fader «no llega», SHIFT + BEAT SYNC para ampliar rango.
+
+## 9. Cuándo usar SYNC (de verdad)
+
+Cuando domines N3: para **ganar tiempo** en directo, para pistas con rejilla perfecta, o cuando hay tres cosas pasando a la vez. Nunca como sustituto del oído: si la rejilla de una pista está mal, SYNC la alinea **mal** y solo tu oído lo salva.
 
 ## 10. Reto del módulo
 
-Con tu par de entreno: graba (REC de Mixxx) **cinco alineaciones a mano seguidas**, cada una aguantando 32 beats. Escucha la grabación: si no oyes galope en ninguna, **Módulo 4**. Si oyes uno, repites el día siguiente (y no pasa nada: este módulo se gana en días, no en horas).
+Graba una mezcla de 3 canciones **a ciegas** (N3/N4) con 64 beats de superposición en cada transición. Escúchala con la rúbrica: **cero S1 y cero S2**. Tres grabaciones en tres días → módulo superado. Y sí: apunta la fecha. Es un día importante.
