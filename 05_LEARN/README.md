@@ -1,50 +1,54 @@
-# Curso intensivo · «Pinchar como los ángeles con arpa» 🎧
+# Curso «Pinchar como los ángeles con arpa» · v2 🎧
 
-> **Qué es:** el curso de mixing de Sinatra. Escrito como lo daría un DJ profesional a un alumno que empieza de cero, adaptado a **tu equipo** (Pioneer DDJ-FLX4 + Mixxx, 2 decks, auriculares) y a **tu biblioteca** (hip-hop/pop con DJ edits de intro/outro y claves musicales).
+> **Qué es:** el curso de mixing de Sinatra, versión **sólida y sin prisa**. Escrito como lo daría un DJ profesional a un alumno que va a echar **cientos de horas** y quiere **consistencia**, no velocidad. Adaptado a **tu equipo** (Pioneer DDJ-FLX4 + Mixxx, 2 decks, auriculares) y a **tu biblioteca** (hip-hop/pop con DJ edits y claves).
 >
-> **Qué será:** el guion del futuro **modo Learn**. Cada ejercicio de aquí se convertirá en un checkpoint con feedback automático en la cabina (viabilidad demostrada en 001-D).
+> **Qué será:** el guion del **modo Learn**. Cada ejercicio y cada escalón de progresión se convertirá en un checkpoint con feedback automático en la cabina (viabilidad demostrada en 001-D).
 
-## La promesa (y la letra pequeña)
+## La filosofía del curso (léela dos veces)
 
-Si haces los módulos en orden y **practicas lo que dice cada uno**, al terminar sabrás: manejar la consola sin mirar, contar la música, igualar tempos a mano, hacer transiciones limpias con EQ, usar cues/loops/FX con criterio, mezclar en armonía y montar un set con sentido.
+1. **No se avanza por haberlo hecho una vez; se avanza por hacerlo bien de forma consistente.** La regla del curso es la **Regla 3×5**: un escalón está superado cuando lo consigues **5 de 5 veces en 3 días distintos**. Un día bueno no cuenta. Tres sí.
+2. **Cada habilidad es una escalera, no una casilla.** Beatmatching no es «sí/no»: tiene 5 niveles. Subes uno cuando el anterior es consistente. Puedes estar en el nivel 4 de conteo y en el 2 de beatmatching a la vez. Es normal y está bien.
+3. **Drills diarios antes de mezclar**, como las escalas de un músico. 10 minutos de calentamiento del oído y las manos, todos los días, antes de «pinchar».
+4. **Grabar y escuchar es parte del ejercicio, no un extra.** Hasta que Learn te corrija en vivo, tu grabación es tu profesor.
+5. **Los bugs se anotan y se paran ahí.** La herramienta también está aprendiendo. Cuando algo de la cabina falle, se registra en `BUGS.md`, se resuelve, y se sigue. Cada bug resuelto mejora Sinatra.
+6. **No hay calendario.** Hay escalones. Tardarás lo que tardes, y estará bien.
 
-La letra pequeña, sin humo: **mezclar bien es una habilidad motriz + auditiva.** Leer no te hace DJ; **repetir con intención** sí. Por eso cada módulo termina en un **reto medible** y el curso lleva un **plan de práctica**. Grábate (Mixxx tiene REC) y escúchate: ese es tu profesor hasta que Learn te corrija en vivo.
+## Estructura: 5 bloques, escaleras y drills
 
-## Cómo usar el curso
+| Bloque | Módulos | Qué construyes |
+|---|---|---|
+| **0 · Método** | [Método y drills](00_METODO.md) · [Diario](DIARIO_plantilla.md) · [Rúbricas](RUBRICAS.md) · [Bugs](BUGS.md) | Cómo practicar, cómo medirte, cómo registrar |
+| **1 · Cimientos** | M0 Consola · M1 Fundamentos musicales · **M1b Entrenamiento del oído** · M2 Cue y monitorización | Manos automáticas, oído despierto, laboratorio del casco |
+| **2 · Tempo y mezcla** | M3 Beatmatching (5 niveles) · M4 Transiciones (taxonomía completa) · M6 Cues, loops y beat jump · **M6b Preparación de biblioteca** | El corazón: igualar y mezclar, con la biblioteca lista |
+| **3 · Herramientas y estilo** | M5 DJ edits y open-format · M7 EQ, filtro y efectos · M8 Mezcla armónica · **M8b Scratch básico y cue juggling** | Tu voz como DJ |
+| **4 · Tocar de verdad** | M9 Construir sets · **M9b Pinchar para gente** (fiesta, radio, stream) · M10 Rescates · M11 Evaluación, mesetas y graduación | De la habitación al público |
 
-1. Un módulo cada vez, **en orden**. No saltes: cada uno asume el anterior.
-2. Lee el módulo (10 min), haz el **ejercicio en la consola** (20-40 min), y **no pases al siguiente hasta cumplir el reto** de "esto ya lo domino".
-3. Sesiones cortas y frecuentes ganan a maratones: **30 min al día** > 4 h el domingo.
-4. Cada módulo tiene: *Objetivo · Concepto · En la FLX4 · Ejercicio · Criterio de dominio · Errores típicos · Reto*.
+Los módulos en **negrita** son nuevos en v2. Los demás se amplían con escaleras de niveles, más ejercicios y drills.
 
-## Plan del curso
+## Estado de la v2
 
-| # | Módulo | Qué dominas al terminar | Estado |
-|---|---|---|---|
-| 0 | [La consola FLX4 al dedillo](M00_la_consola_FLX4.md) | Cada botón, cada mando, y por dónde viaja el sonido | ✅ escrito |
-| 1 | [Fundamentos musicales del DJ](M01_fundamentos_musicales.md) | Beat, compás, el «1», frases de 8/16/32, estructura, intros/outros | ✅ escrito |
-| 2 | [Cue y monitorización](M02_cue_y_monitorizacion.md) | Preparar la siguiente pista en secreto por el casco; ganancia y niveles | ✅ escrito |
-| 3 | [Beatmatching](M03_beatmatching.md) | Igualar tempos **a mano** (y cuándo usar SYNC), nudge con el jog, alinear el «1» | ✅ escrito |
-| 4 | [La transición limpia](M04_la_transicion_limpia.md) | EQ mixing, fader vs crossfader, entrar en la frase, la regla de los graves | ✅ escrito |
-| 5 | [Mezclar con DJ edits](M05_mezclar_con_dj_edits.md) | Intros/outros, «Intro x Acap Outro», acapellas: la escuela open-format | ✅ escrito |
-| 6 | [Hot cues, loops y beat jump](M06_hot_cues_loops_beat_jump.md) | Preparar pistas, marcar el «1», alargar intros, saltar con precisión | ✅ escrito |
-| 7 | [EQ, filtro y efectos con criterio](M07_eq_filtro_y_efectos.md) | CFX, Beat FX: cuándo sí, cuándo no, y cuánto | ✅ escrito |
-| 8 | [Mezcla armónica](M08_mezcla_armonica.md) | Claves y rueda Camelot: mezclar sin que «chirríe» | ✅ escrito |
-| 9 | [Construir un set](M09_construir_un_set.md) | Selección, curva de BPM y energía, el arco de una sesión | ✅ escrito |
-| 10 | [Rescates y errores](M10_rescates_y_errores.md) | Qué hacer cuando descarrila (y cómo que nadie lo note) | ✅ escrito |
-| 11 | [Grabar, escuchar, mejorar + graduación](M11_grabar_escuchar_mejorar.md) | Autoevaluación con REC; práctica deliberada; **examen final** | ✅ escrito |
+| Módulo | Estado |
+|---|---|
+| 00 Método y drills · Diario · Rúbricas · Bugs | ✅ v2 |
+| [M0 La consola FLX4 al dedillo](M00_la_consola_FLX4.md) | v1 → ampliar |
+| [M1 Fundamentos musicales](M01_fundamentos_musicales.md) | v1 → ampliar |
+| M1b Entrenamiento del oído | ⏳ nuevo |
+| [M2 Cue y monitorización](M02_cue_y_monitorizacion.md) | v1 → ampliar |
+| [M3 Beatmatching](M03_beatmatching.md) | v1 → ampliar (5 niveles) |
+| [M4 Transiciones](M04_la_transicion_limpia.md) | v1 → ampliar (taxonomía) |
+| [M5 DJ edits y open-format](M05_mezclar_con_dj_edits.md) | v1 → ampliar |
+| [M6 Cues, loops y beat jump](M06_hot_cues_loops_beat_jump.md) | v1 → ampliar |
+| M6b Preparación de biblioteca | ⏳ nuevo |
+| [M7 EQ, filtro y efectos](M07_eq_filtro_y_efectos.md) | v1 → ampliar |
+| [M8 Mezcla armónica](M08_mezcla_armonica.md) | v1 → ampliar |
+| M8b Scratch básico y cue juggling | ⏳ nuevo |
+| [M9 Construir sets](M09_construir_un_set.md) | v1 → ampliar |
+| M9b Pinchar para gente | ⏳ nuevo |
+| [M10 Rescates y errores](M10_rescates_y_errores.md) | v1 → ampliar |
+| [M11 Evaluación, mesetas y graduación](M11_grabar_escuchar_mejorar.md) | v1 → ampliar |
 
-Ejercicio suelto de arranque (ya escrito): [L01 · Tu primera transición](L01_primera_transicion.md) — úsalo como «prueba de sabor» antes del módulo 4.
+Ejercicio suelto de arranque: [L01 · Tu primera transición](L01_primera_transicion.md) — prueba de sabor antes del M4.
 
 ## Al finalizar el curso serás capaz de…
 
-**Mezclar música en general y conocer tu entorno.** En concreto: manejar la cabina a ciegas y saber por dónde viaja el sonido; oír la música como un DJ (el «1», frases de 8/16/32, estructura); preparar pistas en secreto por el casco con niveles igualados; igualar tempos a mano y de oído; hacer transiciones limpias con EQ, filtro y efectos; mezclar con DJ edits y acapellas; usar hot cues, loops y beat jump; elegir canciones compatibles en tempo y armonía; construir y tocar un set de 30 min con arco de energía; rescatar cualquier error en 8 beats; y mejorar solo, grabándote y escuchándote. El **examen de graduación** está al final del módulo 11.
-
-## Plan de práctica intensivo (4 semanas)
-
-- **Semana 1 — Manos y oído.** Módulos 0-2. Cada día: 10 min de «tour» de la consola + contar beats y encontrar el «1» en 3 canciones.
-- **Semana 2 — Tempo.** Módulos 3-4. Cada día: 20 min de beatmatching a mano con el mismo par de canciones + 5 transiciones grabadas.
-- **Semana 3 — Herramientas.** Módulos 5-7. Cada día: preparar 3 pistas con hot cues + mezclar con DJ edits + una transición con filtro.
-- **Semana 4 — Musicalidad.** Módulos 8-11. Cada día: mezclar en armonía + montar y grabar un mini-set de 15 min, escucharlo y anotar 3 mejoras.
-
-**Regla de oro:** si un ejercicio te sale mal, **baja la dificultad** (canciones más parecidas, tempos más cercanos), no subas la frustración.
+**Mezclar música en general y conocer tu entorno**, con solidez: manejar la cabina a ciegas y entender la señal; oír como un DJ (pulso, «1», frases, estructura por género, fase, tempo, choques); preparar cualquier pista y una biblioteca entera; igualar tempos a mano y de oído en cualquier par de canciones; ejecutar toda la familia de transiciones (blend, corte, filtro, echo, loop, acapella, drop) con criterio; mezclar en armonía; hacer scratch básico y cue juggling; construir y tocar sets de 30-60 min con arco; pinchar para gente (fiesta, radio, stream) y rescatar cualquier error sin que se note; y **seguir mejorando solo**, con método, cuando el curso acabe.
