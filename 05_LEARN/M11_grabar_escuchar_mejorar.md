@@ -1,98 +1,94 @@
-# Módulo 11 · Grabar, escuchar, mejorar (y graduación)
+# Módulo 11 · Evaluación, mesetas y graduación — v2
 
-**Objetivo:** convertir la práctica en **progreso medible**. Hasta que el modo Learn te corrija en vivo, tu mejor profesor es **tu propia grabación** escuchada con criterio. Este módulo te da el método — y el examen final.
+**Objetivo:** convertir la práctica en **progreso medible y sostenido**: escucharte con criterio, leer tu tablero de niveles, atravesar las mesetas, y llegar a la **graduación** — que no es un día, es una **consistencia demostrada**. Y saber qué viene después.
 
-**Tiempo:** el resto de tu vida como DJ. 😄 (En serio: 1 sesión para montar el método; luego, cada semana.)
-
----
-
-## 1. Concepto: práctica deliberada
-
-Practicar no es «pinchar un rato». Es:
-1. **Una habilidad por sesión** (hoy: intercambio de graves; mañana: beatmatching a ciegas).
-2. **Grabarla.**
-3. **Escucharla con una lista de comprobación**, no «a ver qué tal».
-4. **Anotar 1-3 cosas** concretas para la siguiente.
-
-Diez sesiones así valen más que cien de «a ver qué sale».
-
-## 2. Concepto: qué escuchar en una grabación
-
-| Síntoma | Qué falló | Módulo |
-|---|---|---|
-| Galope / bombo doble | Fase | 3 |
-| Se separan poco a poco | Tempo | 3 |
-| «Barro» en los graves | Dos LOW a la vez | 4 |
-| Bajón de volumen en el cambio | Faders / TRIM | 2, 4 |
-| Voz sobre voz o entrada «a mitad» | Frase / conteo | 1, 5 |
-| Suena «desafinado» | Clave | 8 |
-| Efecto que cansa | FX sin apagar | 7 |
-| Silencio o corte feo | Rescate mal elegido | 10 |
+**Tiempo:** el método (00_METODO) ya lo aplicas desde el M0; este módulo lo cierra y lo audita. **Necesitas:** tu diario con semanas de entradas, tus grabaciones, la rúbrica.
 
 ---
 
-## 3. En Mixxx — qué tocas
+## 1. Concepto: la escucha crítica es una habilidad
+
+Escucharte «a ver qué tal» no sirve. Escucharte **con la rúbrica** (`RUBRICAS.md`), transición por transición, nombrando síntoma y módulo, sí. Al principio te costará distinguir S1 de S2 o S3 de S4; a las pocas semanas los oirás al instante — y ese mismo oído es el que luego corrige **en directo**.
+
+## 2. Concepto: el tablero dice la verdad
+
+Tu `DIARIO.md` tiene una fila por habilidad y un nivel. Reglas de lectura:
+- **Sube despacio = bien.** Un nivel cada 1-3 semanas por habilidad es un ritmo excelente.
+- **No sube en 3 semanas = meseta** (punto 4), no fracaso.
+- **Desniveles grandes** (conteo N4, beatmatching N1) son normales: las habilidades no van a la par.
+- **Los escalones superados se mantienen** con la rotación semanal; si uno «se cae» (fallas 2 de 5), vuelve a trabajarlo una semana.
+
+## 3. Concepto: revisión semanal (la reunión contigo mismo)
+
+30 min, siempre el mismo día:
+1. Escuchas el **mini-set de la semana** (15 min) con la rúbrica. Cuentas síntomas por tipo.
+2. Comparas con la semana anterior: **mejor / igual / peor** por síntoma.
+3. Actualizas el tablero (Regla 3×5).
+4. Eliges **máximo dos escalones** para la semana que entra.
+5. Anotas una frase: «esta semana aprendí…».
+
+## 4. Mesetas: protocolo
+
+Si una habilidad no sube en 3 semanas:
+1. **Baja un nivel** una semana (cimentar).
+2. **Cambia el estímulo**: otro par, otro género, otra hora.
+3. **Parte el escalón en dos** (p. ej. beatmatching N3 → «N3a: tempo a ciegas con 1 BPM de diferencia» y «N3b: con 0.5»).
+4. **Descansa 2-3 días.**
+5. Si tras eso nada: **pregunta** (a mí, a otro DJ, a un vídeo de la técnica exacta). Una meseta larga suele ser un **detalle técnico** que no ves (la mano en la superficie en vez del borde, contar desde el 2, MIX al lado equivocado).
+
+## 5. Concepto: qué es «graduarse»
+
+No es el día que te sale un set perfecto. Es cuando **el tablero muestra consistencia**: todas las habilidades núcleo en **N3 o más**, y las de tocar (M9/M9b/M10) en N2+, mantenidas durante un mes.
+
+---
+
+## 6. En Mixxx — qué tocas
 
 | Acción | Dónde |
 |---|---|
-| Grabar | Botón **REC** (arriba, en la barra de Mixxx). Se pone rojo. Otra vez para parar. |
-| Dónde queda el archivo | Mixxx → Preferencias → **Grabando** (carpeta y formato). Aparece también en **Grabaciones** del panel izquierdo. |
-| Escuchar | Ábrelo en cualquier reproductor, o cárgalo en un deck de Mixxx |
+| Grabar | **REC** (barra superior); rojo = grabando |
+| Carpeta / formato | Preferencias → **Grabando** |
+| Ver grabaciones | Panel izquierdo → **Grabaciones** (se cargan en un deck para escuchar) |
+| Saltar entre transiciones al escuchar | Carga la grabación en un deck y usa **BEAT JUMP +32** o el jog con SHIFT (search) |
 
-## 4. Ejercicio: «El ciclo semanal»
+## 7. Escalera de consistencia (la escalera de este módulo es transversal)
 
-**Cada sesión (30 min):**
-1. Elige **la habilidad** del día (una).
-2. **REC** on. Practícala 15-20 min.
-3. **REC** off. Escucha **solo las transiciones** (salta el resto) con la tabla del punto 2 al lado.
-4. En tu **diario de práctica** (un archivo `05_LEARN/diario.md`, o papel): fecha, habilidad, **qué salió bien, qué falló, 1 cosa para mañana**.
+**C1 · Escucha.** Nombras síntoma + módulo en cada transición de tu grabación, 5 de 5 transiciones. 3 semanas seguidas.
+**C2 · Diario.** 15 entradas + 3 revisiones semanales completas.
+**C3 · Tendencia.** El conteo semanal de síntomas **baja** 3 semanas seguidas (o se mantiene en 0-1 en A/B).
+**C4 · Tablero.** Todas las habilidades núcleo (M0-M8) en **N3+**; M9, M9b, M10 en **N2+**.
+**C5 · Un mes de mantenimiento.** Todo lo anterior **sostenido 4 semanas** (rotación semanal sin caídas).
 
-**Cada semana:**
-- Graba un **mini-set de 15 min** «como si fuera de verdad» y cuenta **cuántos síntomas** de la tabla oyes. Ese número debe **bajar** semana a semana. Si no baja, la habilidad del día siguiente es la del síntoma más repetido.
+## 8. Examen de graduación
 
-## 5. Criterio de dominio
+Cuando tengas C4, haces **dos pruebas** (grabadas, escuchadas con la rúbrica):
 
-- Escuchas una grabación y **nombras el síntoma y el módulo** de cada error.
-- Tu diario tiene al menos **10 entradas**.
-- El conteo semanal de síntomas **baja** tres semanas seguidas.
+**Prueba 1 · Set de 60 minutos (en casa, REC):** dos arcos; ≥ 18 canciones; **todos** los tipos de transición T1-T9 al menos una vez; una acapella en clave; un cambio de zona; un loop, un beat jump, un kill percusivo, un echo out; **un** error provocado y rescatado. **Criterio:** mediana **A**, ninguna transición D, cero S3/S6/S8/S11.
 
-## 6. Errores típicos
+**Prueba 2 · 30 minutos para gente (fiesta o Radio Pirata en directo):** rutina de arranque sin tarjeta; lectura de sala (o dos intervenciones de micro si es radio); plan B usado; ningún silencio. **Criterio:** mediana **B+** y una crítica externa concreta anotada.
 
-- **Grabar y no escuchar.** El 80 % del valor está en escucharse.
-- **Escuchar entero** en vez de las transiciones: pierdes el foco.
-- **Practicar todo a la vez.** Una habilidad.
-- **Compararte con DJs de YouTube.** Compárate con tu grabación de la semana pasada.
+Ambas superadas **y C5 en marcha** = graduado. Apunta la fecha. Es un día de verdad importante.
 
----
+## 9. Y después del curso
 
-## 7. Graduación: «Pinchar como los ángeles con arpa»
+- **Sigues con el método**: drills, revisión semanal, tablero. Los pros no dejan de hacer escalas.
+- **Amplías**: otro género, 4 decks (LateNight los tiene), samplers, más scratch (M8b N5+), producción de tus propios edits.
+- **Enseñas**: explicar a alguien el M1 es el mejor examen del M1. Y aquí entra **Sinatra Learn**: tu experiencia de alumno (dónde te atascaste, qué bug te frenó, qué escalón estaba mal partido) es el mejor diseño posible para el modo Learn. Cada síntoma de la rúbrica es un checkpoint automatizable: ya probamos que la cabina puede detectar «tempos igualados»; el resto (estás en el 1, intercambio en el 1, loop múltiplo de 4, dos LOW abiertos) es la misma idea.
 
-Cuando cumplas los criterios de dominio de los módulos 0-10, haz **el examen final**:
+## 10. Al finalizar el curso serás capaz de…
 
-> **Un set de 30 minutos, grabado, con al menos 10 canciones**, que incluya:
-> - 3 transiciones con **EQ** (m4), 2 con **DJ edits** (m5) y 1 con **acapella** (m5),
-> - 1 con **filtro** y 1 **echo out** (m7),
-> - 1 **loop** para ganar tiempo y 1 **beat jump** (m6),
-> - todas las parejas **compatibles en Camelot** (m8),
-> - un **arco de energía** claro (m9),
-> - y **un error provocado y rescatado** que nadie note (m10).
->
-> Escúchalo con la tabla del punto 2. **Cero síntomas** = graduado.
+- **Manejar tu cabina** (FLX4 + Mixxx) a ciegas y **diagnosticar** la señal en 10 segundos.
+- **Oír como un DJ**: pulso, el «1», frases, estructura por género, fase, tempo, barro, clave.
+- **Preparar** cualquier pista y **mantener** una biblioteca afinada con copia de seguridad.
+- **Igualar tempos a mano y de oído** con cualquier par, y saber cuándo usar SYNC.
+- Ejecutar **toda la familia de transiciones** y **elegir** la adecuada.
+- Mezclar con **DJ edits y acapellas**, y hacer **word play** básico.
+- Usar **cues, loops y beat jump** como reflejos e instrumentos.
+- Usar **EQ, filtro y efectos** con criterio (y saber cuándo no).
+- Mezclar **en armonía** y mover la energía con la clave.
+- Hacer **scratch básico y cue juggling** a tiempo.
+- **Construir y tocar sets** de 30-60 min con arco, cambios de zona y plan B.
+- **Pinchar para gente** (fiesta, radio, stream) y **rescatar** cualquier error — de mezcla o de herramienta — sin que se note.
+- **Seguir mejorando solo**, con método, para siempre.
 
-## 8. Al finalizar el curso serás capaz de…
-
-- **Manejar tu cabina** (FLX4 + Mixxx) con los ojos cerrados y explicar por dónde viaja el sonido.
-- **Oír la música como un DJ**: pulso, el «1», frases de 8/16/32, estructura.
-- **Preparar** cualquier canción en secreto por el casco con los niveles igualados.
-- **Igualar tempos a mano** y de oído, y saber cuándo usar SYNC.
-- Hacer **transiciones limpias** con EQ, filtro y efectos, sin barro ni bajones.
-- Mezclar con **DJ edits y acapellas** al estilo open format.
-- Usar **hot cues, loops y beat jump** para que nada te pille.
-- Elegir canciones **compatibles en tempo y armonía**.
-- **Construir y tocar un set** de 30 minutos con arco de energía y plan B.
-- **Rescatar** cualquier error en 8 beats sin que se note.
-- **Mejorar solo**, grabándote y escuchándote con criterio.
-
-Es decir: **mezclar música en general y conocer tu entorno.** Lo que pediste. 🎧
-
-Y cuando el **modo Learn** exista, cada uno de estos ejercicios te lo corregirá la propia cabina en vivo. Hasta entonces: REC, oído y repetición. Bienvenido al oficio.
+Es decir: **mezclar música en general y conocer tu entorno**, con solidez. Bienvenido al oficio. 🎧

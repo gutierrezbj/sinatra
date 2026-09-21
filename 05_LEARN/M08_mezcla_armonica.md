@@ -1,77 +1,95 @@
-# Módulo 8 · Mezcla armónica (claves y Camelot)
+# Módulo 8 · Mezcla armónica — v2
 
-**Objetivo:** elegir canciones que **suenan bien juntas** también en lo melódico, no solo en el tempo. Es lo que hace que una mezcla suene «bonita» y no «que chirría», y **tu biblioteca ya trae la clave** de cada pista: solo tienes que aprender a leerla.
+**Objetivo:** elegir canciones que **suenan bien juntas también en lo melódico**, usar la armonía para **subir o bajar energía** con intención, y saber cuándo la clave importa (y cuándo no). Tu biblioteca ya trae la clave de cada pista; aquí aprendes a leerla y a **oírla**.
 
-**Tiempo:** 2 sesiones de 30 min. **Necesitas:** la columna **Clave** de Mixxx visible.
+**Tiempo:** 1-2 semanas para N3; el oído armónico (M1b E5) sigue toda la vida. **Necesitas:** columna Clave en Mixxx (notación Camelot activada), M1b N2.
 
 ---
 
-## 1. Concepto: la clave y por qué importa
+## 1. Concepto: la clave y cuándo importa
 
-Cada canción está en una **clave** (tonalidad): *Am*, *F#m*, *Bb*… Cuando suenan dos a la vez, sus notas se mezclan: si las claves son **compatibles**, suena armónico; si no, suena a **choque** (un «desafinado» difícil de explicar pero fácil de oír).
-
-Importa sobre todo cuando se superponen partes **melódicas** (voces, sintes, bajos). Si mezclas solo batería con batería (intros/outros), importa menos.
+Cada canción está en una **tonalidad**. Dos canciones superpuestas mezclan sus notas: si las claves son **compatibles**, suena armónico; si no, **choca** (S8). Importa cuando se solapan **partes melódicas** (voces, sintes, bajos con nota). Con **ritmo sobre ritmo** (intros/outros de percusión), importa poco. Regla práctica: **primero tempo y estructura, después clave.**
 
 ## 2. Concepto: la rueda Camelot
 
-Para no saber teoría musical, los DJs usan la **rueda Camelot**: cada clave es un número **1-12** y una letra **A** (menor) o **B** (mayor). Regla de compatibilidad, sin excepciones que te importen ahora:
+Cada clave = número **1-12** + letra **A** (menor) o **B** (mayor). Compatibles desde **nA/nB**:
+- **Misma** (nA).
+- **Vecinas** (n−1 y n+1, misma letra).
+- **Hermana** (mismo número, otra letra: nA ↔ nB).
 
-> Desde una clave **nA** (o **nB**) puedes ir a:
-> - la **misma** (**nA**),
-> - la **vecina** (**n−1** o **n+1**, misma letra),
-> - o la **hermana** (**nB**, mismo número, otra letra).
+Ejemplo: desde **8A** → 8A, 7A, 9A, 8B.
 
-Ejemplo: desde **8A** → **8A, 7A, 9A, 8B**. Todo lo demás, *probablemente* chirría.
+## 3. Concepto: movimientos con intención (energy mixing)
 
-Bonus: subir de número (**8A → 9A**) da una **sensación de subida** de energía; bajar, de relax. Cambiar de A a B (menor → mayor) suena a «se abre».
+| Movimiento | Efecto | Cuándo |
+|---|---|---|
+| **+1** (8A → 9A) | Sube un poco la energía, «avanza» | Subida gradual del set |
+| **−1** (8A → 7A) | Relaja, «vuelve» | Bajada / cierre |
+| **A → B** (8A → 8B) | «Se abre», más luminoso | Pasar de verso oscuro a estribillo feliz |
+| **B → A** | Se «cierra», más íntimo | Cambio de ambiente |
+| **+2** (8A → 10A) *(energy boost)* | Salto de energía notable; funciona si el solape es corto | Pico, con corte o mix rápido |
+| **+7** (8A → 3A) *(medio tono arriba)* | Sube «un semitono»: subidón clásico | Solo con corte/echo, nunca blend largo |
 
-## 3. Concepto: keylock (master tempo)
+Los dos últimos son «reglas rotas a propósito»: úsalas con transiciones **cortas** (M4 T2/T4/T6).
 
-Si cambias el **TEMPO**, la canción cambia de tono (se agudiza/agrava) y su clave se desplaza. **Keylock** («bloqueo tonal») mantiene el tono al cambiar la velocidad. Actívalo cuando muevas el tempo más de ±3 %; desactívalo si notas artefactos («metálico»).
+## 4. Concepto: keylock y key shift
+
+- Cambiar **TEMPO** cambia el tono (y desplaza la clave). **Keylock** lo mantiene. Actívalo por encima de ±3 %; desactívalo si oyes artefactos metálicos (más frecuentes en voces con mucho tempo).
+- **KEY SHIFT** (pads, SHIFT + modo): sube/baja **semitonos** una pista para hacerla compatible. Un semitono suele pasar desapercibido; dos ya se nota. Herramienta de rescate armónico.
+- Con **acapellas** (M5) la clave importa **mucho**: la voz sola sobre una base en otra clave desafina de inmediato. Comprueba Camelot antes.
 
 ---
 
-## 4. En Mixxx y en la FLX4 — qué tocas
+## 5. En Mixxx / FLX4 — qué tocas
 
 | Acción | Dónde |
 |---|---|
-| Ver la clave | Columna **Clave** de la biblioteca de Mixxx (y en la cabecera de cada deck) |
-| Ver la clave en formato Camelot | Mixxx → Preferencias → **Detección de tonalidad** → notación **Camelot** (opcional, hace la lectura inmediata) |
-| Ordenar por clave | Clic en la cabecera **Clave** |
-| Keylock | Botón de **candado/keylock** en el deck de Mixxx (en la FLX4: **SHIFT + pad en modo KEY SHIFT** o desde pantalla) |
-| Cambiar el tono a mano (avanzado) | Pads en modo **KEY SHIFT** (SHIFT + modo): suben/bajan semitonos |
+| Notación Camelot | Mixxx → Preferencias → **Detección de tonalidad** → notación **Camelot** |
+| Ver / ordenar por clave | Columna **Clave** (clic en la cabecera) |
+| Keylock | Botón **candado** del deck en Mixxx (o en la FLX4 según mapping) |
+| Key shift | Pads en modo **KEY SHIFT** (SHIFT + modo) o los controles de tono del deck en Mixxx |
+| Filtrar compatibles | Buscar en la biblioteca por clave («8A», «9A», «8B») o cajones por clave (M6b) |
 
-## 5. Ejercicio A: «Leer el mapa»
+## 6. Escalera de niveles (Regla 3×5)
 
-1. Activa la notación **Camelot** en Mixxx (o usa una tabla de conversión; tu biblioteca muestra claves tipo *Bm*, *F#m*, *Cm*).
-2. Ordena la biblioteca por **Clave**. Elige una canción (p. ej. en **8A**). Busca **3 compatibles**: una **8A**, una **7A o 9A**, una **8B**. Apunta también **una incompatible** (p. ej. **3B**).
-3. Comprueba que las cuatro tienen BPM a ±4 (si no, busca otras: **primero tempo, luego clave**).
+**N1 · Leer.** Dado cualquier Camelot, dices sus **3 compatibles** sin pensar; encuentras una compatible en tempo y clave en < 1 min. 10 de 10.
+**N2 · Oír.** Distingues armonía de choque con los ojos cerrados (M1b E5) 5 de 5, 3 días.
+**N3 · Movimientos.** Encadenas 5 canciones con movimientos **intencionales** (+1, +1, A→B, −1…) y describes qué hizo cada uno a la energía. 3 cadenas, 3 días.
+**N4 · Rescates armónicos.** Con una pareja incompatible: eliges T2/T5/T6 para evitar el solape melódico **o** aplicas key shift de 1 semitono para hacerla compatible, y suena limpio. 5 de 5.
+**N5 · Acapellas en clave.** Tres acapellas (M5) sobre bases **compatibles**, con keylock donde toque, sin S8. 3 sets.
 
-## 6. Ejercicio B: «Oír la diferencia»
+## 7. Ejercicios
 
-1. Mezcla (módulo 4) la canción base con la **compatible 8A**, dejando que se superpongan **las partes con melodía/voz** 8 compases. Escucha: suave.
-2. Ahora con la **incompatible**. Misma superposición. Escucha el **choque**. Eso es lo que evitas.
-3. Después la **vecina (9A)**: nota la **subida** de energía. Y la **hermana (8B)**: nota cómo «se abre».
-4. Repite con otra base. Tu oído está aprendiendo a **sentir** la armonía; no hace falta entenderla.
+### E1 · «El mapa» (N1)
+Activa Camelot. Ordena por Clave. Elige una base (p. ej. 8A). Busca 3 compatibles y 1 incompatible, todas a ±4 BPM. Anótalo.
 
-## 7. Ejercicio C: «Keylock»
+### E2 · «Oír la diferencia» (N2)
+Mezcla la base con la compatible solapando **8 compases de melodía**. Luego con la incompatible. Después la vecina (+1) y la hermana (B). Con los ojos cerrados: nombra cuál es cuál.
 
-Iguala dos canciones que estén a **±6 %** de tempo (más lejos de lo normal). Mezcla sin keylock: oye cómo una suena «ardilla» o «lenta y grave». Activa **keylock** en esa y repite: el tono se mantiene. Decide cuándo compensa.
+### E3 · «Cadena con intención» (N3)
+Diseña 5 pasos: 8A → 9A (+1) → 9B (abre) → 10B (+1) → 9B (−1 cierre). Mézclala y escribe, por paso, qué sentiste en la energía.
 
-## 8. Criterio de dominio
+### E4 · «Energy boost» (N3-N4)
+8A → 10A con **corte en el 1** (T2) o mix rápido (T4). Escucha el subidón. Prueba lo mismo con blend largo y oye por qué no funciona.
 
-- Dado un número Camelot, dices las **tres claves compatibles** sin pensar.
-- Encuentras una canción compatible en tempo **y** clave en **menos de 1 minuto**.
-- Distingues de oído una superposición armónica de un choque.
-- Usas keylock cuando toca, no siempre.
+### E5 · «Semitono de rescate» (N4)
+Pareja incompatible (p. ej. 8A y 9B). Key shift de −1/+1 semitono en una hasta que Camelot marque compatible. Mezcla y decide si el artefacto vale la pena.
 
-## 9. Errores típicos
+### E6 · «Keylock» (N4)
+Pareja a ±6 % de tempo. Sin keylock: oye «ardilla/lenta». Con keylock: tono estable. Escucha si hay metálico en las voces.
 
-- **Obsesionarse con la clave** y olvidar el tempo, la energía o que la canción sea buena. La armonía es la guinda, no la tarta.
-- **Mezclar «a ciegas» por número** sin escuchar: la rueda es una guía; el oído manda.
-- **Tempo cambiado sin keylock** en una acapella: la voz desafina y se nota muchísimo.
-- **Superponer melodías largas** aunque sean compatibles: 8 compases sí, 32 no.
+### E7 · «Acapella en clave» (N5)
+Tres acapellas de tu biblioteca. Para cada una, elige una base **compatible** en Camelot y ±2 BPM. Mezcla (M5 E3). Sin S8.
 
-## 10. Reto del módulo
+## 8. Errores típicos
 
-Monta una cadena de **5 canciones** en la que cada paso sea **compatible en tempo (±4) y en Camelot** y que **suba de número** al menos dos veces. Mézclalas y grábala. Si suena «bonita» de principio a fin, **Módulo 9**.
+- **Obsesión con la clave** y olvidar tempo/energía/que la canción sea buena. La armonía es la guinda.
+- **Mezclar «a ciegas» por número** sin escuchar: la rueda guía; el oído manda.
+- **Blend largo en energy boost.** +2/+7 solo con transiciones cortas.
+- **Acapella sin comprobar clave (S8).** Siempre.
+- **Key shift de 2+ semitonos** «para forzar»: se nota. Mejor cambiar de canción.
+- **Keylock siempre encendido** con voces muy estiradas: artefactos.
+
+## 9. Reto del módulo
+
+Un set de 8 canciones donde **cada paso tenga un movimiento armónico intencional** anotado (+1, −1, A↔B, boost) y que incluya **una acapella en clave**. Rúbrica: cero S8, mediana B+. Tres sets, tres días.

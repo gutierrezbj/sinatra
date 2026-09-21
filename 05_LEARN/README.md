@@ -30,22 +30,22 @@ Los módulos en **negrita** son nuevos en v2. Los demás se amplían con escaler
 | Módulo | Estado |
 |---|---|
 | 00 Método y drills · Diario · Rúbricas · Bugs | ✅ v2 |
-| [M0 La consola FLX4 al dedillo](M00_la_consola_FLX4.md) | v1 → ampliar |
-| [M1 Fundamentos musicales](M01_fundamentos_musicales.md) | v1 → ampliar |
-| M1b Entrenamiento del oído | ⏳ nuevo |
-| [M2 Cue y monitorización](M02_cue_y_monitorizacion.md) | v1 → ampliar |
-| [M3 Beatmatching](M03_beatmatching.md) | v1 → ampliar (5 niveles) |
-| [M4 Transiciones](M04_la_transicion_limpia.md) | v1 → ampliar (taxonomía) |
-| [M5 DJ edits y open-format](M05_mezclar_con_dj_edits.md) | v1 → ampliar |
-| [M6 Cues, loops y beat jump](M06_hot_cues_loops_beat_jump.md) | v1 → ampliar |
-| M6b Preparación de biblioteca | ⏳ nuevo |
-| [M7 EQ, filtro y efectos](M07_eq_filtro_y_efectos.md) | v1 → ampliar |
-| [M8 Mezcla armónica](M08_mezcla_armonica.md) | v1 → ampliar |
-| M8b Scratch básico y cue juggling | ⏳ nuevo |
-| [M9 Construir sets](M09_construir_un_set.md) | v1 → ampliar |
-| M9b Pinchar para gente | ⏳ nuevo |
-| [M10 Rescates y errores](M10_rescates_y_errores.md) | v1 → ampliar |
-| [M11 Evaluación, mesetas y graduación](M11_grabar_escuchar_mejorar.md) | v1 → ampliar |
+| [M0 La consola FLX4 al dedillo](M00_la_consola_FLX4.md) | ✅ v2 |
+| [M1 Fundamentos musicales](M01_fundamentos_musicales.md) | ✅ v2 |
+| [M1b Entrenamiento del oído](M01b_entrenamiento_del_oido.md) | ✅ v2 |
+| [M2 Cue y monitorización](M02_cue_y_monitorizacion.md) | ✅ v2 |
+| [M3 Beatmatching](M03_beatmatching.md) | ✅ v2 |
+| [M4 Transiciones](M04_la_transicion_limpia.md) | ✅ v2 |
+| [M5 DJ edits y open-format](M05_mezclar_con_dj_edits.md) | ✅ v2 |
+| [M6 Cues, loops y beat jump](M06_hot_cues_loops_beat_jump.md) | ✅ v2 |
+| [M6b Preparación de biblioteca](M06b_preparacion_de_biblioteca.md) | ✅ v2 |
+| [M7 EQ, filtro y efectos](M07_eq_filtro_y_efectos.md) | ✅ v2 |
+| [M8 Mezcla armónica](M08_mezcla_armonica.md) | ✅ v2 |
+| [M8b Scratch básico y cue juggling](M08b_scratch_basico_y_cue_juggling.md) | ✅ v2 |
+| [M9 Construir sets](M09_construir_un_set.md) | ✅ v2 |
+| [M9b Pinchar para gente](M09b_pinchar_para_gente.md) | ✅ v2 |
+| [M10 Rescates y errores](M10_rescates_y_errores.md) | ✅ v2 |
+| [M11 Evaluación, mesetas y graduación](M11_grabar_escuchar_mejorar.md) | ✅ v2 |
 
 Ejercicio suelto de arranque: [L01 · Tu primera transición](L01_primera_transicion.md) — prueba de sabor antes del M4.
 
