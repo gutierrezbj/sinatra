@@ -23,18 +23,22 @@ La letra pequeña, sin humo: **mezclar bien es una habilidad motriz + auditiva.*
 |---|---|---|---|
 | 0 | [La consola FLX4 al dedillo](M00_la_consola_FLX4.md) | Cada botón, cada mando, y por dónde viaja el sonido | ✅ escrito |
 | 1 | [Fundamentos musicales del DJ](M01_fundamentos_musicales.md) | Beat, compás, el «1», frases de 8/16/32, estructura, intros/outros | ✅ escrito |
-| 2 | Cue y monitorización | Preparar la siguiente pista en secreto por el casco; ganancia y niveles | pendiente |
-| 3 | Beatmatching | Igualar tempos **a mano** (y cuándo usar SYNC), nudge con el jog, alinear el «1» | pendiente |
-| 4 | La transición limpia | EQ mixing, fader vs crossfader, entrar en la frase, la regla de los graves | pendiente |
-| 5 | Mezclar con DJ edits | Intros/outros, «Intro x Acap Outro», acapellas: la escuela open-format | pendiente |
-| 6 | Hot cues, loops y beat jump | Preparar pistas, marcar el «1», alargar intros, saltar con precisión | pendiente |
-| 7 | EQ, filtro y efectos con criterio | CFX, Beat FX: cuándo sí, cuándo no, y cuánto | pendiente |
-| 8 | Mezcla armónica | Claves y rueda Camelot: mezclar sin que «chirríe» | pendiente |
-| 9 | Construir un set | Selección, curva de BPM y energía, el arco de una sesión | pendiente |
-| 10 | Rescates y errores | Qué hacer cuando descarrila (y cómo que nadie lo note) | pendiente |
-| 11 | Grabar, escuchar, mejorar | Autoevaluación con REC; práctica deliberada | pendiente |
+| 2 | [Cue y monitorización](M02_cue_y_monitorizacion.md) | Preparar la siguiente pista en secreto por el casco; ganancia y niveles | ✅ escrito |
+| 3 | [Beatmatching](M03_beatmatching.md) | Igualar tempos **a mano** (y cuándo usar SYNC), nudge con el jog, alinear el «1» | ✅ escrito |
+| 4 | [La transición limpia](M04_la_transicion_limpia.md) | EQ mixing, fader vs crossfader, entrar en la frase, la regla de los graves | ✅ escrito |
+| 5 | [Mezclar con DJ edits](M05_mezclar_con_dj_edits.md) | Intros/outros, «Intro x Acap Outro», acapellas: la escuela open-format | ✅ escrito |
+| 6 | [Hot cues, loops y beat jump](M06_hot_cues_loops_beat_jump.md) | Preparar pistas, marcar el «1», alargar intros, saltar con precisión | ✅ escrito |
+| 7 | [EQ, filtro y efectos con criterio](M07_eq_filtro_y_efectos.md) | CFX, Beat FX: cuándo sí, cuándo no, y cuánto | ✅ escrito |
+| 8 | [Mezcla armónica](M08_mezcla_armonica.md) | Claves y rueda Camelot: mezclar sin que «chirríe» | ✅ escrito |
+| 9 | [Construir un set](M09_construir_un_set.md) | Selección, curva de BPM y energía, el arco de una sesión | ✅ escrito |
+| 10 | [Rescates y errores](M10_rescates_y_errores.md) | Qué hacer cuando descarrila (y cómo que nadie lo note) | ✅ escrito |
+| 11 | [Grabar, escuchar, mejorar + graduación](M11_grabar_escuchar_mejorar.md) | Autoevaluación con REC; práctica deliberada; **examen final** | ✅ escrito |
 
 Ejercicio suelto de arranque (ya escrito): [L01 · Tu primera transición](L01_primera_transicion.md) — úsalo como «prueba de sabor» antes del módulo 4.
+
+## Al finalizar el curso serás capaz de…
+
+**Mezclar música en general y conocer tu entorno.** En concreto: manejar la cabina a ciegas y saber por dónde viaja el sonido; oír la música como un DJ (el «1», frases de 8/16/32, estructura); preparar pistas en secreto por el casco con niveles igualados; igualar tempos a mano y de oído; hacer transiciones limpias con EQ, filtro y efectos; mezclar con DJ edits y acapellas; usar hot cues, loops y beat jump; elegir canciones compatibles en tempo y armonía; construir y tocar un set de 30 min con arco de energía; rescatar cualquier error en 8 beats; y mejorar solo, grabándote y escuchándote. El **examen de graduación** está al final del módulo 11.
 
 ## Plan de práctica intensivo (4 semanas)
 
