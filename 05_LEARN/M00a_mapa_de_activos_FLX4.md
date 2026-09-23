@@ -19,10 +19,13 @@ La FLX4 son **tres franjas** y **dos platos simétricos**:
 │  modos   │        │ sync    │  └────┘  └────┘      │  sync   │        │   modos  │
 │ PLAY CUE └────────┘         │  faders · xfader     │         └────────┘ PLAY CUE │
 ├─────────────────────────────┴──────────────────────┴─────────────────────────────┤
-│  BEAT FX (centro-abajo) · MASTER · HEADPHONES · MIC · BROWSE/LOAD (centro-arriba)  │
+│ IZQ del mezclador: SMART FADER · ∩ LEVEL · ∩ MIX · FX SELECT · SMART CFX · MIC LEVEL   │
+│ DCHA del mezclador: BEAT FX (RELEASE/ON-OFF/LEVEL-DEPTH/BEAT/SELECT/1·1&2·2) · CUE · MASTER LEVEL │
+│ CENTRO al fondo: medidores LED · indicador MIDI/Bluetooth · BROWSE · BACK · LOAD ×2     │
+│ CENTRO al frente: CROSSFADER                                                          │
 └──────────────────────────────────────────────────────────────────────────────────┘
 ```
-Esquema **orientativo**: la disposición exacta puede variar un poco; lo que no varía son los **nombres impresos** y las **formas**. Usa la tabla del punto 2 y tu consola. Truco: **haz una foto de tu FLX4 desde arriba** y numera en ella los controles de la tabla. Es tu mapa personal.
+Esquema **verificado** contra una foto cenital de la FLX4 de GARAGE1 (23/09/2026). Aun así, lo que nunca varía son los **nombres impresos** y las **formas**: fíate de eso antes que de cualquier dibujo. Usa la tabla del punto 2 y tu consola. Truco: **haz una foto de tu FLX4 desde arriba** y numera en ella los controles de la tabla. Es tu mapa personal.
 
 **El plato 2 es el espejo del plato 1.** Aprendes uno y tienes los dos.
 
@@ -72,10 +75,10 @@ Cómo leer la tabla: **Etiqueta** = lo que pone impreso · **Cómo se ve** · **
 | # | Etiqueta | Cómo se ve | Al tacto | Qué hace |
 |---|---|---|---|---|
 | 28 | **CROSSFADER** | Fader **horizontal**, abajo del todo | El único horizontal | Reparte entre Deck 1 y 2 |
-| 29 | **MASTER LEVEL** | Mando, zona superior central | Mando grande arriba del centro | Volumen general |
-| 30 | **HEADPHONES LEVEL** | Mando, zona del casco | Con serigrafía de casco | Volumen del casco |
-| 31 | **HEADPHONES MIX** (**CUE ↔ MST**) | Mando con escala CUE…MST | Junto al anterior | Qué oyes en el casco |
-| 32 | **MIC LEVEL** | Mando | Cerca del master | Volumen del micro |
+| 29 | **MASTER LEVEL** | Mando con escala −∞…0, **el último del bloque BEAT FX** | Fin de la fila de BEAT FX, pegado a un botón **CUE** | Volumen general (**hardware**, ver 2.6) |
+| 30 | **∩ LEVEL** (HEADPHONES LEVEL) | Mando con **icono de casco** ∩ y escala −∞…0 | Bloque de la **izquierda**, junto a SMART FADER | Volumen del casco (**hardware**) |
+| 31 | **∩ MIX** (**CUE ↔ MST**) | Mando con icono de casco y escala **CUE…MST** | Pegado al anterior, a su derecha | Qué oyes en el casco (**software**: sí se ve en Sinatra) |
+| 32 | **MIC LEVEL** | Mando con escala −∞…0 | Mismo bloque izquierdo, el más al fondo | Volumen del micro (**hardware**) |
 | 33 | **BROWSE** (mando rotatorio) | Mando **grande que gira y se pulsa**, centro-arriba | El único que gira sin tope y se pulsa | Recorre la biblioteca / selecciona |
 | 34 | **BACK** | Botoncito junto al BROWSE | Al lado del rotatorio | Atrás en la biblioteca |
 | 35 | **LOAD** (×2) | Dos botoncitos, uno hacia cada deck | A cada lado del BROWSE | Carga la pista en ese deck |
@@ -102,16 +105,101 @@ Cómo leer la tabla: **Etiqueta** = lo que pone impreso · **Cómo se ve** · **
 | 46 | **PHONES** (jack) | **Frontal** | Tu casco |
 | 47 | **MIC** (jack 1/4") | Trasera | Micrófono (no llega al PC) |
 
-**Total: ~47 activos.** Parecen muchos; en 3 sesiones los tendrás en la mano.
+| 48 | **CUE** (de máster) | Botón pequeño **entre el selector 1·1&2·2 y el MASTER LEVEL** | Último botón de la fila de BEAT FX | **Mete el máster en tu casco.** Es **hardware** (no está en el mapping). **Sin él, el `∩ MIX` en `MST` da silencio** — ver 2.6 |
+
+**Total: ~48 activos.** Parecen muchos; en 3 sesiones los tendrás en la mano.
+
+### 2.6 Software o hardware: qué ve Mixxx y qué no
+
+No todos los activos son iguales. La FLX4 es un **controlador con tarjeta de sonido dentro**: la mezcla la hace **Mixxx**, y la consola solo recibe el resultado ya mezclado y lo saca por los RCA y por el casco. Eso parte tus 47 activos en dos familias:
+
+| | Controles de **software** | Controles de **hardware** |
+|---|---|---|
+| Qué hacen | Mandan un mensaje **MIDI** a Mixxx | Actúan sobre el sonido **directamente**, ya fuera del software |
+| ¿Se mueven en Sinatra? | **Sí** | **No.** Mixxx ni se entera |
+| Cuáles son | Todo lo demás: faders, crossfader, TRIM, EQ, CFX, jogs, pads, PLAY, CUE, TEMPO, SYNC, BROWSE, LOAD, BEAT FX… | **MASTER LEVEL** (29) · **HEADPHONES LEVEL** (30) · **MIC LEVEL** (32) |
+
+Son **solo esos tres**. Comprobado en el mapping oficial `res/controllers/Pioneer-DDJ-FLX4.midi.xml`: no existe ninguna entrada para ellos. El **HEADPHONES MIX** (31), en cambio, **sí** es software (`[Master], headMix`) — ese sí lo verás moverse.
+
+**Tres consecuencias prácticas:**
+
+1. **El MASTER LEVEL no afecta a tus grabaciones.** Con **REC** (M11), Mixxx graba *antes* de esa etapa. Puedes bajar los altavoces a cero y la grabación sale igual de fuerte. Lo mismo vale para un stream.
+2. **No arregles la distorsión con el MASTER LEVEL.** Si los medidores de Mixxx se ponen en **rojo**, el sonido ya está roto *dentro* del software; bajar el MASTER LEVEL lo hace más flojito pero **sigue distorsionado**. Se arregla con el **TRIM**, que sí es software.
+   > **Regla del gain staging:** el **TRIM** arregla la señal. El **MASTER LEVEL** solo decide cómo de fuerte suena en la habitación.
+3. **Volumen de sala y volumen de mezcla son cosas distintas.** Si tienes que subir mucho el MASTER LEVEL para oírte, el problema suele estar en los TRIM, no en el mando.
+
+#### ⚠️ El caso que te va a morder: el `CUE` de máster (48)
+
+El `∩ MIX` hace **dos cosas a la vez**: manda MIDI a Mixxx **y**, dentro de la consola, cruza hacia la **monitorización del máster de la propia FLX4**. Ese bus está **mudo** hasta que pulsas el **`CUE` de máster**.
+
+Por eso, si giras a `MST` sin pulsarlo: **silencio**, aunque los altavoces estén sonando y en la pantalla todo parezca bien.
+
+**Secuencia correcta para monitorizar:**
+1. Deck 1 sonando, fader arriba
+2. **Pulsa el `CUE` de máster** (bajo el MASTER LEVEL) → el máster entra en tu casco
+3. Pulsa el **CUE del canal** que quieras preescuchar
+4. Ahora el **`∩ MIX`** cruza entre los dos, como debe
+
+Es la misma lógica que las mesas de club Pioneer (DJM). *(Diagnosticado en GARAGE1 el 2026-09-23 tras descartar mapping, skin, Mixxx de serie y una versión del mapping a 7 bits: `BUGS.md` #08.)*
+
+**Y te da un diagnóstico gratis:** si mueves **cualquier otro** control y en pantalla no se mueve nada, eso **no** es normal — es un problema de conexión o de mapping. Anótalo en `BUGS.md` (M10 §4).
+
+
+### 2.7 Leer las luces: qué te está diciendo la consola
+
+Las luces **no son decoración**: son la respuesta de la consola. Saber leerlas te ahorra la mitad de los sustos.
+
+**Regla general:** **fijo** = un estado (encendido / apagado). **Parpadeo** = un aviso o una espera.
+
+#### CUE de canal (26) — el botoncito 🎧 sobre el fader
+
+**Siempre fijo. Nunca parpadea.**
+
+| Luz | Significa |
+|---|---|
+| Encendido | Ese canal está **en tu casco** |
+| Apagado | No está |
+
+Se **suman**: los dos encendidos = oyes las dos canciones mezcladas en el casco (así se hace el beatmatching del M3). Si **este** botón te parpadea, eso **no** es normal → `BUGS.md`.
+
+#### CUE de plato (2) — el redondo grande junto a PLAY
+
+La FLX4 usa el **«modo Pioneer»** de Mixxx. Aquí el parpadeo **sí** significa algo:
+
+| Luz | Estado de la pista | Si lo pulsas… |
+|---|---|---|
+| **Parpadeo rápido** | Parada, y **NO** estás en el punto de inicio | **Mueve el punto de inicio aquí** ⚠️ |
+| **Fijo encendido** | Parada, **EN** el punto de inicio | **Previsualiza** (suena mientras aprietas) |
+| **Apagado** | **Sonando** | Vuelve al punto de inicio y para |
+
+> **El parpadeo rápido es un aviso: «me vas a mover el punto de inicio».** Si alguna vez te pasa que «le doy a CUE y la canción arranca en otro sitio», fue eso.
+>
+> **Para dejarlo fijo:** párala y pulsa **CUE** una vez. Desde ahí, CUE siempre te devuelve al mismo sitio.
+
+*(Comprobado en `src/engine/controls/cuecontrol.cpp`, `CueControl::updateIndicators()`, rama por defecto = modo Pioneer; y en las salidas `pfl` del mapping oficial.)*
+
+#### Indicador MIDI / Bluetooth — centro, entre las dos filas de medidores
+
+| Luz | Significa | Qué hacer |
+|---|---|---|
+| **Parpadeando**, con Mixxx **cerrado** | **Normal.** La consola espera a que un software de DJ la abra | Nada. Abre Mixxx |
+| **Apagada**, con Mixxx abierto y la consola **respondiendo** | ✅ **Conectada.** Es el estado bueno | Nada, a tocar |
+| **Parpadeando**, con Mixxx **abierto** | ⚠️ Mixxx **no** la ha cogido (o está en modo Bluetooth) | Cerrar Mixxx, apagar el Bluetooth del móvil, apagar/encender la FLX4 y relanzar (`BUGS.md` #07) |
+
+Observado en GARAGE1 el **2026-09-23**. No he encontrado documentación oficial de AlphaTheta con los estados exactos de este indicador en la FLX4, así que esta tabla es **empírica**.
+
+> **La prueba definitiva no es la luz, es el software.** Mueve un fader y mira si se mueve en Sinatra. Si responde, está conectada — diga lo que diga la luz. La luz solo te orienta cuando **no** responde.
+
 
 ## 3. Las trampas de nombres (lo que despista a todo el mundo)
 
-**«CUE» son cuatro cosas distintas:**
+**«CUE» son cinco cosas distintas:**
 1. **CUE de plato** (redondo grande junto a PLAY) → ensayar/volver al punto de arranque.
 2. **CUE de canal** (botoncito con 🎧 sobre el fader) → **preescuchar** por el casco. *El que buscas cuando «no oigo la otra».*
 3. **CUE/LOOP CALL** (flechas en el bloque de loops) → navegar cues guardados.
 4. **HOT CUE** (modo de pads) → marcadores en los pads.
-Y en el mando **HEADPHONES MIX** pone **CUE** en un extremo (= lo que preescuchas) y **MST** en el otro.
+5. **CUE de máster** (botón al lado del MASTER LEVEL, en la fila de BEAT FX) → preescuchar la salida general. **No aparece en el mapping oficial de Mixxx** (ni en el XML ni en el script) **porque es hardware puro**. Es **imprescindible**: sin él, el `∩ MIX` en `MST` no suena (ver 2.6).
+Y en el mando **∩ MIX** pone **CUE** en un extremo (= lo que preescuchas) y **MST** en el otro.
 
 **«MASTER» son tres:** **MASTER LEVEL** (volumen general) · **BEAT SYNC/MASTER** (quién manda el tempo) · **MST** del HEADPHONES MIX (oír lo del público).
 
@@ -156,8 +244,8 @@ Ojos cerrados. Alguien te pone el dedo en un control (o tú tocas al azar sin mi
 ### E4 · «Del problema al control»
 Tarjetas con problemas («no oigo la B en el casco», «quiero repetir el estribillo», «la A va un poco adelantada», «quiero que el público oiga la B», «quiero apagar la A poco a poco»…). Lees, y **tocas** el control (o la combinación) de la tabla del punto 4. 15 tarjetas.
 
-### E5 · «Los cuatro CUE»
-Alguien dice «CUE» y añade una pista: «el de ensayar», «el del casco», «el de los pads», «el de las flechas». Tocas el correcto. 10 rondas rápidas. Luego lo mismo con los tres MASTER y los tres FX.
+### E5 · «Los cinco CUE»
+Alguien dice «CUE» y añade una pista: «el de ensayar», «el del casco», «el de los pads», «el de las flechas», «el del máster». Tocas el correcto. 10 rondas rápidas. Luego lo mismo con los tres MASTER y los tres FX.
 
 ### E6 · «Recorrido fijo» (cronometrado)
 Recorre siempre el mismo camino de 20 activos en orden (PLAY 1 → CUE 1 → SHIFT 1 → borde jog 1 → TEMPO 1 → BEAT SYNC 1 → 4 BEAT 1 → pad 1 → HOT CUE 1 → TRIM 1 → LOW 1 → CFX 1 → CUE canal 1 → fader 1 → crossfader → MASTER LEVEL → HEADPHONES MIX → BROWSE → LOAD 2 → ON/OFF de FX). Cronometra. Primero mirando; luego **sin mirar**. Objetivo: < 30 s a ciegas.
@@ -165,12 +253,20 @@ Recorre siempre el mismo camino de 20 activos en orden (PLAY 1 → CUE 1 → SHI
 ### E7 · «Espejo»
 Todo lo anterior, pero en el **Deck 2**. Confirma que es simétrico y que no te lías con la mano contraria.
 
+### E8 · «¿Software o hardware?»
+Alguien te canta 10 activos al azar. Antes de tocarlos, dices **«software»** o **«hardware»**. Luego los tocas mirando Sinatra y compruebas. Los tres de hardware (MASTER LEVEL, HEADPHONES LEVEL, MIC LEVEL) tienen que salirte sin pensar. Variante dura: incluye el **HEADPHONES MIX**, que engaña (es software).
+
+
+### E9 · «Leer las luces»
+Con una pista cargada y parada: (1) mueve la reproducción a mitad de la canción → el **CUE de plato** debe **parpadear**; (2) pulsa CUE → se queda **fijo**; (3) dale PLAY → se **apaga**. Repite en el Deck 2. Luego, sin mirar la pantalla, alguien te pone un deck en uno de los tres estados y tú lo **nombras** mirando solo la luz. 10 rondas.
+
+
 ## 6. Escalera de niveles (Regla 3×5)
 
 **N1 · Censo.** Los 47 activos tocados leyendo la etiqueta, sin post-its.
 **N2 · Nombre → control.** 10 de 10 al azar en < 30 s, mirando.
-**N3 · Control → nombre.** 10 de 10 a ciegas (con deck/canal).
-**N4 · Problema → control.** 15 tarjetas sin fallo, incluidas las trampas (cuatro CUE, tres MASTER, tres FX).
+**N3 · Control → nombre.** 10 de 10 a ciegas (con deck/canal) **y los tres estados del CUE de plato leídos por la luz** (E9).
+**N4 · Problema → control.** 15 tarjetas sin fallo, incluidas las trampas (cinco CUE, tres MASTER, tres FX) **y los tres de hardware** (E8).
 **N5 · Recorrido a ciegas.** Los 20 en < 30 s sin mirar, en los dos decks.
 
 Superado N5 → **M0** (ahí aprendes **qué hace** cada uno de verdad y el viaje del sonido). Y el drill **D1** de cada día es el E6.
@@ -196,6 +292,7 @@ CONEXIONES: [ ] USB  [ ] MASTER OUT  [ ] PHONES  [ ] MIC
 - **No ver el crossfader** porque miras los verticales. Es el horizontal de abajo.
 - **Buscar el filtro en Beat FX.** El filtro de canal es **CFX**, un mando encima del fader.
 - **Olvidar que el Deck 2 es espejo.** Practica los dos.
+- **Subir el MASTER LEVEL para arreglar un sonido pobre o distorsionado.** Ese mando es hardware: solo sube el volumen de la sala. La señal se arregla con el **TRIM** (ver 2.6).
 - **Aprenderlo mirando.** Pasa a ciegas cuanto antes: en directo miras la sala, no la consola.
 
 ## 9. Reto del módulo

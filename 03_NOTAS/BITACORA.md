@@ -403,6 +403,63 @@ Copiar tal cual, al final del archivo, con el mismo nivel de encabezado que las 
 
 ---
 
+## 2026-09-23 · Sesión 07 · Primera sesión de práctica real — cabina completa y M2
+
+**Fase:** Curso (05_LEARN). No es ejecución de spec: **sesión de práctica del alumno**, sin cambios en Mixxx ni en las skins.
+**Responsable:** Juan Ramón Gutiérrez, con agente Claude Code (Opus 5)
+**Commit Mixxx:** sin cambios (solo lectura de `res/controllers` y `src/engine` para diagnóstico)
+**Objetivo de la sesión:** estrenar los monitores recién llegados (**DM-50D-BT**) y hacer el M2 — entender por dónde sale el sonido y cómo dirigirlo.
+
+### Qué se hizo
+
+- Conectados los monitores por **RCA al MASTER OUT**; verificada la cadena completa (altavoces = máster, casco = preescucha). Queda cerrado el pendiente no bloqueante de 001-B.
+- Recorridos los tres bloques del M2 (solo altavoces → solo casco → la ventana `∩ MIX`). El alumno acabó **explicando el sistema de monitorización con sus propias palabras**.
+- Primera transición básica (subir fader 2 / bajar fader 1), siguiendo el tutorial oficial de rekordbox.
+- Dos incidencias perseguidas hasta el final y documentadas en `05_LEARN/BUGS.md`: **#07** (consola muda por modo Bluetooth) y **#08** (el `∩ MIX` en `MST` daba silencio).
+- El M0a creció con tres apartados nacidos de dudas reales del alumno: **§2.6** (software vs hardware), **§2.7** (leer las luces) y el **quinto CUE** (activo #48). Mapa corregido con una foto cenital de la consola de GARAGE1.
+- Arrancado `05_LEARN/DIARIO.md` con la entrada de la Sesión 01 y el tablero de niveles.
+
+### Resultado
+
+- **M2 comprendido** (nivel 2 en el tablero; falta repetir 3 días para fijarlo con la Regla 3×5). Cabina completa y operativa.
+- **#07 y #08 cerrados.** Ninguno era un defecto de Sinatra.
+
+### Qué funcionó
+
+- **Bisección → medición → experimento de control.** Para el #08: ratón vs mando físico; luego `--controller-debug` (21.904 muestras, recorrido 0→16383 limpio); luego Mixxx de serie sin Sinatra; luego una versión del mapping a 7 bits. Ocho hipótesis descartadas con datos.
+- El **RESET total + construir de uno en uno** desatascó al alumno cuando «sonaba todo por todos lados». Vale como protocolo didáctico.
+- Que el alumno **insistiera** cuando el agente daba por cerrado el caso. Ocurrió tres veces; las tres tenía razón.
+
+### Qué falló o quedó incierto
+
+- El agente **cerró el #08 en falso** con una hipótesis no verificada («no había máster que oír») y tuvo que reabrirlo. Queda como aviso: no cerrar sin reproducir.
+- El **mapping oficial de Mixxx no contempla el `CUE` de máster** (ni MASTER LEVEL, ∩ LEVEL o MIC LEVEL, que sí mandan MIDI en `0xB6` ctrl `0x05`/`0x08`/`0x0D`). Candidato a propuesta upstream — como documentación, no como bug.
+
+### Decisiones y razones
+
+- **No tocar `C:\dev\mixxx`** en ningún momento del diagnóstico (ADR-001): la variante del mapping a 7 bits se creó en la carpeta de usuario y se borró al descartarla.
+- **Documentar los hallazgos en el M0a en caliente**, no al final: cada duda del alumno se convirtió en apartado del curso el mismo día.
+- **No cerrar bugs sin reproducir**, a raíz del fallo de esta sesión.
+
+### Qué aprendimos
+
+- **Causa real del #08:** el `∩ MIX` actúa a la vez como control MIDI y como **cruce de hardware** dentro de la FLX4 hacia su propia monitorización del máster — que está muda hasta que se pulsa el **`CUE` de máster**. Misma lógica que las mesas DJM.
+- **Para Learn:** el alumno no podía saber que existía un botón imprescindible. «Estás en MST y el CUE de máster está apagado» es un checkpoint automático evidente, del mismo tipo que el indicador de BPM igualados de 001-D.
+- **Sobre el método del curso:** el M0a (conocer la consola) no se aprende leyendo, sino **tocando y rompiendo**. Una tarde de depuración enseñó más que dos semanas de sesiones cortas. Palabras del alumno: *«ya sé por dónde sale el sonido y cómo sacarlo»*.
+- Queda **mucho por entender y tocar** — esto es el punto de partida del curso, no su final.
+
+### Evidencia relacionada
+
+- `05_LEARN/BUGS.md` #07 y #08 (con todas las hipótesis descartadas) · `05_LEARN/M00a_mapa_de_activos_FLX4.md` §2.6, §2.7, activo #48, E8, E9 · `05_LEARN/DIARIO.md` Sesión 01 · página Notion «Tu música y tus entrenos».
+
+### Siguiente paso
+
+- **Práctica:** M0a **E1** (censo de los 48 activos) con la Regla 3×5, y repetir el M2 tres días para fijarlo.
+- **Pendiente de decisión del responsable:** sigue abierta la **revisión de rumbo del Hito 001** — si se abre el **modo Learn** con spec propia y plan de empaquetado.
+- **Opcional, sin prisa:** proponer a Mixxx la documentación del `CUE` de máster de la FLX4.
+
+---
+
 ## Correcciones fechadas
 
 > Estas notas corrigen o unifican terminología sin reescribir las entradas anteriores, que se conservan como registro del momento en que se escribieron.
